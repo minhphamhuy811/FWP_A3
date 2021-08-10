@@ -10,18 +10,18 @@ export default function Declaration() {
 	const [id, setID] = useState('')
 
 	return(
-		<div className="bg-gray-100 p-4">
-			<div className="border-8 border-blue-900 p-4 min-h-screen">
-				<div className="bg-white border border-transparent rounded-2xl p-4">
-					<div className="flex gap-x-2 justify-center items-center">
-						<img src={logochxhcnvn} className="h-10" alt="logo_vn"/>
-						<img src={logobyt} className="h-10" alt="logo_byt"/>
-					</div>
-					<div className="text-center pt-4">
-						<h3 style={{fontSize: '10px'}}>BAN CHỈ ĐẠO QUỐC GIA PHÒNG CHỐNG COVID-19</h3>
-						<h1 className="font-bold">HỆ THỐNG QUẢN LÝ KHAI BÁO Y TẾ</h1>
-					</div>
+		<div className="flex flex-col bg-gray-100">
+			<div className="bg-blue-900 border border-transparent shadow-xl p-8">
+				<div className="flex gap-x-2 justify-center items-center">
+					<img src={logochxhcnvn} className="h-14" alt="logo_vn"/>
+					<img src={logobyt} className="h-14 border border-transparent rounded-full bg-white" alt="logo_byt"/>
 				</div>
+				<div className="text-center pt-4">
+					<h3 className="text-white" style={{fontSize: '10px'}}>BAN CHỈ ĐẠO QUỐC GIA PHÒNG CHỐNG COVID-19</h3>
+					<h1 className="font-bold text-white">HỆ THỐNG QUẢN LÝ KHAI BÁO Y TẾ</h1>
+				</div>
+			</div>
+			<div className="border-blue-900 px-8 py-4 min-h-screen relative max-w-xl mx-auto">
 				<div className="bg-white border border-transparent rounded-2xl p-4 my-4">
 					<div className="text-center">
 						<h1 className="font-bold text-4xl">TỜ KHAI Y TẾ</h1>
