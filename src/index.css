@@ -29,6 +29,14 @@ code {
   pointer-events: none;
 }
 
+label , #fullname, #national, #gender, #birthyear {
+  font-size: 12.5px;
+}
+
+label {
+  @apply font-bold ml-4
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
