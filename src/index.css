@@ -1,11 +1,18 @@
 :root {
-  --color-primary: #302683;
+  --color-primary: #001c3d;
   --color-secondary: #cf1227;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.images{
+  background-image: url("./assets/bglogin.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
 body {
   margin: 0;
@@ -14,6 +21,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 label, select,#fullname, #id, #national, #gender, #birthyear, #address, #phoneNumber, #email {

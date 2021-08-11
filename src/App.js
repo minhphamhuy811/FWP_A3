@@ -1,9 +1,9 @@
 import React from 'react'
 import Declare_page_header from './layout/Declare_page_header'
-import Declaration from './Declaration'
-import Declarationtwo from './Declarationtwo'
+import Declaration from './pages/Declaration'
+import Declarationtwo from './pages/Declarationtwo'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Login from './Login'
+import Login from './pages/Login'
 
 export default function App() {
 	return (
