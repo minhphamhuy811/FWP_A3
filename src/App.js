@@ -3,7 +3,9 @@ import Declare_page from './layout/Declare_page'
 import Declaration from './Declaration'
 import Declarationtwo from './Declarationtwo'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-function App() {
+import Login from './Login'
+
+export default function App() {
 	return (
 		<Router>
 			<Switch>
@@ -12,9 +14,12 @@ function App() {
 						<Declare_page />
 						<Declaration />
 					</Route>
-					<Route path='/2'>
+					<Route path='/continue'>
 						<Declare_page />
 						<Declarationtwo />
+					</Route>
+					<Route path='/admin-login'>
+						<Login/>
 					</Route>
 				</div>
 
@@ -22,5 +27,3 @@ function App() {
 		</Router>
 	)
 }
-
-export default App
