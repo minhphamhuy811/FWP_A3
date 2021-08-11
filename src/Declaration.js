@@ -6,6 +6,9 @@ export default function Declaration() {
 	const [gender, setGender] = useState('')
 	const [national, setNational] = useState('')
 	const [id, setID] = useState('')
+	const [address, setAddress] = useState('')
+	const [phoneNumber, setPhoneNumber] = useState('')
+	const [email, setEmail] = useState('')
 
 	return(
 		<div className="flex flex-col bg-gray-100">
@@ -15,42 +18,41 @@ export default function Declaration() {
 						<h1 className="font-bold text-4xl">TỜ KHAI Y TẾ</h1>
 						<p className="text-red-600" style={{fontSize: '10px'}}>*Thận trọng: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự</p>
 					</div>
-					<div className="my-4">
+					<div className="mt-2 text-center font-bold">Phần 1: Thông tin cá nhân</div>
+					<div className="my-2">
 						<h3 className="font-bold">Thông tin người khai báo</h3>
-						<form action="">
+						<form action="" className="my-2">
 							<ul className="flex flex-col">
-								<label htmlFor="fullname">Họ và Tên:</label>
-								<input type="text" placeholder="Nguyễn Văn A" className="rounded-full border-gray-300 shadow appearance-none" id="fullname" value={fullName} onChange={e => setFullName(e.target.value)}/>
+								<label htmlFor="fullname">Họ và Tên <a className="text-red-600 italic">(*)</a></label>
+								<input type="text" placeholder="Nguyễn Văn A" className="rounded-full border-gray-300 focus:border-blue-900" id="fullname" value={fullName} onChange={e => setFullName(e.target.value)}/>
 							</ul>
-							<ul className="flex flex-col">
-								<label htmlFor="id">Số hộ chiếu / CMND / CCCD:</label>
-								<input type="text" placeholder="012345678" className="rounded-full border-gray-300 shadow appearance-none" id="id" value={id} onChange={e => setID(e.target.value)}/>
+							<ul className="flex flex-col my-2">
+								<label htmlFor="id">Số hộ chiếu / CMND / CCCD <a className="text-red-600 italic">(*)</a></label>
+								<input type="text" placeholder="012345678" className="rounded-full border-gray-300 focus:border-blue-900" id="id" value={id} onChange={e => setID(e.target.value)}/>
 							</ul>
-							<div className="grid grid-cols-3 gap-x-4 my-4">
+							<div className="grid grid-cols-3 gap-x-4 my-2">
 								<ul className="flex flex-col">
-									<label htmlFor="birthyear">Năm Sinh:</label>
-									<input type="text" placeholder="2021" className="rounded-full border-gray-300 shadow appearance-none" id="birthyear" value={birthYear} onChange={e => setBirthYear(e.target.value)}/>
+									<label htmlFor="birthyear">Năm Sinh <a className="text-red-600 italic">(*)</a></label>
+									<input type="text" placeholder="2021" className="rounded-full border-gray-300 focus:border-blue-900" id="birthyear" value={birthYear} onChange={e => setBirthYear(e.target.value)}/>
 								</ul>
 								<ul className="flex flex-col">
-									<label htmlFor="gender">Giới Tính:</label>
-									<select name="gdr" id="gender" value={gender} onChange={e => setGender(e.target.value)} className="rounded-full border-gray-300 shadow appearance-none">
+									<label htmlFor="gender">Giới Tính <a className="text-red-600 italic">(*)</a></label>
+									<select name="gdr" id="gender" value={gender} onChange={e => setGender(e.target.value)} className="rounded-full border-gray-300 focus:border-blue-900">
 										<option value="male" onClick={e => setGender(e.target.value)}>Nam</option>
 										<option value="female" onClick={e => setGender(e.target.value)}>Nữ</option>
 										<option value="differ" onClick={e => setGender(e.target.value)}>Khác</option>
 									</select>
 								</ul>
 								<ul className="flex flex-col">
-									<label htmlFor="national">Quốc Tịch:</label>
-									<input type="text" placeholder="Nam/Nữ" className="rounded-full border-gray-300 shadow appearance-none" id="national" value={national} onChange={e => setNational(e.target.value)}/>
+									<label htmlFor="national">Quốc Tịch <a className="text-red-600 italic">(*)</a></label>
+									<input type="text" placeholder="Việt Nam" className="rounded-full border-gray-300 focus:border-blue-900" id="national" value={national} onChange={e => setNational(e.target.value)}/>
 								</ul>
 							</div>
-							<h3 className="font-bold">Địa chỉ liên lạc tại Việt Nam</h3>
-							<br />
-							<div className="grid grid-cols-3 gap-4">
-								<div >
-									<label className="tracking-wide text-base font-bold mb-2" >
+							<h3 className="font-bold">Thông tin nơi cư trú</h3>
+							<div className="grid grid-cols-3 gap-x-4">
+								<div>
+									<label>
 							Tỉnh/thành <a className="text-red-600 italic">(*)</a>
-
 									</label>
 									<select className="block rounded-full border-gray-300 appearance-none w-full bg-white-200 border border-gray-200 text-gray-700 rounded leading-tight focus:outline-none focus:bg-gray" id="grid-state">
 										<option>-Chọn-</option>
@@ -59,60 +61,51 @@ export default function Declaration() {
 									</select>
 								</div>
 								<div>
-									<label className=" tracking-wide text-base font-bold mb-2" >
+									<label>
 							Quận/huyện <a className="text-red-600 italic">(*)</a>
 									</label>
-									<select className="block appearance-none rounded-full border-gray-300 w-full bg-white-200 border border-gray-200 text-gray-700 rounded leading-tight focus:outline-none focus:bg-gray focus:border-gray-500" id="grid-state">
+									<select className="option-input" id="grid-state">
 										<option>-Chọn-</option>
 										<option>1</option>
 										<option>2</option>
 									</select>
 								</div>
-
 								<div>
-									<label className="tracking-wide text-base font-bold mb-2" >
+									<label>
 							Phường/xã <a className="text-red-600 italic">(*)</a>
 									</label>
-									<select className="block appearance-none rounded-full border-gray-300 w-full bg-white-200 border border-gray-200 text-gray-700 rounded leading-tight focus:outline-none focus:bg-gray focus:border-gray-500" id="grid-state">
+									<select className="option-input" id="grid-state">
 										<option>-Chọn-</option>
 										<option>1</option>
 										<option>2</option>
 									</select>
 								</div>
-
-								<div className="col-span-3">
-									<label className=" tracking-wide text-base font-bold mb-2" >
-							Số nhà, phố, tổ dân phố/thôn/đội <a className="text-red-600 italic">(*)</a>
-									</label>
-									<input className="shadow appearance-none rounded-full border-gray-300 w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:border-blue-500" placeholder=""/>
-								</div>
+								<ul className="flex flex-col col-span-3 my-2">
+									<label htmlFor="email" className="tracking-wide">Số nhà, phố, tổ dân phố/thôn/đội <a className="text-red-600 italic">(*)</a></label>
+									<input type="text" placeholder="01 Đường Hồ Chí Minh, Khu Phố 01, Tổ 1, Phường 1, Quận 1" className="rounded-full border-gray-300 focus:border-blue-900" id="address" value={address} onChange={e => setAddress(e.target.value)}/>
+								</ul>
 							</div>
 							<div className="grid grid-cols-2 gap-4">
-								<div className="col-span-1">
-									<label className=" tracking-wide text-base font-bold mb-2" >
-							Điện thoại <a className="text-red-600 italic">(*)</a>
-									</label>
-									<input className="shadow appearance-none rounded-full border-gray-300 w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:border-blue-500" placeholder=""/>
-								</div>
-								<div className="col-span-1">
-									<label className=" tracking-wide text-base font-bold mb-2" >
-							Email
-									</label>
-									<input className="shadow appearance-none rounded-full border-gray-300 w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:border-blue-500" placeholder=""/>
-								</div>
+								<ul className="flex flex-col">
+									<label htmlFor="email" className="tracking-wide">Điện thoại <a className="text-red-600 italic">(*)</a></label>
+									<input type="number" placeholder="0123456789" className="rounded-full border-gray-300 focus:border-blue-900" id="phoneNumber" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)}/>
+								</ul>
+								<ul className="flex flex-col">
+									<label htmlFor="email" className="tracking-wide">Email <a className="text-red-600 italic">(*)</a></label>
+									<input type="email" placeholder="nguyenvana@mail.com" className="rounded-full border-gray-300 focus:border-blue-900" id="email" value={email} onChange={e => setEmail(e.target.value)}/>
+								</ul>
 							</div>
 						</form>
 					</div>
 
 				</div>
-				<div className="bg-white border border-transparent rounded-2xl p-4">
+				<div className="bg-white border border-transparent rounded-2xl p-2">
 					<div className="flex justify-around">
-						<button className="border-red-600 bg-red-600 py-4 px-8 rounded-xl text-white">XÓA</button>
-						<button className="border-green-600 bg-green-600 p-4 rounded-xl text-white">TIẾN HÀNH</button>
+						<button className="border-red-600 bg-red-600 py-4 px-8 w-full rounded-l-xl text-white">XÓA</button>
+						<button className="border-green-600 bg-green-600 p-4 w-full rounded-r-xl text-white">TIẾP TỤC</button>
 					</div>
 				</div>
 			</div>
-
 		</div>
 	)
 }
