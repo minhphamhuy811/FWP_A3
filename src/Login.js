@@ -1,15 +1,19 @@
 import './index.css'
 import React from 'react'
-import rmitlogo from './assets/rmitlogo.svg'
-
+// import rmitlogo from './assets/rmitlogo.svg'
+import logobyt from './assets/logo_byt.svg'
+import logoembvn from './assets/logo_chxhcnvn.svg'
 function Login () {
 	return (
 		<div className="min-h-screen flex items-center justify-center bg-transparent py-12 px-4 sm:px-6 lg:px-8">
 			<div className="max-w-md w-full space-y-8">
 				<div>
-					<img className="mx-auto h-12 w-auto" src={rmitlogo} alt="rmitlogo"/>
+					<div className="flex">
+						<img className="mx-auto h-12 w-auto" src={logobyt} alt="logobyt"/>
+						<img className="mx-auto h-12 w-auto" src={logoembvn} alt="logoembvn"/>
+					</div>
 					<div>
-						<h2 className="mt-6 text-center text-2xl font-bold text-gray-900">STUDENT WORK ARCHIVING SYSTEM</h2>
+						<h2 className="mt-6 text-center text-2xl font-bold text-gray-900">HỆ THỐNG QUẢN LÝ ĐƠN KHAI BÁO</h2>
 						<p className="mt-2 text-center text-sm text-gray-600">
             Login Portal
 						</p>

@@ -2,13 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
-// import App from './App'
+import App from './App'
 // import Navbar from './components/Navbar'
-import Declaration from './Declaration'
+// import Login from './Login'
 
-ReactDOM.render(
+ReactDOM.render (
 	<React.StrictMode>
-		<Declaration/>
+		<App/>
 	</React.StrictMode>,
 	document.getElementById('root')
 )
