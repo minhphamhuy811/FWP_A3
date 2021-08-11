@@ -20,24 +20,28 @@ export default function Declaration() {
 						<form action="">
 							<ul className="flex flex-col">
 								<label htmlFor="fullname">Họ và Tên:</label>
-								<input type="text" placeholder="Nguyễn Văn A" className="rounded-full" id="fullname" value={fullName} onChange={e => setFullName(e.target.value)}/>
+								<input type="text" placeholder="Nguyễn Văn A" className="rounded-full border-gray-300 shadow appearance-none" id="fullname" value={fullName} onChange={e => setFullName(e.target.value)}/>
 							</ul>
 							<ul className="flex flex-col">
 								<label htmlFor="id">Số hộ chiếu / CMND / CCCD:</label>
-								<input type="text" placeholder="012345678" className="rounded-full" id="id" value={id} onChange={e => setID(e.target.value)}/>
+								<input type="text" placeholder="012345678" className="rounded-full border-gray-300 shadow appearance-none" id="id" value={id} onChange={e => setID(e.target.value)}/>
 							</ul>
 							<div className="grid grid-cols-3 gap-x-4 my-4">
 								<ul className="flex flex-col">
 									<label htmlFor="birthyear">Năm Sinh:</label>
-									<input type="text" placeholder="2021" className="rounded-full" id="birthyear" value={birthYear} onChange={e => setBirthYear(e.target.value)}/>
+									<input type="text" placeholder="2021" className="rounded-full border-gray-300 shadow appearance-none" id="birthyear" value={birthYear} onChange={e => setBirthYear(e.target.value)}/>
 								</ul>
 								<ul className="flex flex-col">
 									<label htmlFor="gender">Giới Tính:</label>
-									<input type="text" placeholder="Nam/Nữ" className="rounded-full" id="gender" value={gender} onChange={e => setGender(e.target.value)}/>
+									<select name="gdr" id="gender" value={gender} onChange={e => setGender(e.target.value)} className="rounded-full border-gray-300 shadow appearance-none">
+										<option value="male" onClick={e => setGender(e.target.value)}>Nam</option>
+										<option value="female" onClick={e => setGender(e.target.value)}>Nữ</option>
+										<option value="differ" onClick={e => setGender(e.target.value)}>Khác</option>
+									</select>
 								</ul>
 								<ul className="flex flex-col">
 									<label htmlFor="national">Quốc Tịch:</label>
-									<input type="text" placeholder="Nam/Nữ" className="rounded-full" id="national" value={national} onChange={e => setNational(e.target.value)}/>
+									<input type="text" placeholder="Nam/Nữ" className="rounded-full border-gray-300 shadow appearance-none" id="national" value={national} onChange={e => setNational(e.target.value)}/>
 								</ul>
 							</div>
 							<h3 className="font-bold">Địa chỉ liên lạc tại Việt Nam</h3>
@@ -48,7 +52,7 @@ export default function Declaration() {
 							Tỉnh/thành <a className="text-red-600 italic">(*)</a>
 
 									</label>
-									<select className="block appearance-none w-full bg-white-200 border border-gray-200 text-gray-700 rounded leading-tight focus:outline-none focus:bg-gray focus:border-gray-500" id="grid-state">
+									<select className="block rounded-full border-gray-300 appearance-none w-full bg-white-200 border border-gray-200 text-gray-700 rounded leading-tight focus:outline-none focus:bg-gray" id="grid-state">
 										<option>-Chọn-</option>
 										<option>Hà Nội</option>
 										<option>Hồ Chí Minh</option>
@@ -58,7 +62,7 @@ export default function Declaration() {
 									<label className=" tracking-wide text-base font-bold mb-2" >
 							Quận/huyện <a className="text-red-600 italic">(*)</a>
 									</label>
-									<select className="block appearance-none w-full bg-white-200 border border-gray-200 text-gray-700 rounded leading-tight focus:outline-none focus:bg-gray focus:border-gray-500" id="grid-state">
+									<select className="block appearance-none rounded-full border-gray-300 w-full bg-white-200 border border-gray-200 text-gray-700 rounded leading-tight focus:outline-none focus:bg-gray focus:border-gray-500" id="grid-state">
 										<option>-Chọn-</option>
 										<option>1</option>
 										<option>2</option>
@@ -69,7 +73,7 @@ export default function Declaration() {
 									<label className="tracking-wide text-base font-bold mb-2" >
 							Phường/xã <a className="text-red-600 italic">(*)</a>
 									</label>
-									<select className="block appearance-none w-full bg-white-200 border border-gray-200 text-gray-700 rounded leading-tight focus:outline-none focus:bg-gray focus:border-gray-500" id="grid-state">
+									<select className="block appearance-none rounded-full border-gray-300 w-full bg-white-200 border border-gray-200 text-gray-700 rounded leading-tight focus:outline-none focus:bg-gray focus:border-gray-500" id="grid-state">
 										<option>-Chọn-</option>
 										<option>1</option>
 										<option>2</option>
@@ -80,7 +84,7 @@ export default function Declaration() {
 									<label className=" tracking-wide text-base font-bold mb-2" >
 							Số nhà, phố, tổ dân phố/thôn/đội <a className="text-red-600 italic">(*)</a>
 									</label>
-									<input className="shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:border-blue-500" placeholder=""/>
+									<input className="shadow appearance-none rounded-full border-gray-300 w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:border-blue-500" placeholder=""/>
 								</div>
 							</div>
 							<div className="grid grid-cols-2 gap-4">
@@ -88,55 +92,15 @@ export default function Declaration() {
 									<label className=" tracking-wide text-base font-bold mb-2" >
 							Điện thoại <a className="text-red-600 italic">(*)</a>
 									</label>
-									<input className="shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:border-blue-500" placeholder=""/>
+									<input className="shadow appearance-none rounded-full border-gray-300 w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:border-blue-500" placeholder=""/>
 								</div>
 								<div className="col-span-1">
 									<label className=" tracking-wide text-base font-bold mb-2" >
 							Email
 									</label>
-									<input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:border-blue-500" placeholder=""/>
+									<input className="shadow appearance-none rounded-full border-gray-300 w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:border-blue-500" placeholder=""/>
 								</div>
 							</div>
-							<p className="font-bold">Trong vòng 14 ngày qua, Anh/Chị có dến tình/thành phố, quốc gia/ vùng lãnh thổ nào (có thể đi qua nhiều nơi)</p>
-							<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
-							<label><input className="style-radio radio-option" type="radio" value='ko'/> Không	</label>
-							<br />
-							<p className=" font-bold">Trong vòng 14 ngày qua, Anh/Chị có thấy xuất hiện ít nhất 1 trong các dấu hiệu: sốt, ho, khó thở, viêm phổi, đau họng, mệt mỏi không?</p>
-							<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
-							<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
-							<br />
-							<p className="font-bold">Trong vòng 14 ngày qua, Anh/Chị có tiếp xúc với <a className="text-red-600 italic">(*)</a></p>
-
-
-
-
-							<table className="table max-w-max border-solid border-gray-300 border-4 table-fixed">
-								<thead >
-									<tr>
-										<th className="w-4/5"/>
-										<th className="w-1/5" >Có</th>
-										<th >Không</th>
-									</tr>
-								</thead >
-								<tbody >
-									<tr className="border-solid border-gray-300 border-4 ">
-										<td  >Người bệnh hoặc nghi ngờ, mắc bệnh COVID-19 <a className="text-red-600 italic">(*)</a></td>
-										<td  ><input type="radio"  /></td>
-										<td  ><input type="radio" /></td>
-									</tr>
-									<tr className="border-solid border-gray-300 border-4 " >
-										<td>Người từ nước có bệnh COVID-19 <a className="text-red-600 italic">(*)</a></td>
-										<td><input type="radio"  /></td>
-										<td><input type="radio"  /></td>
-									</tr>
-									<tr className="border-solid border-gray-300 border-4 ">
-										<td>Người có biểu hiện (Sốt, ho, khó thở, Viêm phổi) <a className="text-red-600 italic">(*)</a></td>
-										<td><input type="radio"/></td>
-										<td><input type="radio"/></td>
-									</tr>
-								</tbody>
-
-							</table>
 						</form>
 					</div>
 
