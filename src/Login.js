@@ -3,19 +3,20 @@ import React from 'react'
 // import rmitlogo from './assets/rmitlogo.svg'
 import logobyt from './assets/logo_byt.svg'
 import logoembvn from './assets/logo_chxhcnvn.svg'
+import {Link} from 'react-router-dom'
 function Login () {
 	return (
 		<div className="min-h-screen flex items-center justify-center bg-transparent py-12 px-4 sm:px-6 lg:px-8">
 			<div className="max-w-md w-full space-y-8">
 				<div>
-					<div className="flex">
-						<img className="mx-auto h-12 w-auto" src={logobyt} alt="logobyt"/>
-						<img className="mx-auto h-12 w-auto" src={logoembvn} alt="logoembvn"/>
+					<div className="flex justify-center items-center gap-x-2">
+						<img className="h-12 w-auto" src={logoembvn} alt="logoembvn"/>
+						<img className="h-12 w-auto" src={logobyt} alt="logobyt"/>
 					</div>
 					<div>
-						<h2 className="mt-6 text-center text-2xl font-bold text-gray-900">HỆ THỐNG QUẢN LÝ ĐƠN KHAI BÁO</h2>
+						<h2 className="mt-6 text-center text-xl font-bold text-gray-900">HỆ THỐNG QUẢN LÝ ĐƠN KHAI BÁO Y TẾ</h2>
 						<p className="mt-2 text-center text-sm text-gray-600">
-            Login Portal
+            Cổng Đăng Nhập
 						</p>
 					</div>
 				</div>
@@ -61,23 +62,25 @@ function Login () {
 								className="h-4 w-4 text-primary focus:ring-transparent border-gray-300 rounded"
 							/>
 							<label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
-                Remember me
+               Ghi nhớ người dùng
 							</label>
 						</div>
 
 						<div className="text-sm">
 							<a href="#" className="font-medium text-primary hover:text-red-700">
-                Forgot your password?
+                Quên mật khẩu?
 							</a>
 						</div>
 					</div>
-
-					<div>
+					<div className="flex gap-x-2">
+						<Link to={'/'} class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-secondary hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-900">
+							Quay lại
+						</Link>
 						<button
 							type="submit"
-							className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-primary hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+							className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-primary hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-900"
 						>
-              Sign in
+             Đăng nhập
 						</button>
 					</div>
 				</form>

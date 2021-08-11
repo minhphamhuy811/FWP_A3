@@ -1,3 +1,4 @@
+import {  Link } from 'react-router-dom'
 import React, {useState} from 'react'
 
 export default function Declaration() {
@@ -15,7 +16,7 @@ export default function Declaration() {
 			<div className="border-blue-900 px-8 py-4 min-h-screen relative max-w-xl mx-auto">
 				<div className="bg-white border border-transparent rounded-2xl p-4 my-4">
 					<div className="text-center">
-						<h1 className="font-bold text-4xl">TỜ KHAI Y TẾ</h1>
+						<h1 className="font-black text-4xl">TỜ KHAI Y TẾ</h1>
 						<p className="text-red-600" style={{fontSize: '10px'}}>*Thận trọng: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự</p>
 					</div>
 					<div className="mt-2 text-center font-bold">Phần 1: Thông tin cá nhân</div>
@@ -54,7 +55,7 @@ export default function Declaration() {
 									<label>
 							Tỉnh/thành <a className="text-red-600 italic">(*)</a>
 									</label>
-									<select className="block rounded-full border-gray-300 appearance-none w-full bg-white-200 border border-gray-200 text-gray-700 rounded leading-tight focus:outline-none focus:bg-gray" id="grid-state">
+									<select className="option-input p-3" id="grid-state">
 										<option>-Chọn-</option>
 										<option>Hà Nội</option>
 										<option>Hồ Chí Minh</option>
@@ -64,7 +65,7 @@ export default function Declaration() {
 									<label>
 							Quận/huyện <a className="text-red-600 italic">(*)</a>
 									</label>
-									<select className="option-input" id="grid-state">
+									<select className="option-input p-3" id="grid-state">
 										<option>-Chọn-</option>
 										<option>1</option>
 										<option>2</option>
@@ -74,7 +75,7 @@ export default function Declaration() {
 									<label>
 							Phường/xã <a className="text-red-600 italic">(*)</a>
 									</label>
-									<select className="option-input" id="grid-state">
+									<select className="option-input p-3" id="grid-state">
 										<option>-Chọn-</option>
 										<option>1</option>
 										<option>2</option>
@@ -100,9 +101,9 @@ export default function Declaration() {
 
 				</div>
 				<div className="bg-white border border-transparent rounded-2xl p-2">
-					<div className="flex justify-around">
-						<button className="border-red-600 bg-red-600 py-4 px-8 w-full rounded-l-xl text-white">XÓA</button>
-						<button className="border-green-600 bg-green-600 p-4 w-full rounded-r-xl text-white">TIẾP TỤC</button>
+					<div className="flex justify-around text-center">
+						<Link className="group flex justify-center border border-transparent rounded-xl text-white bg-secondary hover:bg-red-900 focus:outline-none p-4 mr-2 text-white font-bold" style={{borderRadius: '15px'}}>XÓA</Link>
+						<Link to={'/continue'} className="border-green-600 bg-green-600 p-4 w-full rounded-xl hover:bg-green-900 focus:outline-none text-white font-bold">TIẾP TỤC</Link>
 					</div>
 				</div>
 			</div>

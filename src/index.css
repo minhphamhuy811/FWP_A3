@@ -1,5 +1,6 @@
 :root {
-  --color-primary: #e42a20;
+  --color-primary: #302683;
+  --color-secondary: #cf1227;
 }
 
 @tailwind base;
@@ -15,7 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#fullname, #id, #national, #gender, #birthyear, #address, #phoneNumber, #email {
+label, select,#fullname, #id, #national, #gender, #birthyear, #address, #phoneNumber, #email {
   font-size: 12.5px;
 }
 
@@ -26,10 +27,4 @@ label {
 
 .option-input {
   @apply appearance-none rounded-full border-gray-300 w-full bg-white border text-gray-600 leading-tight focus:border-blue-900 focus:outline-none
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }

@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Hero() {
 	return(
-		<div className="bg-blue-900 border border-transparent p-8">
+		<div className="bg-primary border border-transparent p-8">
 			<div className="flex gap-x-2 justify-center items-center">
 				<img src={logochxhcnvn} className="h-14" alt="logo_vn"/>
 				<img src={logobyt} className="h-14 border border-transparent rounded-full bg-white" alt="logo_byt"/>
