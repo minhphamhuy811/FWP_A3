@@ -2,7 +2,7 @@ import React from 'react'
 import Mininavbar from '../components/Mininavbar'
 import Hero from '../components/Hero'
 
-const Declare_page = () => {
+const Declare_page_header = () => {
 	return (
 		<>
 			<Mininavbar/>
@@ -11,4 +11,4 @@ const Declare_page = () => {
 	)
 }
 
-export default Declare_page
+export default Declare_page_header
