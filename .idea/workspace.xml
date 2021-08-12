@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d998f3f-2fd7-4b80-af7e-549599f20a9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/api/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/config/database.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/config/functions/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/config/functions/cron.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/config/functions/responses/404.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/config/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/extensions/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/extensions/users-permissions/config/jwt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/public/uploads/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/config/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/config/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/extensions/users-permissions/config/jwt.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/extensions/users-permissions/config/jwt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/admin/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +111,7 @@
       <workItem from="1628521289851" duration="1841000" />
       <workItem from="1628685825894" duration="9317000" />
       <workItem from="1628706149113" duration="68000" />
-      <workItem from="1628739312523" duration="3094000" />
+      <workItem from="1628739312523" duration="5492000" />
     </task>
     <servers />
   </component>
