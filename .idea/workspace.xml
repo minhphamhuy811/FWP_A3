@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6d998f3f-2fd7-4b80-af7e-549599f20a9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/config/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/config/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/extensions/users-permissions/config/jwt.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/extensions/users-permissions/config/jwt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/admin/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Mininavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Mininavbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Declaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Declaration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Declarationtwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Declarationtwo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +38,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="1vOXXwWsEOtQKgAOUuo1G7bzzkP" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -51,6 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/moment/min/moment-with-locales.js" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.17.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.17.3" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -111,7 +116,7 @@
       <workItem from="1628521289851" duration="1841000" />
       <workItem from="1628685825894" duration="9317000" />
       <workItem from="1628706149113" duration="68000" />
-      <workItem from="1628739312523" duration="5492000" />
+      <workItem from="1628739312523" duration="9459000" />
     </task>
     <servers />
   </component>
