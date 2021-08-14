@@ -1,7 +1,280 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d998f3f-2fd7-4b80-af7e-549599f20a9f" name="Default Changelist" comment="" />
+    <list default="true" id="6d998f3f-2fd7-4b80-af7e-549599f20a9f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/assets/images/bglogin.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/assets/images/bglogin.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/assets/images/logo_byt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/assets/images/logo_chxhcnvn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/BaselineAlignement/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Bloc/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/ContainerFluid/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Fonts/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/FormBloc/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/FullWidthButton/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/GlobalStyle/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Header/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/HeaderSearch/HeaderSearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/HeaderSearch/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/IntlInput/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuFooter/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuFooter/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuHeader/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuHeader/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLink/A.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLink/LeftMenuIcon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLink/LeftMenuLinkContent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLink/NotificationCount.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLink/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkHeader/Search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkHeader/SearchButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkHeader/SearchWrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkHeader/Title.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkHeader/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkHeader/messages.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkSection/EmptyLinksList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkSection/EmptyLinksListWrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkSection/LeftMenuListLink.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkSection/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LinksContainer/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/NavTopRightWrapper/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Notifications/Notification/Li.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Notifications/Notification/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Notifications/NotificationsContainer/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Notifications/NotificationsContainer/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Notifications/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/PageTitle/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ButtonWithNumber/NumberCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ButtonWithNumber/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/CheckboxWithCondition/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Chevron/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/CollapseLabel/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsButton/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsButton/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ActionRow/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ActionRow/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/ClearIndicator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/CustomDropdownIndicator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/IndicatorSeparator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/MenuList/SubUl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/MenuList/Ul.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/MenuList/UpperFirst.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/MenuList/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/MenuList/utils/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/MenuList/utils/createCollapsesObject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/SingleValue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/Separator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/utils/createDefaultConditionsForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/utils/selectStyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/Collapse/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/Collapse/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/Collapse/utils/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/Collapse/utils/generateCheckboxesActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/ActionRow/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/ActionRow/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/ActionRow/utils/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/ActionRow/utils/getRowLabelCheckboxeState.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/Header/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/SubActionRow/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/SubActionRow/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/SubActionRow/row.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/SubActionRow/timeline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/SubActionRow/utils/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/utils/generateHeadersFromActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/utils/activeStyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/utils/getAvailableActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/utils/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapses/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypes/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Curve/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/EmptyRole/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/GlobalActions/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/GlobalActions/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/GlobalActions/utils/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/GlobalActions/utils/findDisplayedActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/GlobalActions/utils/getRowLabelCheckboxesState.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/GlobalActions/utils/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/HiddenAction/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/createDefaultCTFormFromLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/createDefaultPluginsFormFromLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/findMatchingPermissions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/formatContentTypesPermissionToAPI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/formatLayoutForSettingsAndPlugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/formatPermissionsToAPI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/formatSettingsPermissionsToAPI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/tabLabels.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/updateConditionsToFalse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/updateValues.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PermissionsDataManagerProvider/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/ListWrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/Row/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/Row/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/CheckboxWrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/ConditionsButtonWrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/utils/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/utils/formatActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/utils/getConditionsButtonState.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/utils/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RequiredSign/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RoleForm/NameInput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RoleForm/RoleForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RoleForm/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RoleList/RoleDescription.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RoleList/RoleListWrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RoleList/RoleRow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RoleList/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RowLabelWithCheckbox/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RowLabelWithCheckbox/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Tabs/Tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Tabs/TabsWrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Tabs/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/utils/createArrayOfValues.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/utils/getCheckboxState.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/utils/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/utils/removeConditionKeyFromData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Settings/Header/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Settings/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/SettingsPageTitle/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/SizedInput/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/Arrow/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/Arrow/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/Download/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/Option/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/Option/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/Wrapper/balloon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/Wrapper/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/Filter/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/Input.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/utils/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/utils/formatInputValue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/utils/getInputValue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/utils/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/Footer/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/Footer/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/LinkNotification/Envelope.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/LinkNotification/IconWrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/LinkNotification/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/LinkNotification/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/ActiveStatus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/utils/checkIfAllEntriesAreSelected.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/utils/getSelectedIds.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/utils/headers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/utils/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/utils/updateRows.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/MagicLink/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/utils/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/utils/formDataModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/utils/roleSettingsForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/utils/schema.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/RoleSettingsModalSection/RolesSelectComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/RoleSettingsModalSection/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/ClearIndicator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/DropdownIndicator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/ErrorMessage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/IndicatorSeparator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/MultiValueContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/StyledOption.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/utils/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SortPicker/Button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SortPicker/List.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SortPicker/ListItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SortPicker/ListWrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SortPicker/StyledListItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SortPicker/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Users/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/EventInput/EventRow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/EventInput/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/EventInput/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/EventInput/utils/formatValue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/HeadersInput/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/HeadersInput/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/HeadersInput/keys.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/HeadersInput/utils/getBorderColor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/Inputs/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/Inputs/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/ListRow/StyledListRow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/ListRow/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/Switch/Toggle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/Switch/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/Switch/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/TriggerContainer/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/TriggerContainer/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Background/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Box/Wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Box/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/ForgotPassword/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/ForgotPasswordSuccess/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Login/BaseLogin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/LogoOne/Img.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/LogoOne/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/LogoTwo/Img.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/LogoTwo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Oops/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/ResetPassword/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Section/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/themes/colors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/api/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/config/database.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/config/functions/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/config/functions/cron.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/config/functions/responses/404.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/config/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/config/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/extensions/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/extensions/users-permissions/config/jwt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/public/uploads/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Mininavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Mininavbar.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +283,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -30,6 +304,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="1vOXXwWsEOtQKgAOUuo1G7bzzkP" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,9 +321,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/moment/min/moment-with-locales.js&#10;/Users/travis/Documents/fwp_a3_react/dashboard/node_modules/strapi-admin/webpack.config.js" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.17.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.17.3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dashboard/admin/src/assets/images" />
+    <property name="list.type.of.created.stylesheet" value="PostCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -56,16 +335,46 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="ReadonlyStatusHandler">
+    <option name="SHOW_DIALOG" value="false" />
+  </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dashboard/admin/src/assets/images" />
+      <recent name="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/LogoTwo" />
+      <recent name="$PROJECT_DIR$/dashboard/admin/src" />
+      <recent name="$PROJECT_DIR$/admin/admin/src" />
+      <recent name="$PROJECT_DIR$/admin/admin/src/assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dashboard/admin/src/assets/images" />
       <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/src/pages" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/LogoOne" />
+      <recent name="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/LogoTwo" />
+      <recent name="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start (1)">
+    <configuration name="develop" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/admin/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="develop" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/dashboard/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -78,6 +387,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start (1)" />
+        <item itemvalue="npm.develop" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.start" />
       </list>
@@ -101,6 +412,9 @@
       <workItem from="1628521289851" duration="1841000" />
       <workItem from="1628685825894" duration="9317000" />
       <workItem from="1628706149113" duration="68000" />
+      <workItem from="1628739312523" duration="18159000" />
+      <workItem from="1628915065545" duration="10348000" />
+      <workItem from="1628931118299" duration="3036000" />
     </task>
     <servers />
   </component>

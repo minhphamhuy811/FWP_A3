@@ -1,10 +1,13 @@
 import '../index.css'
-import React from 'react'
+import React, {useState} from 'react'
 import logobyt from '../assets/logo_byt.svg'
 import logoembvn from '../assets/logo_chxhcnvn.svg'
 import {Link} from 'react-router-dom'
 
 export default function Login () {
+	const [email, setEmail] = useState('')
+	const [password, setPassword] = useState('')
+
 	return (
 		<div className="images min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
 			<div className="max-w-md w-full bg-white py-6 px-4 rounded-2xl space-y-8">
@@ -35,6 +38,8 @@ export default function Login () {
 								required
 								className="rounded-xl relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-xl focus:outline-none focus:ring-primary focus:border-primary focus:z-10 text-sm md:text-md"
 								placeholder="Địa chỉ Email"
+								value={email}
+								onChange={e => setEmail(e.target.value)}
 							/>
 						</div>
 						<div>
@@ -49,6 +54,8 @@ export default function Login () {
 								required
 								className="mt-2 appearance-none rounded-xl relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-xl focus:outline-none focus:ring-primary focus:border-primary focus:z-10 text-sm md:text-md"
 								placeholder="Mật khẩu"
+								value={password}
+								onChange={e => setPassword(e.target.value)}
 							/>
 						</div>
 					</div>
