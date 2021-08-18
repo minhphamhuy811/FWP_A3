@@ -12,7 +12,7 @@ export default function App() {
 		<Router>
 			<Switch>
 				<div>
-					<Route exact path='/'>
+					<Route exact path='/home'>
 						<Declare_page_header />
 						<Hotline/>
 						<Declaration />
