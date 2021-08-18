@@ -3,7 +3,8 @@ import Declare_page_header from './layout/Declare_page_header'
 import Declaration from './pages/Declaration'
 import Declarationtwo from './pages/Declarationtwo'
 import Information from './pages/Information'
-import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom'
+import Symptom from './pages/Symptom'
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
 import Login from './pages/Login'
 import Hotline from './components/Hotline'
 
@@ -31,6 +32,9 @@ export default function App() {
 					</Route>
 					<Route path='/admin-login'>
 						<Login/>
+					</Route>
+					<Route path='/symptom'>
+						<Symptom/>
 					</Route>
 				</div>
 
