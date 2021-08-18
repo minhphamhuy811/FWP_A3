@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d998f3f-2fd7-4b80-af7e-549599f20a9f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Mininavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Mininavbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +50,7 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/moment/min/moment-with-locales.js&#10;/Users/travis/Documents/fwp_a3_react/dashboard/node_modules/strapi-admin/webpack.config.js" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.17.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.17.3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dashboard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="PostCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
@@ -149,6 +147,7 @@
       <workItem from="1629007449947" duration="7051000" />
       <workItem from="1629123088569" duration="570000" />
       <workItem from="1629262826180" duration="6198000" />
+      <workItem from="1629292542278" duration="336000" />
     </task>
     <servers />
   </component>
