@@ -1,7 +1,7 @@
 import {  Link } from 'react-router-dom'
 import React, {useState} from 'react'
 
-export default function Declaration() {
+export default function Symptom_info() {
 	const [fullName, setFullName] = useState('')
 	const [birthYear, setBirthYear] = useState('')
 	const [gender, setGender] = useState('')

@@ -1,6 +1,6 @@
 import React from 'react'
 import Declare_page_header from './layout/Declare_page_header'
-import Declaration from './pages/Declaration'
+import Symptom_info from './pages/Symptom_info'
 import Declarationtwo from './pages/Declarationtwo'
 import Information from './pages/Information'
 import Symptom from './pages/Symptom'
@@ -8,23 +8,24 @@ import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-d
 import Login from './pages/Login'
 import Hotline from './components/Hotline'
 
+
 export default function App() {
 	return (
 		<Router>
 			<Switch>
 				<div>
 					<Route exact path="/">
-						<Redirect to="/home" />
+						<Redirect to="/symptom-info" />
 					</Route>
-					<Route exact path='/home'>
+					<Route exact path='/symptom-info'>
 						<Declare_page_header />
 						<Hotline/>
-						<Declaration />
+						<Symptom_info />
 					</Route>
-					<Route path='/continue'>
+					<Route path='/symptom-status'>
 						<Declare_page_header />
 						<Hotline/>
-						<Declarationtwo />
+						<Declarationtwo/>
 					</Route>
 					<Route path='/covid-information'>
 						<Declare_page_header />
