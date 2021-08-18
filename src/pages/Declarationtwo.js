@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-export default function Declaration() {
+export default function Symptomewqer_Info() {
 	return(
 		<div className="flex flex-col bg-gray-100">
 			<div className="border-blue-900 px-4 mb-4 min-h-screen relative max-w-xl mx-auto">
