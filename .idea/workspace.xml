@@ -3,9 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6d998f3f-2fd7-4b80-af7e-549599f20a9f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Declaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Symptom_info.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Declarationtwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Declarationtwo.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/pages/Symptom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Symptom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
+>>>>>>> react-hook-form
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/strapi-integrate" />
+        <entry key="$PROJECT_DIR$" value="feature/backend-api" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
