@@ -5,48 +5,61 @@ export default function Declaration() {
 	return(
 		<div className="flex flex-col bg-gray-100">
 			<div className="border-blue-900 px-4 mb-4 min-h-screen relative max-w-xl mx-auto">
-				<div className="bg-white border border-transparent rounded-2xl p-4 mb-4">
+				<div className="bg-white border border-transparent rounded-2xl p-4 my-4">
 					<div className="text-center">
-						<h1 className="font-bold text-4xl lead">KHAI BÁO SỨC KHỎE</h1>
+						<h1 className="font-bold text-4xl">TỜ KHAI Y TẾ</h1>
+						<p className="text-red-600" style={{fontSize: '10px'}}>*Thận trọng: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự</p>
 					</div>
-					<div className="mt-2 text-center font-bold">Phần 2: Thông tin dịch tễ</div>
-					<div className="my-2">
-						<h3 className="font-bold">Tình trạng nghi nhiễm hoặc gặp phải</h3>
+					<div className="my-4">
+						<h3 className="font-bold">Các dấu hiệu, biểu hiện nhiễm SARS-COV-2</h3>
 						<form action="">
-							<p className="font-light my-2">Trong vòng 14 ngày qua, Anh/Chị có dến tình/thành phố, quốc gia/ vùng lãnh thổ nào (có thể đi qua nhiều nơi)</p>
-							<label className="align-middle"><input className="style-radio radio-option" type="radio" value='có' /> Có    </label>
-							<label className="align-middle"><input className="style-radio radio-option" type="radio" value='ko'/> Không	</label>
-							<p className="font-light my-2">Trong vòng 14 ngày qua, Anh/Chị có thấy xuất hiện ít nhất 1 trong các dấu hiệu: sốt, ho, khó thở, viêm phổi, đau họng, mệt mỏi không?</p>
-							<label className="align-middle"><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
-							<label className="align-middle"><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
-							<p className="font-light my-2">Trong vòng 14 ngày qua, Anh/Chị có tiếp xúc với <a className="text-red-600 italic">(*)</a></p>
-							<table className="table max-w-max border-solid border-gray-300 border-4 table-fixed">
-								<thead>
-									<tr className="text-center">
-										<th className="w-3/5"/>
-										<th className="w-1/5" >Có</th>
-										<th >Không</th>
-									</tr>
-								</thead >
-								<tbody >
-									<tr className="border-solid border-gray-300 border-4">
-										<td  >Người bệnh hoặc nghi ngờ, mắc bệnh COVID-19 <a className="text-red-600 italic">(*)</a></td>
-										<td className="text-center"><input type="radio"  /></td>
-										<td className="text-center"><input type="radio" /></td>
-									</tr>
-									<tr className="border-solid border-gray-300 border-4 " >
-										<td>Người từ nước có bệnh COVID-19 <a className="text-red-600 italic">(*)</a></td>
-										<td className="text-center"><input type="radio"  /></td>
-										<td className="text-center"><input type="radio"  /></td>
-									</tr>
-									<tr className="border-solid border-gray-300 border-4 ">
-										<td>Người có biểu hiện (Sốt, ho, khó thở, Viêm phổi) <a className="text-red-600 italic">(*)</a></td>
-										<td className="text-center"><input type="radio"/></td>
-										<td className="text-center"><input type="radio"/></td>
-									</tr>
-								</tbody>
 
-							</table>
+							<p className="font-light my-2">1.Ho <a className="text-red-600 italic">(*)</a></p>
+							<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
+							<label><input className="style-radio radio-option" type="radio" value='ko'/> Không	</label>
+
+							<p className="font-light my-2">2.Sốt (trên 37.5 độ C) <a className="text-red-600 italic">(*)</a> <input type="text" placeholder="nhập nhiệt độ của bạn" className="rounded-full"  /></p>
+
+
+							<p className="font-light my-2">3.Đau đầu <a className="text-red-600 italic">(*)</a></p>
+							<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
+							<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+
+							<p className="font-light my-2">4.Đau họng, rát họng <a className="text-red-600 italic">(*)</a></p>
+							<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
+							<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+
+							<p className="font-light my-2">5.Sổ mũi, chảy mũi, ngạt mũi <a className="text-red-600 italic">(*)</a></p>
+							<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
+							<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+
+							<p className="font-light my-2">6.Khó thở <a className="text-red-600 italic">(*)</a></p>
+							<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
+							<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+
+							<p className="font-light my-2">7.Đau ngực, tức ngực <a className="text-red-600 italic">(*)</a></p>
+							<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
+							<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+
+							<p className="font-light my-2">8.Đau mỏi người, đau cơ <a className="text-red-600 italic">(*)</a></p>
+							<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
+							<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+
+							<p className="font-light my-2">9.Mất vị giác <a className="text-red-600 italic">(*)</a></p>
+							<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
+							<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+
+							<p className="font-light my-2">10.Mất khứu giác <a className="text-red-600 italic">(*)</a></p>
+							<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
+							<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+
+							<p className="font-light my-2">11.Đau bụng, buồn nôn <a className="text-red-600 italic">(*)</a></p>
+							<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
+							<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+
+							<p className="font-light my-2">12.Tiêu chảy <a className="text-red-600 italic">(*)</a></p>
+							<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
+							<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
 
 						</form>
 					</div>
