@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d998f3f-2fd7-4b80-af7e-549599f20a9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Login/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/global/documentation/1.0.0/global.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/lead-form-submissions/documentation/1.0.0/lead-form-submissions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/page/documentation/1.0.0/page.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/extensions/documentation/documentation/1.0.0/full_documentation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/extensions/email/documentation/1.0.0/email-Email.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/extensions/upload/documentation/1.0.0/upload-File.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/extensions/users-permissions/config/jwt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/extensions/users-permissions/documentation/1.0.0/users-permissions-Role.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/extensions/users-permissions/documentation/1.0.0/users-permissions-User.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Background/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Login/BaseLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Login/BaseLogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/ResetPassword/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/ResetPassword/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Mininavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Mininavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +148,7 @@
       <workItem from="1628960213630" duration="3894000" />
       <workItem from="1629007449947" duration="7051000" />
       <workItem from="1629123088569" duration="570000" />
+      <workItem from="1629262826180" duration="6198000" />
     </task>
     <servers />
   </component>
