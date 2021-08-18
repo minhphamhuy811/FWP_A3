@@ -102,7 +102,7 @@ export default function Symptom_info() {
 				<div className="bg-white border border-transparent rounded-2xl p-2">
 					<div className="flex justify-around text-center">
 						<Link className="group flex justify-center border border-transparent rounded-xl text-white bg-secondary hover:bg-red-900 focus:outline-none p-4 mr-2 text-white font-bold" style={{borderRadius: '15px'}}>XÓA</Link>
-						<Link to={'/continue'} className="border-green-600 bg-green-600 p-4 w-full rounded-xl hover:bg-green-900 focus:outline-none text-white font-bold">TIẾP TỤC</Link>
+						<Link to={'/symptom-status'} className="border-green-600 bg-green-600 p-4 w-full rounded-xl hover:bg-green-900 focus:outline-none text-white font-bold">TIẾP TỤC</Link>
 					</div>
 				</div>
 			</div>
