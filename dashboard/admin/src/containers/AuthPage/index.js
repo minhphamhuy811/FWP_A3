@@ -7,15 +7,14 @@ import { Padded } from '@buffetjs/core';
 import PropTypes from 'prop-types';
 import forms from 'ee_else_ce/containers/AuthPage/utils/forms';
 
-import NavTopRightWrapper from '../../components/NavTopRightWrapper';
+// import NavTopRightWrapper from '../../components/NavTopRightWrapper';
 import PageTitle from '../../components/PageTitle';
-import LocaleToggle from '../LocaleToggle';
+// import LocaleToggle from '../LocaleToggle';
 import checkFormValidity from '../../utils/checkFormValidity';
 import formatAPIErrors from '../../utils/formatAPIErrors';
 import init from './init';
 import { initialState, reducer } from './reducer';
 import useChangeLanguage from '../LanguageProvider/hooks/useChangeLanguage';
-
 
 const AuthPage = ({ hasAdmin, setHasAdmin }) => {
   const { push } = useHistory();
@@ -290,10 +289,11 @@ const AuthPage = ({ hasAdmin, setHasAdmin }) => {
 
   return (
     <Padded bottom size="md">
+
       <PageTitle title={upperFirst(authType)} />
-      <NavTopRightWrapper>
-        <LocaleToggle isLogged className="localeDropdownMenuNotLogged" />
-      </NavTopRightWrapper>
+      {/*<NavTopRightWrapper>*/}
+      {/*  <LocaleToggle isLogged className="localeDropdownMenuNotLogged" />*/}
+      {/*</NavTopRightWrapper>*/}
       <BaselineAlignment top size="78px">
         <Component
           {...rest}

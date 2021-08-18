@@ -12,15 +12,13 @@ import Input from '../Input';
 import LogoOne from '../LogoTwo';
 import LogoTwo from '../LogoOne';
 import Section from '../Section';
-import '../../../../main.css';
-import Background from './Background';
-import styled from "styled-components";
+// import Background from './Background';
 
 const Login = ({ children, formErrors, modifiedData, onChange, onSubmit, requestError }) => {
   const {formatMessage} = useIntl();
 
   return (
-    <Background>
+    <div style={{backgroundImage: 'url("../../../../assets/images/bglogin.jpeg")'}}>
       <Section textAlign="center">
         <LogoTwo />
         <LogoOne />
@@ -72,7 +70,7 @@ const Login = ({ children, formErrors, modifiedData, onChange, onSubmit, request
         </BaselineAlignment>
       </Section>
       <AuthLink label="Auth.link.forgot-password" to="/auth/forgot-password" />
-    </Background>
+    </div>
   );
 };
 

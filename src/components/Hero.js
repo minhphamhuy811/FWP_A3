@@ -11,7 +11,8 @@ export default function Hero() {
 			</div>
 			<div className="text-center pt-4">
 				<h3 className="text-white" style={{fontSize: '10px'}}>BAN CHỈ ĐẠO QUỐC GIA PHÒNG CHỐNG COVID-19</h3>
-				<h1 className="font-bold text-white">HỆ THỐNG THÔNG TIN DỊCH TỄ & KHAI BÁO Y TẾ</h1>
+				<h1 className="font-bold text-white">HỆ THỐNG THÔNG TIN & KHAI BÁO SỨC KHỎE</h1>
+				<h3 className="text-white italic" style={{fontSize: '12.5px'}}>Dành cho bệnh nhân mắc Covid-19</h3>
 			</div>
 		</div>
 	)

@@ -2,330 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d998f3f-2fd7-4b80-af7e-549599f20a9f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dashboard/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/assets/images/bglogin.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/assets/images/bglogin.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/assets/images/logo_byt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/assets/images/logo_chxhcnvn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/BaselineAlignement/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Bloc/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/ContainerFluid/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Fonts/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/FormBloc/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/FullWidthButton/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/GlobalStyle/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Header/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/HeaderSearch/HeaderSearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/HeaderSearch/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/IntlInput/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuFooter/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuFooter/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuHeader/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuHeader/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLink/A.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLink/LeftMenuIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLink/LeftMenuLinkContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLink/NotificationCount.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLink/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkHeader/Search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkHeader/SearchButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkHeader/SearchWrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkHeader/Title.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkHeader/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkHeader/messages.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkSection/EmptyLinksList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkSection/EmptyLinksListWrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkSection/LeftMenuListLink.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LeftMenuLinkSection/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/LinksContainer/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/LeftMenu/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/NavTopRightWrapper/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Notifications/Notification/Li.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Notifications/Notification/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Notifications/NotificationsContainer/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Notifications/NotificationsContainer/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Notifications/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/PageTitle/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ButtonWithNumber/NumberCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ButtonWithNumber/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/CheckboxWithCondition/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Chevron/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/CollapseLabel/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsButton/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsButton/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ActionRow/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ActionRow/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/ClearIndicator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/CustomDropdownIndicator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/IndicatorSeparator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/MenuList/SubUl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/MenuList/Ul.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/MenuList/UpperFirst.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/MenuList/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/MenuList/utils/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/MenuList/utils/createCollapsesObject.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/SingleValue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/ConditionsSelect/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/Separator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/utils/createDefaultConditionsForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ConditionsModal/utils/selectStyle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/Collapse/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/Collapse/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/Collapse/utils/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/Collapse/utils/generateCheckboxesActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/ActionRow/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/ActionRow/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/ActionRow/utils/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/ActionRow/utils/getRowLabelCheckboxeState.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/Header/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/SubActionRow/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/SubActionRow/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/SubActionRow/row.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/SubActionRow/timeline.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/SubActionRow/utils/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/CollapsePropertyMatrix/utils/generateHeadersFromActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/utils/activeStyle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/utils/getAvailableActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapse/utils/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypeCollapses/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypes/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/ContentTypes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Curve/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/EmptyRole/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/GlobalActions/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/GlobalActions/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/GlobalActions/utils/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/GlobalActions/utils/findDisplayedActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/GlobalActions/utils/getRowLabelCheckboxesState.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/GlobalActions/utils/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/HiddenAction/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/createDefaultCTFormFromLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/createDefaultPluginsFormFromLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/findMatchingPermissions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/formatContentTypesPermissionToAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/formatLayoutForSettingsAndPlugins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/formatPermissionsToAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/formatSettingsPermissionsToAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/tabLabels.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/updateConditionsToFalse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Permissions/utils/updateValues.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PermissionsDataManagerProvider/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/ListWrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/Row/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/Row/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/CheckboxWrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/ConditionsButtonWrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/utils/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/utils/formatActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/utils/getConditionsButtonState.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/SubCategory/utils/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/PluginsAndSettings/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RequiredSign/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RoleForm/NameInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RoleForm/RoleForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RoleForm/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RoleList/RoleDescription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RoleList/RoleListWrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RoleList/RoleRow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RoleList/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RowLabelWithCheckbox/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/RowLabelWithCheckbox/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Tabs/Tab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Tabs/TabsWrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/Tabs/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/utils/createArrayOfValues.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/utils/getCheckboxState.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/utils/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Roles/utils/removeConditionKeyFromData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Settings/Header/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Settings/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/SettingsPageTitle/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/SizedInput/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/Arrow/arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/Arrow/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/Download/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/Option/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/Option/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/Wrapper/balloon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/Wrapper/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/UpgradePlanModal/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/Filter/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/Input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/utils/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/utils/formatInputValue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/utils/getInputValue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/Card/utils/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/FilterPicker/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/Footer/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/Footer/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/LinkNotification/Envelope.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/LinkNotification/IconWrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/LinkNotification/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/LinkNotification/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/ActiveStatus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/utils/checkIfAllEntriesAreSelected.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/utils/getSelectedIds.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/utils/headers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/utils/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/List/utils/updateRows.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/MagicLink/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/utils/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/utils/formDataModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/utils/roleSettingsForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/ModalCreateBody/utils/schema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/RoleSettingsModalSection/RolesSelectComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/RoleSettingsModalSection/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/ClearIndicator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/DropdownIndicator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/ErrorMessage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/IndicatorSeparator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/MultiValueContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/StyledOption.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SelectRoles/utils/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SortPicker/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SortPicker/List.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SortPicker/ListItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SortPicker/ListWrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SortPicker/StyledListItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/SortPicker/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Users/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/EventInput/EventRow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/EventInput/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/EventInput/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/EventInput/utils/formatValue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/HeadersInput/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/HeadersInput/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/HeadersInput/keys.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/HeadersInput/utils/getBorderColor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/Inputs/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/Inputs/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/ListRow/StyledListRow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/ListRow/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/Switch/Toggle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/Switch/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/Switch/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/TriggerContainer/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/TriggerContainer/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/components/Webhooks/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Background/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Box/Wrapper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Box/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/ForgotPassword/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/ForgotPasswordSuccess/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Login/BaseLogin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/LogoOne/Img.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/LogoOne/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/LogoTwo/Img.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/LogoTwo/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Oops/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/ResetPassword/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Section/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/HomePage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/themes/colors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/global/config/routes.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/global/controllers/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/global/models/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/global/models/global.settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/global/services/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/lead-form-submissions/config/routes.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/lead-form-submissions/controllers/lead-form-submissions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/lead-form-submissions/models/lead-form-submissions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/lead-form-submissions/models/lead-form-submissions.settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/lead-form-submissions/services/lead-form-submissions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/page/config/routes.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/page/controllers/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/page/models/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/page/models/page.settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/api/page/services/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/elements/feature-column.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/elements/feature-row.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/elements/feature.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/elements/footer-section.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/elements/logos.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/elements/notification-banner.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/elements/plan.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/elements/testimonial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/layout/footer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/layout/navbar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/links/button-link.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/links/button.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/links/link.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/meta/metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/sections/bottom-actions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/sections/feature-columns-group.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/sections/feature-rows-group.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/sections/hero.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/sections/large-video.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/sections/lead-form.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/sections/pricing.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/sections/rich-text.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/components/sections/testimonials-group.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/config/database.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/config/functions/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/config/functions/cron.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/config/functions/responses/404.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/config/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/en/global.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/en/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/en/pages.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/fr/global.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/fr/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/fr/pages.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/lead-form-submissions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/uploads/devices.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/uploads/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/uploads/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/uploads/palette.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/uploads/preview.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/uploads/undraw-content-team.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/uploads/undraw-content-team.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/uploads/undraw-create-page.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/uploads/undraw-design-page.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/data/uploads/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/extensions/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/public/uploads/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Login/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/api/global/documentation/1.0.0/global.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/api/lead-form-submissions/documentation/1.0.0/lead-form-submissions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/api/page/documentation/1.0.0/page.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/extensions/documentation/documentation/1.0.0/full_documentation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/extensions/email/documentation/1.0.0/email-Email.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/extensions/upload/documentation/1.0.0/upload-File.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/extensions/users-permissions/config/jwt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/extensions/users-permissions/documentation/1.0.0/users-permissions-Role.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/extensions/users-permissions/documentation/1.0.0/users-permissions-User.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Background/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Login/BaseLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/Login/BaseLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/ResetPassword/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/components/ResetPassword/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/admin/src/containers/AuthPage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Mininavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Mininavbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,7 +40,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/below-front-end" />
+        <entry key="$PROJECT_DIR$" value="feature/strapi-integrate" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -437,9 +134,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start (1)" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.develop" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.start" />
+        <item itemvalue="npm.start (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -466,6 +164,8 @@
       <workItem from="1628931118299" duration="9149000" />
       <workItem from="1628959697640" duration="454000" />
       <workItem from="1628960213630" duration="3894000" />
+      <workItem from="1629007449947" duration="7051000" />
+      <workItem from="1629123088569" duration="570000" />
     </task>
     <servers />
   </component>

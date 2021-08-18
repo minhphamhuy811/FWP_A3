@@ -11,7 +11,6 @@ import Section from '../Section';
 import Box from '../Box';
 import LogoTwo from '../LogoOne';
 import LogoOne from '../LogoTwo';
-import '../../../../main.css';
 
 const ResetPassword = ({ formErrors, modifiedData, onChange, onSubmit, requestError }) => {
   const { formatMessage } = useIntl();
