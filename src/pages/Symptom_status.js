@@ -18,8 +18,8 @@ export default function Symptom_status() {
 							<div className="flex flex-col">
 								<p className="font-light my-2">1. Ho <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
-									<label><input className="style-radio radio-option" type="radio" value='ko'/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="cough-option" value='có' /> Có	</label>
+									<label><input className="style-radio radio-option" type="radio" name="cough-option" value='ko'/> Không	</label>
 								</div>
 							</div>
 
@@ -32,74 +32,74 @@ export default function Symptom_status() {
 							<div className="flex flex-col">
 								<p className="font-light my-2">3. Đau đầu <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="headache-option" value='có' /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="headache-option" value='ko'/> Không	</label>
 								</div>
 							</div>
 
 							<div className="flex flex-col">
 								<p className="font-light my-2">4. Đau họng, rát họng <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="sorethroat-option" value='có' /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="sorethroat-option" value='ko'/> Không	</label>
 								</div>
 							</div>
 
 							<div className="flex flex-col">
 								<p className="font-light my-2">5. Sổ mũi, chảy mũi, ngạt mũi <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="nasal-option" value='có' /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="nasal-option" value='ko'/> Không	</label>
 								</div>
 							</div>
 
 							<div className="flex flex-col">
 								<p className="font-light my-2">6. Khó thở <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="sob-option" value='có' /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="sob-option" value='ko'/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
 								<p className="font-light my-2">7. Đau ngực, tức ngực <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="chestpain-option" value='có' /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="chestpain-option" alue='ko'/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
 								<p className="font-light my-2">8. Đau mỏi người, đau cơ <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="malaise-option" value='có' /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="malaise-option" value='ko'/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
 								<p className="font-light my-2">9. Mất vị giác <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="taste-option" value='có' /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="taste-option" value='ko'/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
 								<p className="font-light my-2">10. Mất khứu giác <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="smell-option" value='có' /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="smell-option" value='ko'/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
-								<p className="font-light my-2">11. Đau bụng, buồn nôn <a className="text-red-600 italic">(*)</a></p>
+								<p className="font-light my-2">11. Buồn nôn <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="nausea-option" value='có' /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="nausea-option" value='ko'/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
-								<p className="font-light my-2">12. Tiêu chảy <a className="text-red-600 italic">(*)</a></p>
+								<p className="font-light my-2">12. Đau bụng, Tiêu chảy <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" value='có' /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" value='ko'/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="gastro-option" value='có' /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="gastro-option" value='ko'/> Không	</label>
 								</div>
 							</div>
 						</form>
