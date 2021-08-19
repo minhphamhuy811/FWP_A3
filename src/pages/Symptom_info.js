@@ -1,6 +1,7 @@
 import {  Link } from 'react-router-dom'
 import React, {useState} from 'react'
 
+
 export default function Symptom_info() {
 	const [fullName, setFullName] = useState('')
 	const [birthYear, setBirthYear] = useState('')
@@ -10,6 +11,17 @@ export default function Symptom_info() {
 	const [address, setAddress] = useState('')
 	const [phoneNumber, setPhoneNumber] = useState('')
 	const [email, setEmail] = useState('')
+
+	function resetSymptomInfo() {
+		setFullName('')
+		setBirthYear('')
+		setGender('')
+		setNational('')
+		setID('')
+		setAddress('')
+		setPhoneNumber('')
+		setEmail('')
+	}
 
 	return(
 		<div className="flex flex-col bg-gray-100">
@@ -101,7 +113,7 @@ export default function Symptom_info() {
 				</div>
 				<div className="bg-white border border-transparent rounded-2xl p-2">
 					<div className="flex justify-around text-center">
-						<Link className="group flex justify-center border border-transparent rounded-xl text-white bg-secondary hover:bg-red-900 focus:outline-none p-4 mr-2 text-white font-bold" style={{borderRadius: '15px'}}>XÓA</Link>
+						<Link className="group flex justify-center border border-transparent rounded-xl text-white bg-secondary hover:bg-red-900 focus:outline-none p-4 mr-2 text-white font-bold" style={{borderRadius: '15px'}} onClick={() => resetSymptomInfo()}>XÓA</Link>
 						<Link to={'/symptom-status'} className="border-green-600 bg-green-600 p-4 w-full rounded-xl hover:bg-green-900 focus:outline-none text-white font-bold">TIẾP TỤC</Link>
 					</div>
 				</div>
