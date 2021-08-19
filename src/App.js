@@ -1,12 +1,13 @@
 import React from 'react'
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
 import Declare_page_header from './layout/Declare_page_header'
 import Symptom_info from './pages/Symptom_info'
-import Declarationtwo from './pages/Declarationtwo'
 import Information from './pages/Information'
 import Symptom from './pages/Symptom'
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
+import Symptom_status from './pages/Symptom_status'
 import Login from './pages/Login'
 import Hotline from './components/Hotline'
+
 
 
 export default function App() {
@@ -25,7 +26,7 @@ export default function App() {
 					<Route path='/symptom-status'>
 						<Declare_page_header />
 						<Hotline/>
-						<Declarationtwo/>
+						<Symptom_status/>
 					</Route>
 					<Route path='/covid-information'>
 						<Declare_page_header />
