@@ -6,8 +6,11 @@ export default function Symptom_info() {
 	const [fullName, setFullName] = useState('')
 	const [birthYear, setBirthYear] = useState('')
 	const [gender, setGender] = useState('')
-	const [national, setNational] = useState('')
+	const [country, setCountry] = useState('')
 	const [id, setID] = useState('')
+	const [city, setCity] = useState('')
+	const [district, setDistrict] = useState('')
+	const [ward, setWard] = useState('')	
 	const [address, setAddress] = useState('')
 	const [phoneNumber, setPhoneNumber] = useState('')
 	const [email, setEmail] = useState('')
@@ -16,11 +19,14 @@ export default function Symptom_info() {
 		setFullName('')
 		setBirthYear('')
 		setGender('')
-		setNational('')
+		setCountry('')
 		setID('')
 		setAddress('')
 		setPhoneNumber('')
 		setEmail('')
+		setCity('')
+		setDistrict('')
+		setWard('')
 	}
 
 	return(
@@ -33,7 +39,7 @@ export default function Symptom_info() {
 					<div className="mt-2 text-center font-bold">Phần 1: Thông tin cá nhân</div>
 					<div className="my-2">
 						<h3 className="font-bold">Thông tin người khai báo</h3>
-						<form action="" className="my-2">
+						<form method="post" action="/" className="my-2">
 							<ul className="flex flex-col">
 								<label htmlFor="fullname">Họ và Tên <a className="text-red-600 italic">(*)</a></label>
 								<input type="text" placeholder="Nguyễn Văn A" className="rounded-full border-gray-300 focus:border-blue-900" id="fullname" value={fullName} onChange={e => setFullName(e.target.value)}/>
@@ -56,8 +62,8 @@ export default function Symptom_info() {
 									</select>
 								</ul>
 								<ul className="flex flex-col">
-									<label htmlFor="national">Quốc Tịch <a className="text-red-600 italic">(*)</a></label>
-									<input type="text" placeholder="Việt Nam" className="rounded-full border-gray-300 focus:border-blue-900" id="national" value={national} onChange={e => setNational(e.target.value)}/>
+									<label htmlFor="country">Quốc Tịch <a className="text-red-600 italic">(*)</a></label>
+									<input type="text" placeholder="Việt Nam" className="rounded-full border-gray-300 focus:border-blue-900" id="country" value={country} onChange={e => setCountry(e.target.value)}/>
 								</ul>
 							</div>
 							<h3 className="font-bold">Thông tin nơi cư trú</h3>
@@ -66,7 +72,7 @@ export default function Symptom_info() {
 									<label>
 							Tỉnh/thành <a className="text-red-600 text-xs italic">(*)</a>
 									</label>
-									<select className="option-input p-3" id="grid-state">
+									<select className="option-input p-3" id="grid-state" value={city} onChange={e => setCity(e.target.value)}>
 										<option>-Chọn-</option>
 										<option>Hà Nội</option>
 										<option>Hồ Chí Minh</option>
@@ -76,7 +82,7 @@ export default function Symptom_info() {
 									<label>
 							Quận/huyện <a className="text-red-600 italic">(*)</a>
 									</label>
-									<select className="option-input p-3" id="grid-state">
+									<select className="option-input p-3" id="grid-state" value={district} onChange={e => setDistrict(e.target.value)}>
 										<option>-Chọn-</option>
 										<option>1</option>
 										<option>2</option>
@@ -86,7 +92,7 @@ export default function Symptom_info() {
 									<label>
 							Phường/xã <a className="text-red-600 italic">(*)</a>
 									</label>
-									<select className="option-input p-3" id="grid-state">
+									<select className="option-input p-3" id="grid-state" value={ward} onChange={e => setWard(e.target.value)}>
 										<option>-Chọn-</option>
 										<option>1</option>
 										<option>2</option>

@@ -3,11 +3,32 @@ import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 
 export default function Symptom_status() {
-	const [temp, setTemp] = useState('')
-	const [symp, setSymp] = useState()
+	const [cough, setCough] = useState('')
+	const [fever, setFever] = useState('')
+	const [headache, setHeadache] = useState('')
+	const [soreThroat, setSoreThroat] = useState('')
+	const [stuffNose, setStuffNose] = useState('')
+	const [difficultyBreathing, setDifficultyBreathing] = useState('')
+	const [chestache, setChestache] = useState('')
+	const [muscleache, setMuscleache] = useState('')
+	const [ageusia, setAgeusia] = useState('')
+	const [anosmia, setAnosmia] = useState('')
+	const [nausea, setNausea] = useState('')
+	const [stomachache, setStomachache] = useState('')
 	
 	function resetSymptomStatus() {
-		setSymp(false)
+		setCough(null)
+		setFever(null)
+		setHeadache(null)
+		setSoreThroat(null)
+		setStuffNose(null)
+		setDifficultyBreathing(null)
+		setChestache(null)
+		setMuscleache(null)
+		setAgeusia(null)
+		setAnosmia(null)
+		setNausea(null)
+		setStomachache(null)
 	}
 
 	return(
@@ -19,93 +40,93 @@ export default function Symptom_status() {
 					</div>
 					<div className="flex flex-col my-4 justify-center items-center ">
 						<h3 className="font-bold">Các dấu hiệu, biểu hiện nhiễm SARS-CoV-2</h3>
-						<form action="">
+						<form meathod="post" action="/">
 
 							<div className="flex flex-col">
 								<p className="font-light my-2">1. Ho <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" name="cough-option" value='có' required='true' checked={symp} onSelect={() => setSymp(true)} /> Có	</label>
-									<label><input className="style-radio radio-option" type="radio" name="cough-option" value='ko' checked={symp} onSelect={() => setSymp(true)}/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="cough-option" value={cough} required='true' onSelect={() => setCough(true)} /> Có	</label>
+									<label><input className="style-radio radio-option" type="radio" name="cough-option" value={cough} onSelect={() => setCough(false)}/> Không	</label>
 								</div>
 							</div>
 
 							<div className="flex flex-col">
 								<p className="font-light my-2">2. Sốt (trên 37.5 độ C) <a className="text-red-600 italic">(*)</a></p>
-								<input type="number" value={temp} className="rounded-full border-0 focus:ring-0 pr-4 font-bold" readOnly="true"/>
-								<input type="range" placeholder="nhập nhiệt độ của bạn" min="34" max="42" step="0.5" onChange={event => setTemp(event.target.value)} />
+								<input type="number" value={fever} className="rounded-full border-0 focus:ring-0 pr-4 font-bold" readOnly="true"/>
+								<input type="range" placeholder="nhập nhiệt độ của bạn" min="34" max="42" step="0.5" required='true' onChange={event => setFever(event.target.value)} />
 							</div>
 
 							<div className="flex flex-col">
 								<p className="font-light my-2">3. Đau đầu <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" name="headache-option" value='có' checked={symp} onSelect={() => setSymp(true)} /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" name="headache-option" value='ko' checked={symp} onSelect={() => setSymp(true)} /> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="headache-option" value={headache} required='true' onSelect={() => setHeadache(true)} /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="headache-option" value={headache} onSelect={() => setHeadache(false)} /> Không	</label>
 								</div>
 							</div>
 
 							<div className="flex flex-col">
 								<p className="font-light my-2">4. Đau họng, rát họng <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" name="sorethroat-option" value='có' checked={symp} onSelect={() => setSymp(true)} /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" name="sorethroat-option" value='ko' checked={symp} onSelect={() => setSymp(true)}/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="sorethroat-option" value={soreThroat} required='true' onSelect={() => setSoreThroat(true)} /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="sorethroat-option" value={soreThroat} onSelect={() => setSoreThroat(false)}/> Không	</label>
 								</div>
 							</div>
 
 							<div className="flex flex-col">
 								<p className="font-light my-2">5. Sổ mũi, chảy mũi, ngạt mũi <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" name="nasal-option" value='có' checked={symp} onSelect={() => setSymp(true)} /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" name="nasal-option" value='ko' checked={symp} onSelect={() => setSymp(true)}/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="nasal-option" value={stuffNose} required='true' onSelect={() => setStuffNose(true)} /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="nasal-option" value={stuffNose} onSelect={() => setStuffNose(false)}/> Không	</label>
 								</div>
 							</div>
 
 							<div className="flex flex-col">
 								<p className="font-light my-2">6. Khó thở <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" name="sob-option" value='có' checked={symp} onSelect={() => setSymp(true)} /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" name="sob-option" value='ko' checked={symp} onSelect={() => setSymp(true)}/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="sob-option" value={difficultyBreathing} required='true' onSelect={() => setDifficultyBreathing(true)} /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="sob-option" value={difficultyBreathing} onSelect={() => setDifficultyBreathing(false)}/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
 								<p className="font-light my-2">7. Đau ngực, tức ngực <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" name="chestpain-option" value='có' checked={symp} onSelect={() => setSymp(true)} /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" name="chestpain-option" value='ko' checked={symp} onSelect={() => setSymp(true)} /> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="chestpain-option" value={chestache} required='true' onSelect={() => setChestache(true)} /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="chestpain-option" value={chestache} onSelect={() => setChestache(false)} /> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
 								<p className="font-light my-2">8. Đau mỏi người, đau cơ <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" name="malaise-option" value='có' checked={symp} onSelect={() => setSymp(true)} /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" name="malaise-option" value='ko' checked={symp} onSelect={() => setSymp(true)}/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="malaise-option" value={muscleache} required='true' onSelect={() => setMuscleache(true)} /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="malaise-option" value={muscleache} onSelect={() => setMuscleache(false)}/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
 								<p className="font-light my-2">9. Mất vị giác <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" name="taste-option" value='có' checked={symp} onSelect={() => setSymp(true)} /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" name="taste-option" value='ko' checked={symp} onSelect={() => setSymp(true)}/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="taste-option" value={ageusia} required='true' onSelect={() => setAgeusia(true)} /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="taste-option" value={ageusia} onSelect={() => setAgeusia(false)}/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
 								<p className="font-light my-2">10. Mất khứu giác <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" name="smell-option" value='có' checked={symp} onSelect={() => setSymp(true)} /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" name="smell-option" value='ko' checked={symp} onSelect={() => setSymp(true)}/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="smell-option" value={anosmia} required='true' onSelect={() => setAnosmia(true)} /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="smell-option" value={anosmia} onSelect={() => setAnosmia(false)}/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
 								<p className="font-light my-2">11. Buồn nôn <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" name="nausea-option" value='có' checked={symp} onSelect={() => setSymp(true)} /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" name="nausea-option" value='ko' checked={symp} onSelect={() => setSymp(true)}/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="nausea-option" value={nausea} required='true' onSelect={() => setNausea(true)} /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="nausea-option" value={nausea} onSelect={() => setNausea(false)}/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
 								<p className="font-light my-2">12. Đau bụng, Tiêu chảy <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" name="gastro-option" value='có' checked={symp} onSelect={() => setSymp(true)} /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" name="gastro-option" value='ko' checked={symp} onSelect={() => setSymp(true)}/> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="gastro-option" value={stomachache} required='true' onSelect={() => setStomachache(true)} /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="gastro-option" value={stomachache} onSelect={() => setStomachache(false)}/> Không	</label>
 								</div>
 							</div>
 						</form>
