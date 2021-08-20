@@ -3,7 +3,6 @@ import React, {useState} from 'react'
 import { cities, districts, generateYear, generateLocation } from '../lib/utils/generate-options'
 import { nameRegex, idRegex, emailRegex, phoneRegex, validateForm } from '../lib/utils/validate'
 
-
 export default function Symptom_info() {
 	const [fullName, setFullName] = useState('')
 	const [birthYear, setBirthYear] = useState('')
@@ -13,6 +12,9 @@ export default function Symptom_info() {
 	const [address, setAddress] = useState('')
 	const [phoneNumber, setPhoneNumber] = useState('')
 	const [email, setEmail] = useState('')
+
+	const { register, handleSubmit } = useForm();
+	const onSubmit = data => console.log(data);
 
 	function resetSymptomInfo() {
 		setFullName('')
@@ -35,7 +37,7 @@ export default function Symptom_info() {
 					<div className="mt-2 text-center font-bold">Phần 1: Thông tin cá nhân</div>
 					<div className="my-2">
 						<h3 className="font-bold">Thông tin người khai báo</h3>
-						<form action="" className="my-2">
+						<form onSubmit="" className="my-2">
 							<ul className="flex flex-col">
 								<label htmlFor="fullname">Họ và Tên <a className="text-red-600 italic">(*)</a>{validateForm(fullName, nameRegex)}</label>
 
