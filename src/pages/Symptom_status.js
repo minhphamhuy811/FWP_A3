@@ -1,11 +1,10 @@
-/* eslint-disable no-unused-vars */
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 
 export default function Symptom_status() {
 	const [temp, setTemp] = useState('')
-	const [symp, setSymp] = useState()
-	
+	const [symp, setSymp] = useState('')
+
 	function resetSymptomStatus() {
 		setSymp(false)
 	}
@@ -123,5 +122,3 @@ export default function Symptom_status() {
 		</div>
 	)
 }
-
-/* eslint-enable no-unused-vars */
