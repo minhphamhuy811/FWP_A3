@@ -13,9 +13,6 @@ export default function Symptom_info() {
 	const [phoneNumber, setPhoneNumber] = useState('')
 	const [email, setEmail] = useState('')
 
-	const { register, handleSubmit } = useForm();
-	const onSubmit = data => console.log(data);
-
 	function resetSymptomInfo() {
 		setFullName('')
 		setBirthYear('')
@@ -69,7 +66,7 @@ export default function Symptom_info() {
 										<option value={national}>Việt Nam</option>
 										<option value={national}>Khác</option>
 									</select>
-									
+
 								</ul>
 							</div>
 							<h3 className="font-bold">Thông tin nơi cư trú</h3>

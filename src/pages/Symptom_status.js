@@ -37,8 +37,8 @@ export default function Symptom_status() {
 							<div className="flex flex-col">
 								<p className="font-light my-2">3. Đau đầu <a className="text-red-600 italic">(*)</a></p>
 								<div>
-									<label><input className="style-radio radio-option" type="radio" name="headache-option" value='có' checked={symp} onSelect={() => setSymp(true)} /> Có	</label>
-									<label><input className=" style-radio radio-option" type="radio" name="headache-option" value='ko' checked={symp} onSelect={() => setSymp(true)} /> Không	</label>
+									<label><input className="style-radio radio-option" type="radio" name="headache-option" value='có'  onSelect={() => setSymp(true)} /> Có	</label>
+									<label><input className=" style-radio radio-option" type="radio" name="headache-option" value='ko' onSelect={() => setSymp(false)} /> Không	</label>
 								</div>
 							</div>
 
