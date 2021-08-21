@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-d
 import Declare_page_header from './layout/Declare_page_header'
 import Symptom_info from './pages/Symptom_info'
 import Information from './pages/Information'
-import Symptom from './pages/Symptom'
 import Symptom_status from './pages/Symptom_status'
 import Login from './pages/Login'
 import Hotline from './components/Hotline'
@@ -36,7 +35,7 @@ export default function App() {
 						<Login/>
 					</Route>
 					<Route path='/symptom'>
-						<Symptom/>
+						<Login/>
 					</Route>
 				</div>
 

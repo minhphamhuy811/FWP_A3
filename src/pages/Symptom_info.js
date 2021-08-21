@@ -1,7 +1,6 @@
 import {  Link } from 'react-router-dom'
 import React, {useState} from 'react'
 
-
 export default function Symptom_info() {
 	const [fullName, setFullName] = useState('')
 	const [birthYear, setBirthYear] = useState('')
@@ -10,7 +9,7 @@ export default function Symptom_info() {
 	const [id, setID] = useState('')
 	const [city, setCity] = useState('')
 	const [district, setDistrict] = useState('')
-	const [ward, setWard] = useState('')	
+	const [ward, setWard] = useState('')
 	const [address, setAddress] = useState('')
 	const [phoneNumber, setPhoneNumber] = useState('')
 	const [email, setEmail] = useState('')
@@ -27,6 +26,25 @@ export default function Symptom_info() {
 		setCity('')
 		setDistrict('')
 		setWard('')
+		localStorage.clear()
+	}
+
+	const info = {
+		fullname: fullName,
+		id: id,
+		birthyear: birthYear,
+		gender: gender,
+		nationality: country,
+		address: address,
+		ward: ward,
+		district: district,
+		city: city,
+		phone_no: phoneNumber,
+		email: email
+	}
+
+	const setValues = () => {
+		localStorage.setItem('info', JSON.stringify(info))
 	}
 
 	return(
@@ -42,11 +60,11 @@ export default function Symptom_info() {
 						<form method="post" action="/" className="my-2">
 							<ul className="flex flex-col">
 								<label htmlFor="fullname">Họ và Tên <a className="text-red-600 italic">(*)</a></label>
-								<input type="text" placeholder="Nguyễn Văn A" className="rounded-full border-gray-300 focus:border-blue-900" id="fullname" value={fullName} onChange={e => setFullName(e.target.value)}/>
+								<input type="text" placeholder="Nguyễn Văn A" className="rounded-full border-gray-300 focus:border-blue-900" id="fullname" required='true' value={fullName} onChange={e => setFullName(e.target.value)}/>
 							</ul>
 							<ul className="flex flex-col my-2">
 								<label htmlFor="id">Số hộ chiếu / CMND / CCCD <a className="text-red-600 italic">(*)</a></label>
-								<input type="text" placeholder="012345678" className="rounded-full border-gray-300 focus:border-blue-900" id="id" value={id} onChange={e => setID(e.target.value)}/>
+								<input type="text" placeholder="012345678" itemID="id" className="rounded-full border-gray-300 focus:border-blue-900" id="id" value={id} onChange={e => setID(e.target.value)}/>
 							</ul>
 							<div className="grid grid-cols-3 gap-x-4 my-2">
 								<ul className="flex flex-col">
@@ -120,7 +138,7 @@ export default function Symptom_info() {
 				<div className="bg-white border border-transparent rounded-2xl p-2">
 					<div className="flex justify-around text-center">
 						<Link className="group flex justify-center border border-transparent rounded-xl text-white bg-secondary hover:bg-red-900 focus:outline-none p-4 mr-2 text-white font-bold" style={{borderRadius: '15px'}} onClick={() => resetSymptomInfo()}>XÓA</Link>
-						<Link to={'/symptom-status'} className="border-green-600 bg-green-600 p-4 w-full rounded-xl hover:bg-green-900 focus:outline-none text-white font-bold">TIẾP TỤC</Link>
+						<Link to={'/symptom-status'} onClick={setValues} className="border-green-600 bg-green-600 p-4 w-full rounded-xl hover:bg-green-900 focus:outline-none text-white font-bold">TIẾP TỤC</Link>
 					</div>
 				</div>
 			</div>
