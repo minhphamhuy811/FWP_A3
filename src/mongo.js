@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const mongoPath = 'mongodb+srv://baocypher:Baocypher0912@teamvuer.qmxzn.mongodb.net/healthTracker?retryWrites=true&w=majority'
 
-module.exports = async () => {
+const mongo = async () => {
 	await mongoose.connect(mongoPath, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
@@ -9,3 +9,5 @@ module.exports = async () => {
 
 	return mongoose
 }
+
+export default mongo
