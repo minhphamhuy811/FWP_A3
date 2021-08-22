@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
 
-
 const infoSchema = mongoose.Schema({
 	name: String,
 	id: Number,
