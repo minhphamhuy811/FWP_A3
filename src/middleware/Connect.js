@@ -1,4 +1,4 @@
-import mongo from '../mongo'
+import mongo from 'mongo'
 import {getStorageValue} from './GetStorage'
 import infoSchema from '../schemas/tracker-schema'
 
