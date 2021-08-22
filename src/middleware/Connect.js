@@ -1,5 +1,5 @@
 import mongo from 'mongo'
-import getStorageValue from '../useSessionStorage'
+import {getStorageValue} from './GetStorage'
 import infoSchema from '../schemas/tracker-schema'
 
 export const connectToMongoDB = async () => {

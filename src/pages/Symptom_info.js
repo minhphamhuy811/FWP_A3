@@ -1,6 +1,6 @@
 import {  Link } from 'react-router-dom'
 import React from 'react'
-import { useSessionStorage} from '../useSessionStorage'
+import { useSessionStorage } from '../middleware/UseStorage'
 
 
 export default function Symptom_info() {

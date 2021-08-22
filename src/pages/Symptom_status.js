@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import { useSessionStorage } from '../useSessionStorage'
+import { useSessionStorage } from '../middleware/UseStorage'
 import { connectToMongoDB } from '../middleware/Connect'
 
 export default function Symptom_status() {
