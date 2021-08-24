@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import {getStorageValue} from './GetStorage'
+const { getStorageValue } = require('./GetStorage')
 
-const useSessionStorage = (key, defaultValue) => {
+export const useSessionStorage = (key, defaultValue) => {
 	const [value, setValue] = useState(() => {
 		return getStorageValue(key, defaultValue)
 	})
@@ -14,4 +14,4 @@ const useSessionStorage = (key, defaultValue) => {
 	return [value, setValue]
 }
 
-export default useSessionStorage
+

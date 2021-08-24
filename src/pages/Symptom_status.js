@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import { useSessionStorage } from '../middleware/UseStorage'
-import { connectToMongoDB } from '../middleware/Connect'
 
 export default function Symptom_status() {
 	const [cough, setCough] = useSessionStorage('cough',false)
@@ -34,7 +33,7 @@ export default function Symptom_status() {
 	}
 
 	function sendAndResetForm() {
-		connectToMongoDB()
+		fetch('/patients')
 		sessionStorage.clear()
 	}
 

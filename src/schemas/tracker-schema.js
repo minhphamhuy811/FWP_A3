@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 
-const infoSchema = mongoose.schema({
+const infoSchema = mongoose.Schema({
 	name: String,
 	id: Number,
 	yearOfBirth: Number,
