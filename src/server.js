@@ -3,7 +3,8 @@ const app = express()
 const port = 3001
 
 const infoSchema = require('./schemas/tracker-schema')
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
+const patients = require('./controllers/patient.controller')
 
 const mongoPath = 'mongodb+srv://baocypher:Baocypher0912@teamvuer.qmxzn.mongodb.net/healthTracker?retryWrites=true&w=majority'
 
@@ -53,6 +54,8 @@ const connectToMongoDB = async () => {
 	})
 }
 
+app.route('/patients').post(patients.post)
+
 connectToMongoDB()
 // CORS
 app.use(function(req, res, next) {
@@ -67,6 +70,7 @@ app.use(function(req, res, next) {
 app.get('/', (req, res) => {
 	res.json({'message': 'Welcome to COVID-19 Vietnam\'s App'})
 })
+
 
 app.listen(port, () => {
 	console.log(`Server starting at http://localhost:${port}`)

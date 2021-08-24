@@ -1,9 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import { useSessionStorage } from '../middleware/UseStorage'
-import { post } from '../controllers/patient.controller'
+import patient from '../controllers/patient.controller'
 
-export default function Symptom_status() {
+export default function SymptomStatus() {
 	const [cough, setCough] = useSessionStorage('cough',false)
 	const [fever, setFever] = useSessionStorage('fever',38)
 	const [headache, setHeadache] = useSessionStorage('headache',false)
@@ -34,7 +34,7 @@ export default function Symptom_status() {
 	}
 
 	function sendAndResetForm() {
-		post('/patients')
+		patient.post()
 		sessionStorage.clear()
 	}
 
@@ -140,7 +140,7 @@ export default function Symptom_status() {
 					</div>
 
 				</div>
-				<div className="bg-white border border-transparent rounded-2xl p-2">
+				<div className="bg-white border border-transparent rounded-2xl p-2 px- ">
 					<div className="flex justify-around items-center text-center">
 						<Link className="group flex justify-center border border-transparent rounded-xl text-white bg-secondary hover:bg-red-900 focus:outline-none p-4 mr-2 text-white font-bold" style={{borderRadius: '15px'}} onClick={() => resetSymptomStatus()}>XÓA</Link>
 						<Link to={'/symptom-info'} className="group flex justify-center border border-transparent bg-yellow-400 py-4 w-1/2 rounded-l-xl text-white hover:bg-yellow-800 focus:outline-none font-bold">QUAY LẠI</Link>

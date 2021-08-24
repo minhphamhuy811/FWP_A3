@@ -3,7 +3,7 @@ import React from 'react'
 import { useSessionStorage } from '../middleware/UseStorage'
 
 
-export default function Symptom_info() {
+export default function SymptomInfo() {
 	const [fullName, setFullName] = useSessionStorage('fullName','')
 	const [birthYear, setBirthYear] = useSessionStorage('birthYear','')
 	const [gender, setGender] = useSessionStorage('gender','')
