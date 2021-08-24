@@ -27,4 +27,4 @@ const infoSchema = mongoose.Schema({
 	stomachache: Boolean,
 })
 
-module.exports = mongoose.model('info', infoSchema)
+module.exports = mongoose.model('tracker', infoSchema)

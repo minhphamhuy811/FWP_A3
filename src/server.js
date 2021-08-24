@@ -1,29 +1,49 @@
 const express = require('express')
 const app = express()
 const port = 3001
-
-const bodyParser = require('body-parser')
+const mongo = require('./mongo')
+const infoSchema = require('./schemas/tracker-schema')
 
 // Configuring the database
-const mongoose = require('mongoose')
-require('../src/routes/patient.routes.js')(app) //Add route file he
+const connectToMongoDB = async () => {
+	await mongo().then(async mongoose => {
+		try {
+			console.log('connected to mongo DB')
 
+			const patient = {
+				name: '',
+				id: 123123123,
+				yearOfBirth: 1234,
+				gender: 'male',
+				country: 'vietnam',
+				state: 'HCM',
+				district: 'TB',
+				ward: '8',
+				address: '987 sege',
+				phoneNumber: '123123123',
+				email: 'eamil',
+		
+				cough: false,
+				fever: 38,
+				headache: false,
+				soreThroat: false,
+				stuffNose: false,
+				difficultyBreathing: false,
+				chestache: false,
+				muscleache: false,
+				ageusia: false,
+				anosmia: false,
+				nausea: false,
+				stomachache: false,
+			}
+			await new infoSchema(patient).save()
+		} finally {
+			mongoose.connection.close()
+		}
+	})
+}
 
-// Connecting to the database
-mongoose.connect( 'mongodb+srv://baocypher:Baocypher0912@teamvuer.qmxzn.mongodb.net/healthTracker?retryWrites=true&w=majority', {
-	useNewUrlParser: true
-}).then(() => {
-	console.log('Successfully connected to the database')
-}).catch(err => {
-	console.log('Could not connect to the database. Exiting now...', err)
-	process.exit()
-})
-
-
-// parse requests
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
-
+connectToMongoDB()
 // CORS
 app.use(function(req, res, next) {
 	res.header('Access-Control-Allow-Origin', '*')

@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import { useSessionStorage } from '../middleware/UseStorage'
+import { post } from '../controllers/patient.controller'
 
 export default function Symptom_status() {
 	const [cough, setCough] = useSessionStorage('cough',false)
@@ -33,7 +34,7 @@ export default function Symptom_status() {
 	}
 
 	function sendAndResetForm() {
-		fetch('/patients')
+		post('/patients')
 		sessionStorage.clear()
 	}
 
@@ -59,7 +60,7 @@ export default function Symptom_status() {
 							<div className="flex flex-col">
 								<p className="font-light my-2">2. Sốt (trên 37.5 độ C) <a className="text-red-600 italic">(*)</a></p>
 								<input type="number" value={fever} className="rounded-full border-0 focus:ring-0 pr-4 font-bold" readOnly="true"/>
-								<input type="range" value={fever} placeholder="nhập nhiệt độ của bạn" min="34" max="42" step="0.5" required='true' onChange={event => setFever(event.target.value)} />
+								<input type="range" value={fever} placeholder="nhập nhiệt độ của bạn" min="34" max="42" step="0.5" onChange={event => setFever(event.target.value)} />
 							</div>
 
 							<div className="flex flex-col">
