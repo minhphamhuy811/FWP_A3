@@ -1,8 +1,18 @@
 const express = require('express')
 const app = express()
 const port = 3001
-const mongo = require('./mongo')
+
 const infoSchema = require('./schemas/tracker-schema')
+const mongoose = require('mongoose');
+
+const mongoPath = 'mongodb+srv://baocypher:Baocypher0912@teamvuer.qmxzn.mongodb.net/healthTracker?retryWrites=true&w=majority'
+
+const mongo = async () => {
+	await mongoose.connect(mongoPath, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true
+	})
+}
 
 // Configuring the database
 const connectToMongoDB = async () => {
@@ -22,7 +32,7 @@ const connectToMongoDB = async () => {
 				address: '987 sege',
 				phoneNumber: '123123123',
 				email: 'eamil',
-		
+
 				cough: false,
 				fever: 38,
 				headache: false,
