@@ -1,5 +1,7 @@
 import {  Link } from 'react-router-dom'
 import React, {useState} from 'react'
+import { cities, districts, generateYear, generateLocation } from '../lib/utils/generate-options'
+import { nameRegex, idRegex, emailRegex, phoneRegex, validateForm } from '../lib/utils/validate'
 
 export default function Symptom_info() {
 	const [fullName, setFullName] = useState('')
@@ -11,6 +13,17 @@ export default function Symptom_info() {
 	const [phoneNumber, setPhoneNumber] = useState('')
 	const [email, setEmail] = useState('')
 
+	function resetSymptomInfo() {
+		setFullName('')
+		setBirthYear('')
+		setGender('')
+		setNational('')
+		setID('')
+		setAddress('')
+		setPhoneNumber('')
+		setEmail('')
+	}
+
 	return(
 		<div className="flex flex-col bg-gray-100">
 			<div className="border-blue-900 px-4 mb-4 min-h-screen relative max-w-xl mx-auto">
@@ -21,19 +34,23 @@ export default function Symptom_info() {
 					<div className="mt-2 text-center font-bold">Phần 1: Thông tin cá nhân</div>
 					<div className="my-2">
 						<h3 className="font-bold">Thông tin người khai báo</h3>
-						<form action="" className="my-2">
+						<form onSubmit="" className="my-2">
 							<ul className="flex flex-col">
-								<label htmlFor="fullname">Họ và Tên <a className="text-red-600 italic">(*)</a></label>
+								<label htmlFor="fullname">Họ và Tên <a className="text-red-600 italic">(*)</a>{validateForm(fullName, nameRegex)}</label>
+
 								<input type="text" placeholder="Nguyễn Văn A" className="rounded-full border-gray-300 focus:border-blue-900" id="fullname" value={fullName} onChange={e => setFullName(e.target.value)}/>
 							</ul>
 							<ul className="flex flex-col my-2">
-								<label htmlFor="id">Số hộ chiếu / CMND / CCCD <a className="text-red-600 italic">(*)</a></label>
+								<label htmlFor="id">Số hộ chiếu / CMND / CCCD <a className="text-red-600 italic">(*)</a>{validateForm(id, idRegex)}</label>
 								<input type="text" placeholder="012345678" className="rounded-full border-gray-300 focus:border-blue-900" id="id" value={id} onChange={e => setID(e.target.value)}/>
 							</ul>
 							<div className="grid grid-cols-3 gap-x-4 my-2">
 								<ul className="flex flex-col">
 									<label htmlFor="birthyear">Năm Sinh <a className="text-red-600 italic">(*)</a></label>
-									<input type="text" placeholder="2021" className="rounded-full border-gray-300 focus:border-blue-900" id="birthyear" value={birthYear} onChange={e => setBirthYear(e.target.value)}/>
+									<select type="text" placeholder="2021" className="rounded-full border-gray-300 focus:border-blue-900" id="birthyear" value={birthYear} onChange={e => setBirthYear(e.target.value)}>
+										<option value='0'>Năm sinh</option>
+										{generateYear()}
+									</select>
 								</ul>
 								<ul className="flex flex-col">
 									<label htmlFor="gender">Giới Tính <a className="text-red-600 italic">(*)</a></label>
@@ -45,7 +62,11 @@ export default function Symptom_info() {
 								</ul>
 								<ul className="flex flex-col">
 									<label htmlFor="national">Quốc Tịch <a className="text-red-600 italic">(*)</a></label>
-									<input type="text" placeholder="Việt Nam" className="rounded-full border-gray-300 focus:border-blue-900" id="national" value={national} onChange={e => setNational(e.target.value)}/>
+									<select type="text" placeholder="Việt Nam" className="rounded-full border-gray-300 focus:border-blue-900" id="national" onChange={e => setNational(e.target.value)}>
+										<option value={national}>Việt Nam</option>
+										<option value={national}>Khác</option>
+									</select>
+
 								</ul>
 							</div>
 							<h3 className="font-bold">Thông tin nơi cư trú</h3>
@@ -56,8 +77,7 @@ export default function Symptom_info() {
 									</label>
 									<select className="option-input p-3" id="grid-state">
 										<option>-Chọn-</option>
-										<option>Hà Nội</option>
-										<option>Hồ Chí Minh</option>
+										{generateLocation(cities)}
 									</select>
 								</div>
 								<div>
@@ -66,8 +86,7 @@ export default function Symptom_info() {
 									</label>
 									<select className="option-input p-3" id="grid-state">
 										<option>-Chọn-</option>
-										<option>1</option>
-										<option>2</option>
+										{generateLocation(districts)}
 									</select>
 								</div>
 								<div>
@@ -87,11 +106,11 @@ export default function Symptom_info() {
 							</div>
 							<div className="grid grid-cols-2 gap-4">
 								<ul className="flex flex-col">
-									<label htmlFor="email" className="tracking-wide">Điện thoại <a className="text-red-600 italic">(*)</a></label>
-									<input type="number" placeholder="0123456789" className="rounded-full border-gray-300 focus:border-blue-900" id="phoneNumber" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)}/>
+									<label htmlFor="email" className="tracking-wide">Điện thoại <a className="text-red-600 italic">(*)</a>{validateForm(phoneNumber, phoneRegex)}</label>
+									<input type="text" placeholder="0123456789" className="rounded-full border-gray-300 focus:border-blue-900" id="phoneNumber" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)}/>
 								</ul>
 								<ul className="flex flex-col">
-									<label htmlFor="email" className="tracking-wide">Email <a className="text-red-600 italic">(*)</a></label>
+									<label htmlFor="email" className="tracking-wide">Email <a className="text-red-600 italic">(*)</a>{validateForm(email, emailRegex)}</label>
 									<input type="email" placeholder="nguyenvana@mail.com" className="rounded-full border-gray-300 focus:border-blue-900" id="email" value={email} onChange={e => setEmail(e.target.value)}/>
 								</ul>
 							</div>
@@ -101,8 +120,8 @@ export default function Symptom_info() {
 				</div>
 				<div className="bg-white border border-transparent rounded-2xl p-2">
 					<div className="flex justify-around text-center">
-						<Link className="group flex justify-center border border-transparent rounded-xl text-white bg-secondary hover:bg-red-900 focus:outline-none p-4 mr-2 text-white font-bold" style={{borderRadius: '15px'}}>XÓA</Link>
-						<Link to={'/continue'} className="border-green-600 bg-green-600 p-4 w-full rounded-xl hover:bg-green-900 focus:outline-none text-white font-bold">TIẾP TỤC</Link>
+						<Link className="group flex justify-center border border-transparent rounded-xl text-white bg-secondary hover:bg-red-900 focus:outline-none p-4 mr-2 text-white font-bold" style={{borderRadius: '15px'}} onClick={() => resetSymptomInfo()}>XÓA</Link>
+						<Link to={'/symptom-status'} className="border-green-600 bg-green-600 p-4 w-full rounded-xl hover:bg-green-900 focus:outline-none text-white font-bold">TIẾP TỤC</Link>
 					</div>
 				</div>
 			</div>
