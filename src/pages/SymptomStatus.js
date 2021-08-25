@@ -1,9 +1,22 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import { useSessionStorage } from '../middleware/UseStorage'
-import patient from '../controllers/patient.controller'
+import axios from "axios";
+
 
 export default function SymptomStatus() {
+	const fullName = sessionStorage.getItem('fullName')
+	const birthYear = sessionStorage.getItem('birthYear')
+	const gender = sessionStorage.getItem('gender')
+	const country = sessionStorage.getItem('country')
+	const id = sessionStorage.getItem('id')
+	const city = sessionStorage.getItem('city')
+	const district = sessionStorage.getItem('district')
+	const ward = sessionStorage.getItem('ward')
+	const address = sessionStorage.getItem('address')
+	const phoneNumber = sessionStorage.getItem('phoneNumber')
+	const email = sessionStorage.getItem('email')
+
 	const [cough, setCough] = useSessionStorage('cough',false)
 	const [fever, setFever] = useSessionStorage('fever',38)
 	const [headache, setHeadache] = useSessionStorage('headache',false)
@@ -16,6 +29,35 @@ export default function SymptomStatus() {
 	const [anosmia, setAnosmia] = useSessionStorage('anosmia',false)
 	const [nausea, setNausea] = useSessionStorage('nausea',false)
 	const [stomachache, setStomachache] = useSessionStorage('stomachache',false)
+
+
+	const submitForm = async () => {
+		await axios.post('http://localhost:3306/patient', {
+			fullName,
+			birthYear,
+			gender,
+			country,
+			id,
+			city,
+			district,
+			ward,
+			address,
+			phoneNumber,
+			email,
+			cough,
+			fever,
+			headache,
+			soreThroat,
+			stuffNose,
+			difficultyBreathing,
+			chestache,
+			muscleache,
+			ageusia,
+			anosmia,
+			nausea,
+			stomachache
+		}, {headers: {"Access-Control-Allow-Origin": "*"}})
+	}
 
 	function resetSymptomStatus() {
 		setCough(false)
@@ -34,7 +76,7 @@ export default function SymptomStatus() {
 	}
 
 	function sendAndResetForm() {
-		patient.post()
+		submitForm()
 		sessionStorage.clear()
 	}
 
