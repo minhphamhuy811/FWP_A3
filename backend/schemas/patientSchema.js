@@ -13,7 +13,7 @@ const patientSchema = mongoose.Schema({
 	phoneNumber: String,
 	email: String,
 	cough: Boolean,
-	fever: Boolean,
+	fever: Number,
 	headache: Boolean,
 	soreThroat: Boolean,
 	stuffNose: Boolean,

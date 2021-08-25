@@ -43,20 +43,20 @@ export default function SymptomInfo() {
 						<h3 className="font-bold">Thông tin người khai báo</h3>
 						<form method="post" action="/" className="my-2">
 							<ul className="flex flex-col">
-								<label htmlFor="fullname">Họ và Tên <div className="text-red-600 italic">(*)</div></label>
+								<label htmlFor="fullname" className="flex gap-x-1">Họ và Tên <div className="text-red-600 italic"> (*)</div></label>
 								<input type="text" placeholder="Nguyễn Văn A" className="rounded-full border-gray-300 focus:border-blue-900" id="fullname" value={fullName} onChange={e => setFullName(e.target.value)}/>
 							</ul>
 							<ul className="flex flex-col my-2">
-								<label htmlFor="id">Số hộ chiếu / CMND / CCCD <div className="text-red-600 italic">(*)</div></label>
+								<label htmlFor="id" className="flex gap-x-1">Số hộ chiếu / CMND / CCCD <div className="text-red-600 italic">(*)</div></label>
 								<input type="text" placeholder="012345678" itemID="id" className="rounded-full border-gray-300 focus:border-blue-900" id="id" value={id} onChange={e => setID(e.target.value)}/>
 							</ul>
 							<div className="grid grid-cols-3 gap-x-4 my-2">
 								<ul className="flex flex-col">
-									<label htmlFor="birthyear">Năm Sinh <div className="text-red-600 italic">(*)</div></label>
+									<label htmlFor="birthyear" className="flex gap-x-1">Năm Sinh <div className="text-red-600 italic">(*)</div></label>
 									<input type="text" placeholder="2021" className="rounded-full border-gray-300 focus:border-blue-900" id="birthyear" value={birthYear} onChange={e => setBirthYear(e.target.value)}/>
 								</ul>
 								<ul className="flex flex-col">
-									<label htmlFor="gender">Giới Tính <div className="text-red-600 italic">(*)</div></label>
+									<label htmlFor="gender" className="flex gap-x-1">Giới Tính <div className="text-red-600 italic">(*)</div></label>
 									<select name="gdr" id="gender" value={gender} onChange={e => setGender(e.target.value)} className="rounded-full border-gray-300 focus:border-blue-900">
 										<option>-Chọn-</option>
 										<option>Nam</option>
@@ -65,14 +65,14 @@ export default function SymptomInfo() {
 									</select>
 								</ul>
 								<ul className="flex flex-col">
-									<label htmlFor="country">Quốc Tịch <div className="text-red-600 italic">(*)</div></label>
+									<label htmlFor="country" className="flex gap-x-1">Quốc Tịch <div className="text-red-600 italic">(*)</div></label>
 									<input type="text" placeholder="Việt Nam" className="rounded-full border-gray-300 focus:border-blue-900" id="country" value={country} onChange={e => setCountry(e.target.value)}/>
 								</ul>
 							</div>
 							<h3 className="font-bold">Thông tin nơi cư trú</h3>
 							<div className="grid grid-cols-3 gap-x-4">
 								<div>
-									<label>
+									<label className="flex gap-x-1">
 							Tỉnh/thành <div className="text-red-600 text-xs italic">(*)</div>
 									</label>
 									<select className="option-input p-3" id="grid-state" value={city} onChange={e => setCity(e.target.value)}>
@@ -82,7 +82,7 @@ export default function SymptomInfo() {
 									</select>
 								</div>
 								<div>
-									<label>
+									<label className="flex gap-x-1">
 							Quận/huyện <div className="text-red-600 italic">(*)</div>
 									</label>
 									<select className="option-input p-3" id="grid-state" value={district} onChange={e => setDistrict(e.target.value)}>
@@ -92,7 +92,7 @@ export default function SymptomInfo() {
 									</select>
 								</div>
 								<div>
-									<label>
+									<label className="flex gap-x-1">
 							Phường/xã <div className="text-red-600 italic">(*)</div>
 									</label>
 									<select className="option-input p-3" id="grid-state" value={ward} onChange={e => setWard(e.target.value)}>
@@ -102,17 +102,17 @@ export default function SymptomInfo() {
 									</select>
 								</div>
 								<ul className="flex flex-col col-span-3 my-2">
-									<label htmlFor="email" className="tracking-wide">Số nhà, phố, tổ dân phố/thôn/đội <div className="text-red-600 italic">(*)</div></label>
+									<label htmlFor="email" className="tracking-wide flex gap-x-1">Số nhà, phố, tổ dân phố/thôn/đội <div className="text-red-600 italic">(*)</div></label>
 									<input type="text" placeholder="01 Đường Hồ Chí Minh, Khu Phố 01, Tổ 1, Phường 1, Quận 1" className="rounded-full border-gray-300 focus:border-blue-900" id="address" value={address} onChange={e => setAddress(e.target.value)}/>
 								</ul>
 							</div>
 							<div className="grid grid-cols-2 gap-4">
 								<ul className="flex flex-col">
-									<label htmlFor="email" className="tracking-wide">Điện thoại <div className="text-red-600 italic">(*)</div></label>
+									<label htmlFor="email" className="tracking-wide flex gap-x-1">Điện thoại <div className="text-red-600 italic">(*)</div></label>
 									<input type="number" placeholder="0123456789" className="rounded-full border-gray-300 focus:border-blue-900" id="phoneNumber" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)}/>
 								</ul>
 								<ul className="flex flex-col">
-									<label htmlFor="email" className="tracking-wide">Email <div className="text-red-600 italic">(*)</div></label>
+									<label htmlFor="email" className="tracking-wide flex gap-x-1">Email <div className="text-red-600 italic">(*)</div></label>
 									<input type="email" placeholder="nguyenvana@mail.com" className="rounded-full border-gray-300 focus:border-blue-900" id="email" value={email} onChange={e => setEmail(e.target.value)}/>
 								</ul>
 							</div>
