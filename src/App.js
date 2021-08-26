@@ -1,10 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
-import Declare_page_header from './layout/Declare_page_header'
-import Symptom_info from './pages/Symptom_info'
+import DeclarePageHeader from './layout/DeclarePageHeader'
+import SymptomInfo from './pages/SymptomInfo'
 import Information from './pages/Information'
-import Symptom from './pages/Symptom'
-import Symptom_status from './pages/Symptom_status'
+import SymptomStatus from './pages/SymptomStatus'
 import Login from './pages/Login'
 import Hotline from './components/Hotline'
 
@@ -19,24 +18,24 @@ export default function App() {
 						<Redirect to="/symptom-info" />
 					</Route>
 					<Route exact path='/symptom-info'>
-						<Declare_page_header />
+						<DeclarePageHeader />
 						<Hotline/>
-						<Symptom_info />
+						<SymptomInfo />
 					</Route>
 					<Route path='/symptom-status'>
-						<Declare_page_header />
+						<DeclarePageHeader />
 						<Hotline/>
-						<Symptom_status/>
+						<SymptomStatus/>
 					</Route>
 					<Route path='/covid-information'>
-						<Declare_page_header />
+						<DeclarePageHeader />
 						<Information/>
 					</Route>
 					<Route path='/admin-login'>
 						<Login/>
 					</Route>
 					<Route path='/symptom'>
-						<Symptom/>
+						<Login/>
 					</Route>
 				</div>
 

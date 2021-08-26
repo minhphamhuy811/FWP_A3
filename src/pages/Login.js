@@ -74,7 +74,7 @@ export default function Login () {
 						</div>
 
 						<div className="text-sm">
-							<a href="#" className="font-medium text-primary hover:text-red-700">
+							<a href="/" className="font-medium text-primary hover:text-red-700">
                 Quên mật khẩu?
 							</a>
 						</div>

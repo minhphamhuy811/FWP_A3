@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d998f3f-2fd7-4b80-af7e-549599f20a9f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+=======
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Declaration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Symptom_info.js" afterDir="false" />
@@ -10,6 +15,7 @@
 =======
       <change beforePath="$PROJECT_DIR$/src/pages/Symptom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Symptom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
+>>>>>>> react-hook-form
 >>>>>>> react-hook-form
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +161,7 @@
       <workItem from="1629007449947" duration="7051000" />
       <workItem from="1629123088569" duration="570000" />
       <workItem from="1629262826180" duration="6198000" />
-      <workItem from="1629292542278" duration="1521000" />
+      <workItem from="1629292542278" duration="2549000" />
     </task>
     <servers />
   </component>
