@@ -6,6 +6,7 @@ import Information from './pages/Information'
 import SymptomStatus from './pages/SymptomStatus'
 import Login from './pages/Login'
 import Hotline from './components/Hotline'
+import Dashboard from './pages/Dashboard';
 
 
 
@@ -34,8 +35,8 @@ export default function App() {
 					<Route path='/admin-login'>
 						<Login/>
 					</Route>
-					<Route path='/symptom'>
-						<Login/>
+					<Route path='/dashboard'>
+						<Dashboard/>
 					</Route>
 				</div>
 
