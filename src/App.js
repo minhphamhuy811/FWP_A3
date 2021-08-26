@@ -19,13 +19,13 @@ export default function App() {
 					</Route>
 					<Route exact path='/symptom-info'>
 						<DeclarePageHeader />
-						<Hotline/>
 						<SymptomInfo />
+						<Hotline/>
 					</Route>
 					<Route path='/symptom-status'>
 						<DeclarePageHeader />
-						<Hotline/>
 						<SymptomStatus/>
+						<Hotline/>
 					</Route>
 					<Route path='/covid-information'>
 						<DeclarePageHeader />

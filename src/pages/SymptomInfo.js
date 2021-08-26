@@ -34,7 +34,7 @@ export default function SymptomInfo() {
 	return(
 		<div className="flex flex-col bg-gray-100">
 			<div className="border-blue-900 px-4 mb-4 min-h-screen relative max-w-xl mx-auto">
-				<div className="bg-white border border-transparent rounded-2xl p-4 mb-4">
+				<div className="bg-white border border-transparent rounded-2xl p-4 my-4">
 					<div className="text-center">
 						<h1 className="font-bold text-4xl">KHAI BÁO SỨC KHỎE</h1>
 					</div>
