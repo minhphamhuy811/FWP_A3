@@ -1,6 +1,7 @@
 import React from 'react'
 import logochxhcnvn from '../assets/logo_chxhcnvn.svg'
 import logobyt from '../assets/logo_byt.svg'
+import Table from '../components/Table'
 
 
 export default function Dashboard() {
@@ -50,12 +51,15 @@ export default function Dashboard() {
     </div>
 
       <div id="patients" className="flex-shrink w-full overflow-hidden">
-        <div className="border-b border-transparent shadow-2xl">
-          <div className="flex justify-between items-center ">
+        <div className="border-b border-transparent shadow-sm">
+          <div className="flex justify-between items-center">
             <div className="py-12">
-              <div className="text-4xl font-bold mx-6">Patients</div>
+              <div className="text-4xl font-bold mx-10">Patients</div>
             </div>
           </div>
+        </div>
+        <div className="mt-5 px-10">
+          <Table/>
         </div>
       </div>
 
