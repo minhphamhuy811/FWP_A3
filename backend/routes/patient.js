@@ -13,5 +13,14 @@ const router = express.Router()
 		}
 		res.send('Patient declared successfully')
 	})
-
+	router.get('/', function(req,res) {
+		patientSchema.find({})
+			.exec(function(err, patients) {
+				if (err) {
+					return res.send({
+						err: err.message
+					})}			   
+				return res.send(patients)
+			})
+	} );
 module.exports = router

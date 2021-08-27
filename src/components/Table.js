@@ -1,6 +1,21 @@
 import React from 'react'
+import { useEffect, useState } from "react"
 
+
+
+ 
 export default function Table() {
+	const [patientList, setPatientList] = useState([])
+	const endPoint = "http://localhost:3306/getall"
+	const getPatient = () => {
+		fetch(endPoint)
+			.then(response => response.json())
+			.then(patientList => setPatientList(patientList))
+	}
+	useEffect(() => {
+		getPatient()
+	}, [])
+
 	return (
 		<div className="flex flex-col container mx-auto">
 			<div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -36,8 +51,26 @@ export default function Table() {
 									<th scope="col" className="relative px-6 py-3">
 										<span className="sr-only">Edit</span>
 									</th>
+								
 								</tr>
+							
+								{patientList.map(row => (
+									<tr key={row._id}>
+										<th scope="col"
+											className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">{row.id}</th>
+										<th scope="col"
+											className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">{row.name}</th>
+										<th scope="col"
+											className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">{row.fever}</th>	
+										
+										<th scope="col"
+											className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">{row.gender}</th>	
+
+									</tr>
+								))}
+							
 							</thead>
+						
 							{/*	<tbody className="bg-white divide-y divide-gray-200">*/}
 							{/*		{people.map((person) => (*/}
 							{/*			<tr key={person.email}>*/}
