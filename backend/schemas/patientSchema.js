@@ -1,33 +1,29 @@
 const mongoose = require('mongoose')
 
-const stringReq = {type: String, required: true}
-const booleanReq = {type: Boolean, required: true}
-const numberReq = {type: Number, required: true}
-
 const patientSchema = mongoose.Schema({
-	name: stringReq,
-	id: stringReq,
-	yearOfBirth: numberReq,
-	gender: stringReq,
-	country: stringReq,
-	state: stringReq,
-	district: stringReq,
-	ward: stringReq,
-	address: stringReq,
-	phoneNumber: stringReq,
-	email: stringReq,
-	cough: booleanReq,
-	fever: numberReq,
-	headache: booleanReq,
-	soreThroat: booleanReq,
-	stuffNose: booleanReq,
-	difficultyBreathing: booleanReq,
-	chestache: booleanReq,
-	muscleache: booleanReq,
-	ageusia: booleanReq,
-	anosmia: booleanReq,
-	nausea: booleanReq,
-	stomachache: booleanReq,
+	name: String,
+	id: String,
+	yearOfBirth: Number,
+	gender: String,
+	country: String,
+	state: String,
+	district: String,
+	ward: String,
+	address: String,
+	phoneNumber: String,
+	email: String,
+	cough: Boolean,
+	fever: Number,
+	headache: Boolean,
+	soreThroat: Boolean,
+	stuffNose: Boolean,
+	difficultyBreathing: Boolean,
+	chestache: Boolean,
+	muscleache: Boolean,
+	ageusia: Boolean,
+	anosmia: Boolean,
+	nausea: Boolean,
+	stomachache: Boolean,
 })
 
 module.exports = mongoose.model('patient', patientSchema)

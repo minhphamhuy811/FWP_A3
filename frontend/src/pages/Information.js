@@ -6,7 +6,7 @@ import Graph2 from '../assets/graph2.png'
 
 export default function Information() {
 	return(
-		<div className="flex flex-col gap-y-8 px-2 mt-4 md:px-0">
+		<div className="flex flex-col gap-y-8 px-2 my-8 md:px-0">
 			<div className="text-3xl flex justify-center font-bold">THÔNG TIN DỊCH TỄ</div>
 			<div className="flex flex-row align-middle text-center p-4 gap-x-8 md:gap-y-0 justify-center items-center">
 				<div className="border border-green-400 bg-green-200 rounded-2xl p-8">
