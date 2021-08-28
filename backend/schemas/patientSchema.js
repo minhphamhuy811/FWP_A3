@@ -5,12 +5,12 @@ const booleanReq = {type: Boolean, required: true}
 const numberReq = {type: Number, required: true}
 
 const patientSchema = mongoose.Schema({
-	name: stringReq,
+	fullName: stringReq,
 	id: stringReq,
-	yearOfBirth: numberReq,
+	birthYear: numberReq,
 	gender: stringReq,
 	country: stringReq,
-	state: stringReq,
+	city: stringReq,
 	district: stringReq,
 	ward: stringReq,
 	address: stringReq,

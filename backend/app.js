@@ -1,5 +1,5 @@
 var patientRouter = require('./routes/patient')
-var loginRouter = require('./routes/login')
+var registerRouter = require('./routes/register')
 var express = require('express')
 var app = express()
 
@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/patient', patientRouter)
 app.use('/getall', patientRouter)
-app.use('/login', loginRouter)
+app.use('/register', registerRouter)
 
 
 app.listen(port, () => {

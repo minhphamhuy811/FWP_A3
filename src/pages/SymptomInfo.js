@@ -5,10 +5,10 @@ import { CountryDropdown } from 'react-country-region-selector';
 
 export default function SymptomInfo() {
 	const [fullName, setFullName] = useSessionStorage('fullName', '')
+	const [id, setID] = useSessionStorage('id', '')
 	const [birthYear, setBirthYear] = useSessionStorage('birthYear', '')
 	const [gender, setGender] = useSessionStorage('gender', '')
 	const [country, setCountry] = useSessionStorage('country', 'Vietnam')
-	const [id, setID] = useSessionStorage('id', '')
 	const [city, setCity] = useSessionStorage('city', '')
 	const [district, setDistrict] = useSessionStorage('district', '')
 	const [ward, setWard] = useSessionStorage('ward', '')
@@ -19,10 +19,10 @@ export default function SymptomInfo() {
 	
 	function resetSymptomInfo() {
 		setFullName('')
+		setID('')
 		setBirthYear('')
 		setGender('')
 		setCountry('Vietnam')
-		setID('')
 		setAddress('')
 		setPhoneNumber('')
 		setEmail('')
@@ -44,8 +44,8 @@ export default function SymptomInfo() {
 						<h3 className="font-bold">Thông tin người khai báo</h3>
 						<form method="post" action="/" className="my-2">
 							<ul className="flex flex-col">
-								<label htmlFor="fullname" className="flex gap-x-1">Họ và Tên <div className="text-red-600 italic"> (*)</div></label>
-								<input type="text" placeholder="Nguyễn Văn A" className="rounded-full border-gray-300 focus:border-blue-900" id="fullname" value={fullName} onChange={e => setFullName(e.target.value)} />
+								<label htmlFor="fullName" className="flex gap-x-1">Họ và Tên <div className="text-red-600 italic"> (*)</div></label>
+								<input type="text" placeholder="Nguyễn Văn A" className="rounded-full border-gray-300 focus:border-blue-900" id="fullName" value={fullName} onChange={e => setFullName(e.target.value)} />
 							</ul>
 							<ul className="flex flex-col my-2">
 								<label htmlFor="id" className="flex gap-x-1">Số hộ chiếu / CMND / CCCD <div className="text-red-600 italic">(*)</div></label>
@@ -53,8 +53,8 @@ export default function SymptomInfo() {
 							</ul>
 							<div className="grid grid-cols-3 gap-x-4 my-2">
 								<ul className="flex flex-col">
-									<label htmlFor="birthyear" className="flex gap-x-1">Năm Sinh <div className="text-red-600 italic">(*)</div></label>
-									<input type="number" placeholder="2021" className="rounded-full border-gray-300 focus:border-blue-900" id="birthyear" value={birthYear} onChange={e => setBirthYear(e.target.value)} />
+									<label htmlFor="birthYear" className="flex gap-x-1">Năm Sinh <div className="text-red-600 italic">(*)</div></label>
+									<input type="number" placeholder="2021" className="rounded-full border-gray-300 focus:border-blue-900" id="birthYear" value={birthYear} onChange={e => setBirthYear(e.target.value)} />
 								</ul>
 								<ul className="flex flex-col">
 									<label htmlFor="gender" className="flex gap-x-1">Giới Tính <div className="text-red-600 italic">(*)</div></label>
@@ -77,10 +77,10 @@ export default function SymptomInfo() {
 							<h3 className="font-bold">Thông tin nơi cư trú</h3>
 							<div className="grid grid-cols-3 gap-x-4">
 								<div>
-									<label className="flex gap-x-1">
+									<label htmlFor="city" className="flex gap-x-1">
 										Tỉnh/thành <div className="text-red-600 text-xs italic">(*)</div>
 									</label>
-									<select className="option-input p-3" id="grid-state" value={city} onChange={e => setCity(e.target.value)}>
+									<select className="option-input p-3" id="city" value={city} onChange={e => setCity(e.target.value)}>
 										<option hidden>-Chọn-</option>
 										<option>Thành phố Hà Nội</option>
 										<option>Thành phố Hồ Chí Minh</option>
@@ -149,27 +149,27 @@ export default function SymptomInfo() {
 
 								</div>
 								<div>
-									<label className="flex gap-x-1">
+									<label htmlFor="district" className="flex gap-x-1">
 										Quận/huyện <div className="text-red-600 italic">(*)</div>
 									</label>
-									<select className="option-input p-3" id="grid-state" value={district}  aria-placeholder="-Chọn-" onChange={e => setDistrict(e.target.value)}>
+									<select className="option-input p-3" id="district" value={district} onChange={e => setDistrict(e.target.value)}>
 										<option hidden>-Chọn-</option>
 										<option>1</option>
 										<option>2</option>
 									</select>
 								</div>
 								<div>
-									<label className="flex gap-x-1">Phường/xã <div className="text-red-600 italic">(*)</div></label>
+									<label htmlFor="ward" className="flex gap-x-1">Phường/xã <div className="text-red-600 italic">(*)</div></label>
 									<input type="text" placeholder="1" className="option-input rounded-full px-3 py-2.5" id="ward" value={ward} onChange={e => setWard(e.target.value)} />
 								</div>
 								<ul className="flex flex-col col-span-3 my-2">
-									<label htmlFor="email" className="tracking-wide flex gap-x-1">Số nhà, phố, tổ dân phố/thôn/đội <div className="text-red-600 italic">(*)</div></label>
+									<label htmlFor="address" className="tracking-wide flex gap-x-1">Số nhà, phố, tổ dân phố/thôn/đội <div className="text-red-600 italic">(*)</div></label>
 									<input type="text" placeholder="01 Đường Hồ Chí Minh, Khu Phố 01, Tổ 1, Phường 1, Quận 1" className="rounded-full border-gray-300 focus:border-blue-900" id="address" value={address} onChange={e => setAddress(e.target.value)} />
 								</ul>
 							</div>
 							<div className="grid grid-cols-2 gap-4">
 								<ul className="flex flex-col">
-									<label htmlFor="email" className="tracking-wide flex gap-x-1">Điện thoại <div className="text-red-600 italic">(*)</div></label>
+									<label htmlFor="phoneNumber" className="tracking-wide flex gap-x-1">Điện thoại <div className="text-red-600 italic">(*)</div></label>
 									<input type="text" placeholder="0123456789" className="rounded-full border-gray-300 focus:border-blue-900" id="phoneNumber" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} />
 								</ul>
 								<ul className="flex flex-col">

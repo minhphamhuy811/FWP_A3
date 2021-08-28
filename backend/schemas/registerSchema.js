@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 
-const loginSchema = mongoose.Schema({
+const registerSchema = mongoose.Schema({
 	user: {type: String, required: true},
     password: {type: String, required: true}
 })
 
-module.exports = mongoose.model('admin', loginSchema)
+module.exports = mongoose.model('admin', registerSchema)
