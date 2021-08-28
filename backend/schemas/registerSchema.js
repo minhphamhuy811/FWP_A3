@@ -1,8 +1,10 @@
 const mongoose = require('mongoose')
 
+const stringReq = {type: String, required: true}
+
 const registerSchema = mongoose.Schema({
-	user: {type: String, required: true},
-    password: {type: String, required: true}
+	user: stringReq,
+    password: stringReq
 })
 
 module.exports = mongoose.model('admin', registerSchema)

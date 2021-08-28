@@ -10,11 +10,22 @@ export default function Register () {
 	const [password, setPassword] = useState('')
 	const [confirmPassword, setConfirmPassword] = useState('')
 
+	const user = email
+
 	const setAdmin = async () => {
 		await axios.post('/register', {
-			email,
+			user,
 			password
 		})
+	}
+
+	const passwordVerify = () => {
+		if (password === confirmPassword){
+			console.log(setAdmin())
+		}
+		else {
+			window.alert('Your password is incorrect!')
+		}
 	}
 
 	return (
@@ -28,11 +39,11 @@ export default function Register () {
 					<div>
 						<h2 className="mt-6 text-center text-xl font-bold text-gray-900">HỆ THỐNG QUẢN LÝ ĐƠN KHAI BÁO Y TẾ</h2>
 						<p className="mt-2 text-center text-sm text-gray-600">
-            Trang Thiết Lập Mật Khẩu
+							Đăng Ký Tài Khoản Quản Trị Viên
 						</p>
 					</div>
 				</div>
-				<form className="mt-8 space-y-6" action="#" method="POST">
+				<form className="mt-8 space-y-6">
 					<input type="hidden" name="remember" defaultValue="true" />
 					<div className="rounded -space-y-px">
 						<div>
@@ -91,7 +102,7 @@ export default function Register () {
 						<button
 							type="submit"
 							className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-primary hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-900"
-							onClick={setAdmin()}>
+							onClick={passwordVerify}>
 							Đăng ký
 						</button>
 					</div>
