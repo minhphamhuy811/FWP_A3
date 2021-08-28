@@ -45,7 +45,7 @@ export default function SymptomInfo() {
 						<form method="post" action="/" className="my-2">
 							<ul className="flex flex-col">
 								<label htmlFor="fullName" className="flex gap-x-1">Họ và Tên <div className="text-red-600 italic"> (*)</div></label>
-								<input type="text" placeholder="Nguyễn Văn A" className="rounded-full border-gray-300 focus:border-blue-900" id="fullName" value={fullName} onChange={e => setFullName(e.target.value)} />
+								<input type="text" placeholder="Nguyễn Văn A" className="option-input p-3 rounded-full border-gray-300 focus:border-blue-900" id="fullName" value={fullName} onChange={e => setFullName(e.target.value)} />
 							</ul>
 							<ul className="flex flex-col my-2">
 								<label htmlFor="id" className="flex gap-x-1">Số hộ chiếu / CMND / CCCD <div className="text-red-600 italic">(*)</div></label>
@@ -54,11 +54,11 @@ export default function SymptomInfo() {
 							<div className="grid grid-cols-3 gap-x-4 my-2">
 								<ul className="flex flex-col">
 									<label htmlFor="birthYear" className="flex gap-x-1">Năm Sinh <div className="text-red-600 italic">(*)</div></label>
-									<input type="number" placeholder="2021" className="rounded-full border-gray-300 focus:border-blue-900" id="birthYear" value={birthYear} onChange={e => setBirthYear(e.target.value)} />
+									<input type="number" placeholder="2021" className="option-input p-3 rounded-full border-gray-300 focus:border-blue-900" id="birthYear" value={birthYear} onChange={e => setBirthYear(e.target.value)} />
 								</ul>
 								<ul className="flex flex-col">
 									<label htmlFor="gender" className="flex gap-x-1">Giới Tính <div className="text-red-600 italic">(*)</div></label>
-									<select name="gdr" id="gender" value={gender} onChange={e => setGender(e.target.value)} className="rounded-full border-gray-300 focus:border-blue-900">
+									<select name="gdr" id="gender" value={gender} onChange={e => setGender(e.target.value)} className="option-input p-3 rounded-full border-gray-300 focus:border-blue-900">
 										<option hidden>-Chọn-</option>
 										<option>Nam</option>
 										<option>Nữ</option>
@@ -68,7 +68,7 @@ export default function SymptomInfo() {
 								<ul className="flex flex-col">
 									<label htmlFor="country" className="flex gap-x-1">Quốc Tịch <div className="text-red-600 italic">(*)</div></label>
 									<CountryDropdown
-									type="text"  className="rounded-full border-gray-300 focus:border-blue-900" id="country"
+									type="text"  className="rounded-full option-input p-3 border-gray-300 focus:border-blue-900" id="country"
 									value={country}
 									onChange={value => setCountry(value)}
 									/>
@@ -160,13 +160,13 @@ export default function SymptomInfo() {
 								</div>
 								<div>
 									<label htmlFor="ward" className="flex gap-x-1">Phường/xã <div className="text-red-600 italic">(*)</div></label>
-									<input type="text" placeholder="1" className="option-input rounded-full px-3 py-2.5" id="ward" value={ward} onChange={e => setWard(e.target.value)} />
+									<input type="text" placeholder="1" className="option-input text-gray-600 p-3" id="ward" value={ward} onChange={e => setWard(e.target.value)}/>
 								</div>
-								<ul className="flex flex-col col-span-3 my-2">
-									<label htmlFor="address" className="tracking-wide flex gap-x-1">Số nhà, phố, tổ dân phố/thôn/đội <div className="text-red-600 italic">(*)</div></label>
-									<input type="text" placeholder="01 Đường Hồ Chí Minh, Khu Phố 01, Tổ 1, Phường 1, Quận 1" className="rounded-full border-gray-300 focus:border-blue-900" id="address" value={address} onChange={e => setAddress(e.target.value)} />
-								</ul>
 							</div>
+							<ul className="flex flex-col col-span-3 my-2">
+								<label htmlFor="address" className="tracking-wide flex gap-x-1">Số nhà, phố, tổ dân phố/thôn/đội <div className="text-red-600 italic">(*)</div></label>
+								<input type="text" placeholder="01 Đường Hồ Chí Minh, Khu Phố 01, Tổ 1, Phường 1, Quận 1" className="rounded-full border-gray-300 focus:border-blue-900" id="address" value={address} onChange={e => setAddress(e.target.value)} />
+							</ul>
 							<div className="grid grid-cols-2 gap-4">
 								<ul className="flex flex-col">
 									<label htmlFor="phoneNumber" className="tracking-wide flex gap-x-1">Điện thoại <div className="text-red-600 italic">(*)</div></label>

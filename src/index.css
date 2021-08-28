@@ -37,5 +37,6 @@ label {
 }
 
 .option-input {
+  font-size: 12.5px;
   @apply appearance-none rounded-full border-gray-300 w-full bg-white border text-gray-600 leading-tight focus:border-blue-900 focus:outline-none
 }

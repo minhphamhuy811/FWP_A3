@@ -5,7 +5,7 @@ var app = express()
 
 var cookieParser = require('cookie-parser')
 var logger = require('morgan')
-const port = 3307
+const port = 3306
 const mongo = require('./connectToMongoDB')
 
 mongo()
