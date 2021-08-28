@@ -4,7 +4,7 @@ var app = express()
 
 var cookieParser = require('cookie-parser')
 var logger = require('morgan')
-const port = 3306
+const port = 3307
 const mongo = require('./connectToMongoDB')
 
 mongo()
@@ -19,4 +19,6 @@ app.use('/getall', patientRouter)
 app.listen(port, () => {
     console.log(`Server app listening at http://localhost:${port}`)
 })
+
+
 module.exports = app;

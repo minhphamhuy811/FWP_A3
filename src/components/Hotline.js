@@ -8,9 +8,7 @@ export default function Hotline() {
 			<div className="mt-4 mb-7">
 				<div  className="text-2xl flex justify-center items-end gap-x-2">
 					<p className="text-3xl font-bold text-secondary">1022</p> bấm phím <p className="text-3xl font-bold text-secondary">2</p>
-				</div>
-				<div className="text-2xl flex justify-center items-end gap-x-2">
-				hoặc <p className="text-3xl font-bold text-secondary">1900 9095</p>
+					hoặc <p className="text-3xl font-bold text-secondary">1900 9095</p>
 				</div>
 			</div>
 		</div>

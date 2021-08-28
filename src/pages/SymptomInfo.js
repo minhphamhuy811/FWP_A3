@@ -16,7 +16,7 @@ export default function SymptomInfo() {
 	const [phoneNumber, setPhoneNumber] = useSessionStorage('phoneNumber', '')
 	const [email, setEmail] = useSessionStorage('email', '')
 	
-	  
+	
 	function resetSymptomInfo() {
 		setFullName('')
 		setBirthYear('')
@@ -34,7 +34,7 @@ export default function SymptomInfo() {
 
 	return (
 		<div className="flex flex-col bg-gray-100">
-			<div className="border-blue-900 px-4 mb-4 min-h-screen relative max-w-xl mx-auto">
+			<div className="border-blue-900 px-4 mb-2 relative max-w-xl mx-auto">
 				<div className="bg-white border border-transparent rounded-2xl p-4 my-4">
 					<div className="text-center">
 						<h1 className="font-bold text-4xl">KHAI BÁO SỨC KHỎE</h1>
@@ -73,7 +73,6 @@ export default function SymptomInfo() {
 									value={country}
 									onChange={e => setCountry(e.target.value)}
 									/>
-									<input type="text" placeholder="Việt Nam" className="rounded-full border-gray-300 focus:border-blue-900" id="country" value={country} onChange={e => setCountry(e.target.value)} />
 								</ul>
 							</div>
 							<h3 className="font-bold">Thông tin nơi cư trú</h3>
@@ -131,7 +130,6 @@ export default function SymptomInfo() {
 							</div>
 						</form>
 					</div>
-
 				</div>
 				<div className="bg-white border border-transparent rounded-2xl p-2">
 					<div className="flex justify-around text-center">
@@ -140,9 +138,6 @@ export default function SymptomInfo() {
 					</div>
 				</div>
 			</div>
-			<script>
-
-			</script>
 		</div>
 
 	)
