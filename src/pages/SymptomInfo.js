@@ -7,7 +7,7 @@ export default function SymptomInfo() {
 	const [fullName, setFullName] = useSessionStorage('fullName', '')
 	const [birthYear, setBirthYear] = useSessionStorage('birthYear', '')
 	const [gender, setGender] = useSessionStorage('gender', '')
-	const [country, setCountry] = useSessionStorage('country', '')
+	const [country, setCountry] = useSessionStorage('country', 'Vietnam')
 	const [id, setID] = useSessionStorage('id', '')
 	const [city, setCity] = useSessionStorage('city', '')
 	const [district, setDistrict] = useSessionStorage('district', '')
@@ -21,7 +21,7 @@ export default function SymptomInfo() {
 		setFullName('')
 		setBirthYear('')
 		setGender('')
-		setCountry('')
+		setCountry('Vietnam')
 		setID('')
 		setAddress('')
 		setPhoneNumber('')
@@ -54,12 +54,12 @@ export default function SymptomInfo() {
 							<div className="grid grid-cols-3 gap-x-4 my-2">
 								<ul className="flex flex-col">
 									<label htmlFor="birthyear" className="flex gap-x-1">Năm Sinh <div className="text-red-600 italic">(*)</div></label>
-									<input type="text" placeholder="2021" className="rounded-full border-gray-300 focus:border-blue-900" id="birthyear" value={birthYear} onChange={e => setBirthYear(e.target.value)} />
+									<input type="number" placeholder="2021" className="rounded-full border-gray-300 focus:border-blue-900" id="birthyear" value={birthYear} onChange={e => setBirthYear(e.target.value)} />
 								</ul>
 								<ul className="flex flex-col">
 									<label htmlFor="gender" className="flex gap-x-1">Giới Tính <div className="text-red-600 italic">(*)</div></label>
 									<select name="gdr" id="gender" value={gender} onChange={e => setGender(e.target.value)} className="rounded-full border-gray-300 focus:border-blue-900">
-										<option>-Chọn-</option>
+										<option hidden>-Chọn-</option>
 										<option>Nam</option>
 										<option>Nữ</option>
 										<option>Khác</option>
@@ -69,9 +69,8 @@ export default function SymptomInfo() {
 									<label htmlFor="country" className="flex gap-x-1">Quốc Tịch <div className="text-red-600 italic">(*)</div></label>
 									<CountryDropdown
 									type="text"  className="rounded-full border-gray-300 focus:border-blue-900" id="country"
-									defaultOptionLabel="Việt Nam"
 									value={country}
-									onChange={e => setCountry(e.target.value)}
+									onChange={value => setCountry(value)}
 									/>
 								</ul>
 							</div>
@@ -82,14 +81,70 @@ export default function SymptomInfo() {
 										Tỉnh/thành <div className="text-red-600 text-xs italic">(*)</div>
 									</label>
 									<select className="option-input p-3" id="grid-state" value={city} onChange={e => setCity(e.target.value)}>
-										<option>-Chọn-</option>
-
-										<option >Thành phố Hà Nội</option>
-
-										<option >Tỉnh Hà Giang</option>
-
-										<option >Tỉnh Cao Bằng</option>
-
+										<option hidden>-Chọn-</option>
+										<option>Thành phố Hà Nội</option>
+										<option>Thành phố Hồ Chí Minh</option>
+										<option>Tỉnh An Giang</option>
+										<option>Tỉnh Bà Rịa - Vũng Tàu</option>
+										<option>Tỉnh Bạc Liêu</option>
+										<option>Tỉnh Bắc Giang</option>
+										<option>Tỉnh Bắc Kạn</option>
+										<option>Tỉnh Bắc Ninh</option>
+										<option>Tỉnh Bến Tre</option>
+										<option>Tỉnh Bình Dương</option>
+										<option>Tỉnh Bình Định</option>
+										<option>Tỉnh Bình Phước</option>
+										<option>Tỉnh Bình Thuận</option>
+										<option>Tỉnh Cao Bằng</option>
+										<option>Tỉnh Cà Mau</option>
+										<option>Thành phố Cần Thơ</option>
+										<option>Thành phố Hải Phòng</option>
+										<option>Thành phố Đà Nẵng</option>
+										<option>Tỉnh Gia Lai</option>
+										<option>Tỉnh Hòa Bình</option>
+										<option>Tỉnh Hà Giang</option>
+										<option>Tỉnh Hà Nam</option>
+										<option>Tỉnh Hà Tĩnh</option>
+										<option>Tỉnh Hưng Yên</option>
+										<option>Tỉnh Hải Dương</option>
+										<option>Tỉnh Hậu Giang</option>
+										<option>Tỉnh Điện Biên</option>
+										<option>Tỉnh Đắk Lắk</option>
+										<option>Tỉnh Đắk Nông</option>
+										<option>Tỉnh Đồng Nai</option>
+										<option>Tỉnh Đồng Tháp</option>
+										<option>Tỉnh Khánh Hòa</option>
+										<option>Tỉnh Kiên Giang</option>
+										<option>Tỉnh Kon Tum</option>
+										<option>Tỉnh Lai Châu</option>
+										<option>Tỉnh Long An</option>
+										<option>Tỉnh Lào Cai</option>
+										<option>Tỉnh Lâm Đồng</option>
+										<option>Tỉnh Lạng Sơn</option>
+										<option>Tỉnh Nam Định</option>
+										<option>Tỉnh Nghệ An</option>
+										<option>Tỉnh Ninh Bình</option>
+										<option>Tỉnh Ninh Thuận</option>
+										<option>Tỉnh Phú Thọ</option>
+										<option>Tỉnh Phú Yên</option>
+										<option>Tỉnh Quảng Bình</option>
+										<option>Tỉnh Quảng Nam</option>
+										<option>Tỉnh Quảng Ngãi</option>
+										<option>Tỉnh Quảng Ninh</option>
+										<option>Tỉnh Quảng Trị</option>
+										<option>Tỉnh Sóc Trăng</option>
+										<option>Tỉnh Sơn La</option>
+										<option>Tỉnh Thanh Hóa</option>
+										<option>Tỉnh Thái Bình</option>
+										<option>Tỉnh Thái Nguyên</option>
+										<option>Tỉnh Thừa Thiên - Huế</option>
+										<option>Tỉnh Tiền Giang</option>
+										<option>Tỉnh Trà Vinh</option>
+										<option>Tỉnh Tuyên Quang</option>
+										<option>Tỉnh Tây Ninh</option>
+										<option>Tỉnh Vĩnh Long</option>
+										<option>Tỉnh Vĩnh Phúc</option>
+										<option>Tỉnh Yên Bái</option>
 									</select>
 
 								</div>
@@ -97,21 +152,15 @@ export default function SymptomInfo() {
 									<label className="flex gap-x-1">
 										Quận/huyện <div className="text-red-600 italic">(*)</div>
 									</label>
-									<select className="option-input p-3" id="grid-state" value={district} onChange={e => setDistrict(e.target.value)}>
-										<option>-Chọn-</option>
+									<select className="option-input p-3" id="grid-state" value={district}  aria-placeholder="-Chọn-" onChange={e => setDistrict(e.target.value)}>
+										<option hidden>-Chọn-</option>
 										<option>1</option>
 										<option>2</option>
 									</select>
 								</div>
 								<div>
-									<label className="flex gap-x-1">
-										Phường/xã <div className="text-red-600 italic">(*)</div>
-									</label>
-									<select className="option-input p-3" id="grid-state" value={ward} onChange={e => setWard(e.target.value)}>
-										<option>-Chọn-</option>
-										<option>1</option>
-										<option>2</option>
-									</select>
+									<label className="flex gap-x-1">Phường/xã <div className="text-red-600 italic">(*)</div></label>
+									<input type="text" placeholder="1" className="option-input rounded-full px-3 py-2.5" id="ward" value={ward} onChange={e => setWard(e.target.value)} />
 								</div>
 								<ul className="flex flex-col col-span-3 my-2">
 									<label htmlFor="email" className="tracking-wide flex gap-x-1">Số nhà, phố, tổ dân phố/thôn/đội <div className="text-red-600 italic">(*)</div></label>
@@ -121,7 +170,7 @@ export default function SymptomInfo() {
 							<div className="grid grid-cols-2 gap-4">
 								<ul className="flex flex-col">
 									<label htmlFor="email" className="tracking-wide flex gap-x-1">Điện thoại <div className="text-red-600 italic">(*)</div></label>
-									<input type="number" placeholder="0123456789" className="rounded-full border-gray-300 focus:border-blue-900" id="phoneNumber" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} />
+									<input type="text" placeholder="0123456789" className="rounded-full border-gray-300 focus:border-blue-900" id="phoneNumber" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} />
 								</ul>
 								<ul className="flex flex-col">
 									<label htmlFor="email" className="tracking-wide flex gap-x-1">Email <div className="text-red-600 italic">(*)</div></label>

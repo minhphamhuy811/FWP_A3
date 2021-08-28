@@ -1,25 +1,25 @@
 const express = require('express')
-const patientSchema = require('../schemas/patientSchema')
+const loginSchema = require('../schemas/loginSchema')
 const router = express.Router()
 
 	router.post('/', async(req, res) => {
 		try {
-			const patient = new patientSchema(req.body)
-			await patient.save()
+			const login = new loginSchema(req.body)
+			await login.save()
 		}
 		catch (e) {
 			res.status(400).json({error: e.toString()})
 		}
-		res.send('Patient declared successfully')
+		res.send('login declared successfully')
 	})
 	router.get('/', function(req,res) {
-		patientSchema.find({})
-			.exec(function(err, patients) {
+		loginSchema.find({})
+			.exec(function(err, login) {
 				if (err) {
 					return res.send({
 						err: err.message
 					})}			   
-				return res.send(patients)
+				return res.send(login)
 			})
 	} );
 module.exports = router
