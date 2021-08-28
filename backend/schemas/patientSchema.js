@@ -1,5 +1,9 @@
 const mongoose = require('mongoose')
 
+const stringReq = {type: String, required: true}
+const booleanReq = {type: Boolean, required: true}
+const numberReq = {type: Number, required: true}
+
 const patientSchema = mongoose.Schema({
 	fullName: stringReq,
 	id: stringReq,
