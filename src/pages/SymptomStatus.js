@@ -5,17 +5,17 @@ import axios from 'axios'
 
 
 export default function SymptomStatus() {
-	const fullName = sessionStorage.getItem('fullName')
-	const birthYear = sessionStorage.getItem('birthYear')
-	const gender = sessionStorage.getItem('gender')
-	const country = sessionStorage.getItem('country')
-	const id = sessionStorage.getItem('id')
-	const city = sessionStorage.getItem('city')
-	const district = sessionStorage.getItem('district')
-	const ward = sessionStorage.getItem('ward')
-	const address = sessionStorage.getItem('address')
-	const phoneNumber = sessionStorage.getItem('phoneNumber')
-	const email = sessionStorage.getItem('email')
+	const fullName = JSON.parse(sessionStorage.getItem('fullName'))
+	const id = JSON.parse(sessionStorage.getItem('id'))
+	const birthYear = JSON.parse(sessionStorage.getItem('birthYear'))
+	const gender = JSON.parse(sessionStorage.getItem('gender'))
+	const country = JSON.parse(sessionStorage.getItem('country'))
+	const city = JSON.parse(sessionStorage.getItem('city'))
+	const district = JSON.parse(sessionStorage.getItem('district'))
+	const ward = JSON.parse(sessionStorage.getItem('ward'))
+	const address = JSON.parse(sessionStorage.getItem('address'))
+	const phoneNumber = JSON.parse(sessionStorage.getItem('phoneNumber'))
+	const email = JSON.parse(sessionStorage.getItem('email'))
 
 	const [cough, setCough] = useSessionStorage('cough',false)
 	const [fever, setFever] = useSessionStorage('fever',38)
@@ -34,10 +34,10 @@ export default function SymptomStatus() {
 	const submitForm = async () => {
 		await axios.post('/patient', {
 			fullName,
+			id,
 			birthYear,
 			gender,
 			country,
-			id,
 			city,
 			district,
 			ward,
