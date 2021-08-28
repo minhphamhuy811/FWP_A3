@@ -15,14 +15,14 @@ export default function SymptomInfo() {
 	const [address, setAddress] = useSessionStorage('address', '')
 	const [phoneNumber, setPhoneNumber] = useSessionStorage('phoneNumber', '')
 	const [email, setEmail] = useSessionStorage('email', '')
-	
-	
+
+
 	function resetSymptomInfo() {
 		setFullName('')
 		setID('')
 		setBirthYear('')
 		setGender('')
-		setCountry('Vietnam')
+		setCountry('')
 		setAddress('')
 		setPhoneNumber('')
 		setEmail('')

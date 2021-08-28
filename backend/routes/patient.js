@@ -2,7 +2,8 @@ const express = require('express')
 const patientSchema = require('../schemas/patientSchema')
 const router = express.Router()
 
-	router.post('/', async(req, res) => {
+	// Create a new Product
+	router.post('/', async(req, res, next) => {
 		try {
 			const patient = new patientSchema(req.body)
 			await patient.save()
