@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/patient', patientRouter)
-
+app.use('/getall', patientRouter)
 
 app.listen(port, () => {
     console.log(`Server app listening at http://localhost:${port}`)

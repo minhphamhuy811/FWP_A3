@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Hotline() {
 	return (
-		<div className="flex flex-col gap-y-2 bg-gray-100 px-2 md:px-4 lg:px-8 pt-8 text-center">
+		<div className="flex flex-col gap-y-2 bg-gray-100 px-2 md:px-4 lg:px-8 pt-4 text-center">
 			<h3 className="text-md md:text-xl lg:text-2xl font-bold">Nếu bạn hoặc bệnh nhân có triệu chứng nặng</h3>
 			<h3 className="text-md md:text-xl lg:text-2xl font-bold">hãy liên hệ đường dây nóng bên dưới để được cấp cứu kịp thời.</h3>
 			<div className="mt-4 mb-7">
