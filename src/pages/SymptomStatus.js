@@ -88,23 +88,20 @@ export default function SymptomStatus() {
 						<h1 className="font-bold text-4xl">KHAI BÁO SỨC KHỎE</h1>
 					</div>
 					<div className="flex flex-col my-4 justify-center items-center ">
-						<h3 className="font-bold">Các dấu hiệu, biểu hiện nhiễm SARS-CoV-2</h3>
-						<form method="post" action="/">
-
+						<h3 className="font-bold">Phần 2: Các dấu hiệu, biểu hiện nhiễm SARS-CoV-2</h3>
+						<form method="post" className="grid grid-cols-2 gap-4" action="/">
 							<div className="flex flex-col">
-								<p className="font-light my-2 flex gap-x-1">1. Ho <div className="text-red-600 italic">(*)</div></p>
+								<p className="font-light my-2 flex gap-x-1">1. Sốt (trên 37.5 độ C) <div className="text-red-600 italic">(*)</div></p>
+								<input type="number" value={fever} className="rounded-full border-0 focus:ring-0 pr-4 font-bold" readOnly="true"/>
+								<input type="range" value={fever} placeholder="nhập nhiệt độ của bạn" min="34" max="42" step="0.5" onChange={event => setFever(event.target.value)} />
+							</div>
+							<div className="flex flex-col">
+								<p className="font-light my-2 flex gap-x-1">2. Ho <div className="text-red-600 italic">(*)</div></p>
 								<div>
 									<label><input className="style-radio radio-option" type="radio" name="cough" value={cough} onChange={() => setCough(true)} checked={cough}/> Có	</label>
 									<label><input className="style-radio radio-option" type="radio" name="cough" value={cough} onChange={() => setCough(false)} checked={!cough}/> Không	</label>
 								</div>
 							</div>
-
-							<div className="flex flex-col">
-								<p className="font-light my-2 flex gap-x-1">2. Sốt (trên 37.5 độ C) <div className="text-red-600 italic">(*)</div></p>
-								<input type="number" value={fever} className="rounded-full border-0 focus:ring-0 pr-4 font-bold" readOnly="true"/>
-								<input type="range" value={fever} placeholder="nhập nhiệt độ của bạn" min="34" max="42" step="0.5" onChange={event => setFever(event.target.value)} />
-							</div>
-
 							<div className="flex flex-col">
 								<p className="font-light my-2 flex gap-x-1">3. Đau đầu <div className="text-red-600 italic">(*)</div></p>
 								<div>
