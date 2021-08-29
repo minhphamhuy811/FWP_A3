@@ -2,15 +2,15 @@ const express = require('express')
 const registerSchema = require('../schemas/registerSchema')
 const router = express.Router()
 
-router.post('/', async(req, res) => {
+router.post('/', async (req, res) => {
 	try {
 		const register = new registerSchema(req.body)
 		await register.save()
 	}
 	catch (e) {
-		res.status(400).json({error: e.toString()})
+		return res.status(400).json({error: e.toString()})
 	}
-	res.send('register successfully')
+	res.send('Register successfully')
 })
 router.get('/', function(req,res) {
 	registerSchema.find({})
@@ -18,7 +18,7 @@ router.get('/', function(req,res) {
 			if (err) {
 				return res.send({
 					err: err.message
-				})}			   
+				})}
 			return res.send(register)
 		})
 } );

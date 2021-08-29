@@ -75,7 +75,7 @@ export default function Login () {
 
 						<div className="text-sm">
 							<Link to={'/admin-register'} className="font-medium text-primary hover:text-red-700">
-                Quên mật khẩu?
+                Tạo tài khoản
 							</Link>
 						</div>
 					</div>

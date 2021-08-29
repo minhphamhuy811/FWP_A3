@@ -2,14 +2,13 @@ const express = require('express')
 const patientSchema = require('../schemas/patientSchema')
 const router = express.Router()
 
-	// Create a new Product
 	router.post('/', async(req, res) => {
 		try {
 			const patient = new patientSchema(req.body)
 			await patient.save()
 		}
 		catch (e) {
-			res.status(400).json({error: e.toString()})
+			return res.status(400).json({error: e.toString()})
 		}
 		res.send('Patient declared successfully')
 	})
@@ -19,7 +18,7 @@ const router = express.Router()
 				if (err) {
 					return res.send({
 						err: err.message
-					})}			   
+					})}
 				return res.send(patients)
 			})
 	} );
