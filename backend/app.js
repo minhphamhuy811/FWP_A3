@@ -27,6 +27,13 @@ app.use('/patient', patientRouter)
 app.use('/getall', patientRouter)
 app.use('/register', registerRouter)
 
+
+app.use('/login', (req, res) => {
+    res.send({
+        token: 'test123'
+    });
+});
+
 app.listen(port, () => {
     console.log(`Server app listening at http://localhost:${port}`)
 })

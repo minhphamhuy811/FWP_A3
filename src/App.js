@@ -6,11 +6,19 @@ import Information from './pages/Information'
 import SymptomStatus from './pages/SymptomStatus'
 import Login from './pages/Login'
 import Hotline from './components/Hotline'
-import Dashboard from './pages/Dashboard';
-import Register from './pages/Register';
+import Dashboard from './pages/Dashboard'
+import Register from './pages/Register'
+import useToken from './middleware/useToken'
 
 export default function App() {
-	
+	const { token, setToken } = useToken();
+
+	function tokenLogin() {
+		if(!token) {
+		return(<Login setToken={setToken}/>)
+		}
+	}
+
 	return (
 		<Router>
 			<Switch>
@@ -33,7 +41,7 @@ export default function App() {
 						<Information/>
 					</Route>
 					<Route path='/admin-login'>
-						<Login/>
+						{tokenLogin()}
 					</Route>
 					<Route path='/admin-register'>
 						<Register/>
