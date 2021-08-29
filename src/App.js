@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
 import DeclarePageHeader from './layout/DeclarePageHeader'
 import SymptomInfo from './pages/SymptomInfo'
@@ -9,9 +9,8 @@ import Hotline from './components/Hotline'
 import Dashboard from './pages/Dashboard';
 import Register from './pages/Register';
 
-
-
 export default function App() {
+	
 	return (
 		<Router>
 			<Switch>

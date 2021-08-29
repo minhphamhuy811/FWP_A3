@@ -1,12 +1,35 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
 import '../index.css'
 import React, {useState} from 'react'
 import logobyt from '../assets/logo_byt.svg'
 import logoembvn from '../assets/logo_chxhcnvn.svg'
 import {Link} from 'react-router-dom'
+import PropTypes from 'prop-types';
 
-export default function Login () {
+
+async function loginUser(credentials) {
+	return fetch('http://localhost:3000/admin-login', {
+	method: 'POST',
+	headers: {
+		'Content-Type': 'application/json'
+	},
+	body: JSON.stringify(credentials)
+	}).then(data => data.json())
+}
+   
+
+export default function Login ({ setToken }) {
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
+
+	const handleSubmit = async e => {
+		e.preventDefault();
+		const token = await loginUser({
+			email,
+		  	password
+		});
+		setToken(token);
+	}
 
 	return (
 		<div className="images min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
@@ -23,7 +46,7 @@ export default function Login () {
 						</p>
 					</div>
 				</div>
-				<form className="mt-8 space-y-6" action="#" method="POST">
+				<form className="mt-8 space-y-6" action="#" method="POST" onSubmit={handleSubmit}>
 					<input type="hidden" name="remember" defaultValue="true" />
 					<div className="rounded -space-y-px">
 						<div>
@@ -94,4 +117,8 @@ export default function Login () {
 			</div>
 		</div>
 	)
+}
+
+Login.propTypes = {
+	setToken: PropTypes.func.isRequired
 }
