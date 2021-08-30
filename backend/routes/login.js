@@ -16,24 +16,18 @@ router.get('/', function(req,res) {
 
 router.post('/', async (req, res) => {
     try {
-        accountSchema.findOne({
-            email: req.body.email,
-            password: req.body.password
+        const query  = accountSchema.where({email: req.body.email, password: req.body.password});
+        query.findOne(function (err, accounts) {
+            if (err) return res.send({err: err.message})
+            if (accounts) {
+                res.send({accounts})
+            }
         })
-            .exec(function(err, accounts) {
-                res.send({accounts})
-
-                if (err) {
-                    return res.send({
-                        err: err.message
-                    })}
-                res.send({accounts})
-            })
-	    res.send({
-            token:'this is the only token'
-	    })
     } catch (e) {
 		return res.status(400).json({error: e.toString()})
 	}
+    res.send({
+        token:'this is the only token'
+    })
 })
 module.exports = router
