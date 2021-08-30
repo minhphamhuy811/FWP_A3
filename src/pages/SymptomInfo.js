@@ -3,6 +3,7 @@ import React from 'react'
 import { useSessionStorage } from '../middleware/UseStorage'
 import { CountryDropdown } from 'react-country-region-selector';
 import { isFormCorrect, isFormFilled, nameRegex, idRegex, emailRegex, phoneRegex, validateForm, handleRedirect } from '../lib/utils/validate'
+import generateYear from '../lib/utils/generate-year'
 
 export default function SymptomInfo() {
 	const [fullName, setFullName] = useSessionStorage('fullName', '')
@@ -55,7 +56,10 @@ export default function SymptomInfo() {
 							<div className="grid grid-cols-3 gap-x-4 my-2">
 								<ul className="flex flex-col">
 									<label htmlFor="birthYear" className="flex gap-x-1">Năm Sinh <div className="text-red-600 italic">(*)</div></label>
-									<input type="number" placeholder="2021" className="option-input p-3 rounded-full border-gray-300 focus:border-blue-900" id="birthYear" value={birthYear} onChange={e => setBirthYear(e.target.value)} />
+									<select name="birthyear" id="birthYear" value={birthYear} onChange={e => setBirthYear(e.target.value)} className="option-input p-3 rounded-full border-gray-300 focus:border-blue-900">
+										<option hidden>-Chọn-</option>
+										{generateYear()}
+									</select>
 								</ul>
 								<ul className="flex flex-col">
 									<label htmlFor="gender" className="flex gap-x-1">Giới Tính <div className="text-red-600 italic">(*)</div></label>
