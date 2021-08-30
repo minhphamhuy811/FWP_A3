@@ -9,12 +9,10 @@ export default function Register () {
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 	const [confirmPassword, setConfirmPassword] = useState('')
-
-	const user = email
-
+	
 	const setAdmin = async () => {
 		await axios.post('/register', {
-			user,
+			email,
 			password
 		})
 	}

@@ -16,6 +16,8 @@ export default function App() {
 	function tokenLogin() {
 		if(!token) {
 		return(<Login setToken={setToken}/>)
+		} else {
+			return (<Dashboard/>)
 		}
 	}
 

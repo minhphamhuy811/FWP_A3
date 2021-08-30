@@ -4,8 +4,9 @@ import React, {useState} from 'react'
 import logobyt from '../assets/logo_byt.svg'
 import logoembvn from '../assets/logo_chxhcnvn.svg'
 import {Link} from 'react-router-dom'
-import PropTypes from 'prop-types';
-
+import PropTypes from 'prop-types'
+//import axios from 'axios'
+//import isValidAccount from '../middleware/isValidAccount'
 
 async function loginUser(credentials) {
 	return fetch('/login', {
@@ -24,11 +25,14 @@ export default function Login ({ setToken }) {
 
 	const handleSubmit = async e => {
 		e.preventDefault();
+		//await axios.post('/Login' )
+					//.then(data => isValidAccount(JSON.stringify(data), {email, password}))
 		const token = await loginUser({
 			email,
 		  	password
 		});
 		setToken(token);
+		
 	}
 
 	return (

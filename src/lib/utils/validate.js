@@ -7,7 +7,7 @@ const emailRegex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
 const phoneRegex = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-s./0-9]*$/
 
 function validateForm(data, type) {
-	if (data != '') {
+	if (data !== '') {
 		switch(type.test(data)){
 		case false: return <WrongInput />
 		case true: return <CorrectInput />

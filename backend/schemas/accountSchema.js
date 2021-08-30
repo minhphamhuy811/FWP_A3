@@ -2,9 +2,9 @@ const mongoose = require('mongoose')
 
 const stringReq = {type: String, required: true}
 
-const registerSchema = mongoose.Schema({
-	user: stringReq,
+const accountSchema = mongoose.Schema({
+	email: stringReq,
     password: stringReq
 })
 
-module.exports = mongoose.model('admin', registerSchema)
+module.exports = mongoose.model('admin', accountSchema)
