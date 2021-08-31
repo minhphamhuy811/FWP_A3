@@ -1,23 +1,21 @@
-/* eslint-disable no-mixed-spaces-and-tabs */
 import '../index.css'
 import React, {useState} from 'react'
 import logobyt from '../assets/logo_byt.svg'
 import logoembvn from '../assets/logo_chxhcnvn.svg'
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
-//import axios from 'axios'
-//import isValidAccount from '../middleware/isValidAccount'
+
 
 async function loginUser(credentials) {
-	return fetch('/login', {
+	return fetch('http://localhost:3307/login', {
 	method: 'POST',
 	headers: {
-		'Content-Type': 'application/json'
+		'Content-Type': 'application/json',
+		"Access-Control-Allow-Origin": "*"
 	},
 	body: JSON.stringify(credentials)
 	}).then(data => data.json())
 }
-
 
 export default function Login ({ setToken }) {
 	const [email, setEmail] = useState('')
@@ -25,14 +23,10 @@ export default function Login ({ setToken }) {
 
 	const handleSubmit = async e => {
 		e.preventDefault();
-		//await axios.post('/Login' )
-					//.then(data => isValidAccount(JSON.stringify(data), {email, password}))
 		const token = await loginUser({
-			email,
-		  	password
+			email, password
 		});
 		setToken(token);
-		
 	}
 
 	return (
@@ -113,8 +107,7 @@ export default function Login ({ setToken }) {
 						<button
 							type="submit"
 							className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-primary hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-900"
-						>
-             				Đăng nhập
+						>Đăng nhập
 						</button>
 					</div>
 				</form>

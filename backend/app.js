@@ -3,7 +3,7 @@ var registerRouter = require('./routes/register')
 var loginRouter = require('./routes/login')
 var express = require('express')
 var app = express()
-const cors = require('cors');
+var cors = require('cors')
 
 var cookieParser = require('cookie-parser')
 var logger = require('morgan')
@@ -12,7 +12,12 @@ const mongo = require('./connectToMongoDB')
 
 mongo()
 
-app.use(cors());
+var corsOptions = {
+    origin: 'http://localhost:3000',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+
+app.use(cors(corsOptions))
 
 app.use(logger('dev'));
 app.use(express.json());
