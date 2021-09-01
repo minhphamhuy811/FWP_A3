@@ -4,17 +4,20 @@ const router = express.Router()
 
 router.post('/', async (req, res) => {
 	try {
-		const register = new accountSchema(req.body)
-		if(register === accountSchema.findOne({email: req.body.email, password: req.body.password})){
-			res.header("Access-Control-Allow-Origin", "*")
-			await register.save()
-			res.send('Register successfully')
+		res.header("Access-Control-Allow-Origin", "*")
+		accountSchema.findOne({email: req.body.email, password: req.body.password})
+						.exec(function(err, register) {
+							if (err) {
+								return res.status(400).json('Account has already signed up')
+							}
+							register = new accountSchema(req.body)
+							register.save()
+							res.send('Register successfully')
+						})
+			}
+			catch (e) {
+				return res.status(400).json({error: e.toString()})
 		}
-		return res.status(400).json('Account has already signed up')
-	}
-	catch (e) {
-		return res.status(400).json({error: e.toString()})
-	}
 })
 
 module.exports = router
