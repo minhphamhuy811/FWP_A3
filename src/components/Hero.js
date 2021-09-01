@@ -8,10 +8,10 @@ import {Link} from 'react-router-dom'
 export default function Hero() {
 	return(
 		<div className="bg-primary">
-			<div className="flex ml-0 md:ml-10 justify-center items-center border border-transparent py-4 px-2 md:px-8">
-			<div className="flex flex-shrink-0 gap-x-2 px-4 justify-center items-center">
-				<img src={logochxhcnvn} className="h-10" alt="logo_vn"/>
-				<img src={logobyt} className="h-10 border border-transparent rounded-full bg-white" alt="logo_byt"/>
+			<div className="flex justify-center items-center border border-transparent py-4 px-2 md:px-8">
+			<div className="flex flex-shrink-0 gap-x-2 px-7 justify-center items-center">
+				<img src={logochxhcnvn} className="h-12" alt="logo_vn"/>
+				<img src={logobyt} className="h-12 border border-transparent rounded-full bg-white" alt="logo_byt"/>
 			</div>
 			<div className="flex flex-col justify-center items-center text-center border-l border-r px-4 py-0.5 border-white">
 				<h3 className="text-white" style={{fontSize: '10px'}}>BAN CHỈ ĐẠO QUỐC GIA PHÒNG CHỐNG COVID-19</h3>
