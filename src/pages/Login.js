@@ -3,10 +3,31 @@ import React, {useState} from 'react'
 import logobyt from '../assets/logo_byt.svg'
 import logoembvn from '../assets/logo_chxhcnvn.svg'
 import {Link} from 'react-router-dom'
+import PropTypes from 'prop-types'
 
-export default function Login () {
+
+async function loginUser(credentials) {
+	return fetch('http://localhost:3307/login', {
+	method: 'POST',
+	headers: {
+		'Content-Type': 'application/json',
+		"Access-Control-Allow-Origin": "*"
+	},
+	body: JSON.stringify(credentials)
+	}).then(data => data.json())
+}
+
+export default function Login ({ setToken }) {
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
+
+	const handleSubmit = async e => {
+		e.preventDefault();
+		const token = await loginUser({
+			email, password
+		});
+		setToken(token);
+	}
 
 	return (
 		<div className="images min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
@@ -23,7 +44,7 @@ export default function Login () {
 						</p>
 					</div>
 				</div>
-				<form className="mt-8 space-y-6" action="#" method="POST">
+				<form className="mt-8 space-y-6" onSubmit={handleSubmit}>
 					<input type="hidden" name="remember" defaultValue="true" />
 					<div className="rounded -space-y-px">
 						<div>
@@ -86,12 +107,15 @@ export default function Login () {
 						<button
 							type="submit"
 							className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-primary hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-900"
-						>
-             Đăng nhập
+						>Đăng nhập
 						</button>
 					</div>
 				</form>
 			</div>
 		</div>
 	)
+}
+
+Login.propTypes = {
+	setToken: PropTypes.func.isRequired
 }

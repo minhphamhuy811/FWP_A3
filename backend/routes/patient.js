@@ -3,6 +3,7 @@ const patientSchema = require('../schemas/patientSchema')
 const router = express.Router()
 
 	router.post('/', async(req, res) => {
+		res.header("Access-Control-Allow-Origin", "*")
 		try {
 			const patient = new patientSchema(req.body)
 			await patient.save()
@@ -13,6 +14,7 @@ const router = express.Router()
 		res.send('Patient declared successfully')
 	})
 	router.get('/', function(req,res) {
+		res.header("Access-Control-Allow-Origin", "*")
 		patientSchema.find({})
 			.exec(function(err, patients) {
 				if (err) {

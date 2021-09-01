@@ -9,6 +9,7 @@ var isFormCorrect = false
 var isFormFilled = false
 
 function validateForm(data, type) {
+<<<<<<< HEAD
 	// if the data field is not empty, check the data
 	if (data != '') {
 		isFormFilled = true
@@ -30,6 +31,13 @@ function validateForm(data, type) {
 function handleRedirect(e, isFormCorrect, isFormFilled) {
 	if (!(isFormCorrect && isFormFilled)) {
 		e.preventDefault()
+=======
+	if (data !== '') {
+		switch(type.test(data)){
+		case false: return <WrongInput />
+		case true: return <CorrectInput />
+		} 
+>>>>>>> dashboard-api
 	}
 }
 

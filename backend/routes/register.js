@@ -1,25 +1,28 @@
 const express = require('express')
-const registerSchema = require('../schemas/registerSchema')
+const accountSchema = require('../schemas/accountSchema')
 const router = express.Router()
 
 router.post('/', async (req, res) => {
+	res.header("Access-Control-Allow-Origin", "*")
 	try {
-		const register = new registerSchema(req.body)
-		await register.save()
-	}
-	catch (e) {
+		accountSchema.findOne({email: req.body.email})
+		.exec(function(err, register) {
+		
+			if (register === null) {
+				register = new accountSchema(req.body)
+				register.save()
+				return res.status(200).send('Register successfully')
+				
+			}
+			
+			return res.status(422).send({
+				error: 'That email address is already exist',
+				statusCode: 422
+			});
+		})
+	} catch (e) {
 		return res.status(400).json({error: e.toString()})
 	}
-	res.send('Register successfully')
 })
-router.get('/', function(req,res) {
-	registerSchema.find({})
-		.exec(function(err, register) {
-			if (err) {
-				return res.send({
-					err: err.message
-				})}
-			return res.send(register)
-		})
-} );
+
 module.exports = router

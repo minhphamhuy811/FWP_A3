@@ -10,11 +10,9 @@ export default function Register () {
 	const [password, setPassword] = useState('')
 	const [confirmPassword, setConfirmPassword] = useState('')
 
-	const user = email
-
 	const setAdmin = async () => {
-		await axios.post('/register', {
-			user,
+		await axios.post('http://localhost:3307/register', {
+			email,
 			password
 		})
 	}
@@ -83,8 +81,8 @@ export default function Register () {
 								Xác Nhận Mật khẩu
 							</label>
 							<input
-								id="password"
-								name="password"
+								id="confPassword"
+								name="confPassword"
 								type="password"
 								autoComplete="current-password"
 								required
@@ -96,15 +94,15 @@ export default function Register () {
 						</div>
 					</div>
 					<div className="flex gap-x-2">
-						<Link to={'/admin-login'} class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-secondary hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-900">
+						<Link to={'/admin-login'} className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-secondary hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-900">
 							Quay lại
 						</Link>
-						<button
+						<Link
 							type="submit"
 							className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-primary hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-900"
 							onClick={passwordVerify}>
 							Đăng ký
-						</button>
+						</Link>
 					</div>
 				</form>
 			</div>
