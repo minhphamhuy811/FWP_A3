@@ -19,15 +19,25 @@ router.post('/', async (req, res) => {
     res.header("Access-Control-Allow-Origin", "*");
     try {
         accountSchema.findOne({email: req.body.email})
-            if(req.body.email === accountSchema.findOne({email})){
-                        exec(function (err, accounts) {
-            if (err) return res.send({err: err.message})
-            if (accounts) {
+            .exec(function (err, accounts) {
+                if (accounts === null) {
+                    return res.status(406).send({
+                        error: "there is no account registered with this email address",
+                        statusCode: 406
+                    })
+                }
+
+                if (accounts.password !== req.body.password) {
+                    return res.status(406).send({
+                        error: 'wrong password',
+                        statusCode: 406
+                    });
+                }
                 return res.send({
                     token:'this is the only token'
                 })
-            }
-        })}
+            })
+        
     } catch (e) {
 		return res.status(400).json({error: e.toString()})
 	}
