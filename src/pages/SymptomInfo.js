@@ -4,6 +4,7 @@ import { useSessionStorage } from '../middleware/UseStorage'
 import { CountryDropdown } from 'react-country-region-selector';
 import { isFormCorrect, isFormFilled, nameRegex, idRegex, emailRegex, phoneRegex, validateForm, handleRedirect } from '../lib/utils/validate'
 import generateYear from '../lib/utils/generate-year'
+import Hotline from '../components/Hotline';
 
 export default function SymptomInfo() {
 	const [fullName, setFullName] = useSessionStorage('fullName', '')
@@ -35,7 +36,7 @@ export default function SymptomInfo() {
 	}
 
 	return (
-		<div className="flex flex-col bg-gray-100">
+		<div className="flex flex-col bg-gray-100 min-h-screen">
 			<div className="border-blue-900 px-4 mb-2 relative max-w-xl mx-auto">
 				<div className="bg-white border border-transparent rounded-2xl p-4 my-4">
 					<div className="text-center">
@@ -79,7 +80,9 @@ export default function SymptomInfo() {
 									/>
 								</ul>
 							</div>
+							<div className="my-2">
 							<h3 className="font-bold">Thông tin nơi cư trú</h3>
+							</div>
 							<div className="grid grid-cols-3 gap-x-4">
 								<div>
 									<label htmlFor="city" className="flex gap-x-1">
@@ -193,7 +196,7 @@ export default function SymptomInfo() {
 					</div>
 				</div>
 			</div>
+			<Hotline/>	
 		</div>
-
 	)
 }

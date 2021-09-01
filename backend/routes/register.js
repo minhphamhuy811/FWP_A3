@@ -17,7 +17,8 @@ router.post('/', async (req, res) => {
 			
 			return res.status(422).send({
 				error: 'That email address is already exist',
-				statusCode: 422
+				statusCode: 422,
+				message: 'Mail exists'
 			});
 		})
 	} catch (e) {

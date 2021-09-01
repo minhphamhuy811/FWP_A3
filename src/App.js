@@ -5,7 +5,6 @@ import SymptomInfo from './pages/SymptomInfo'
 import Information from './pages/Information'
 import SymptomStatus from './pages/SymptomStatus'
 import Login from './pages/Login'
-import Hotline from './components/Hotline'
 import Dashboard from './pages/Dashboard'
 import Register from './pages/Register'
 import useToken from './middleware/useToken'
@@ -31,12 +30,10 @@ export default function App() {
 					<Route exact path='/symptom-info'>
 						<DeclarePageHeader />
 						<SymptomInfo />
-						<Hotline/>
 					</Route>
 					<Route path='/symptom-status'>
 						<DeclarePageHeader />
 						<SymptomStatus/>
-						<Hotline/>
 					</Route>
 					<Route path='/covid-information'>
 						<DeclarePageHeader />
