@@ -8,6 +8,6 @@ export function WrongInput() {
 
 export function CorrectInput() {
 	return(
-		<a className="text-green-600 italic text-sm">   OK</a>
+		<a className="text-green-600 bold text-sm">   🗸</a>
 	)
 }

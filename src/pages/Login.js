@@ -8,13 +8,22 @@ import PropTypes from 'prop-types'
 
 async function loginUser(credentials) {
 	return fetch('http://localhost:3307/login', {
-	method: 'POST',
-	headers: {
-		'Content-Type': 'application/json',
-		"Access-Control-Allow-Origin": "*"
-	},
-	body: JSON.stringify(credentials)
-	}).then(data => data.json())
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+			"Access-Control-Allow-Origin": "*"
+		},
+		body: JSON.stringify(credentials)
+	})
+		.then((data) => {
+			if (data.ok) {
+				return data.json();
+			} else {
+				alert('wrong password or account does not exist');
+				location.reload();
+				localStorage.removeItem()
+			}
+		})
 }
 
 export default function Login ({ setToken }) {

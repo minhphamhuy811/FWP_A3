@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
  
 export default function Table() {
 	const [patientList, setPatientList] = useState([])
-	const endPoint = "http://localhost:3306/getall"
+	const endPoint = "http://localhost:3307/getall"
 	const getPatient = () => {
 		fetch(endPoint)
 			.then(response => response.json())

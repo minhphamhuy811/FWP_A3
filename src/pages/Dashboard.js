@@ -2,9 +2,15 @@ import React from 'react'
 import logochxhcnvn from '../assets/logo_chxhcnvn.svg'
 import logobyt from '../assets/logo_byt.svg'
 import Table from '../components/Table'
-
+import FileToDownload from '../lib/utils/data.csv'
+import  { Link } from 'react-router-dom'
 
 export default function Dashboard() {
+
+  function logout(){
+    sessionStorage.removeItem('token')
+   
+  }
   return(
     <div className="flex flex-col lg:flex-row">
     <div className="bg-primary h-1/2 lg:min-h-screen flex-shrink md:flex-shrink-0">
@@ -37,14 +43,16 @@ export default function Dashboard() {
             </svg>
             Admin
           </button>
-          <a href="/"
+          <a href="/" 
              className="flex text-xl text-white font-bold items-center gap-x-2 py-4 px-6 border border-transparent hover:bg-black focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
                  stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                     d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
             </svg>
-            <div>Log Out</div>
+            <div onClick={logout}>
+            <Link to ='/'/>
+              Log Out</div>
           </a>
         </div>
       </div>
@@ -60,13 +68,14 @@ export default function Dashboard() {
         </div>
         <div className="flex flex-col mt-4 px-4 gap-y-4">
           <div className="flex justify-end">
-          <button className="flex gap-x-1 items-center border border-primary p-2 text-primary rounded-xl font-bold hover:bg-primary hover:text-white focus:outline-none focus:text-white focus:bg-black">
+          <button className="flex gap-x-1 items-center border border-primary p-2 text-primary rounded-xl font-bold hover:bg-primary hover:text-white focus:outline-none focus:text-white focus:bg-black"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
               <path
                 d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/>
               <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/>
             </svg>
-            EXPORT</button>
+            <a href={FileToDownload} download="data.csv"> EXPORT </a></button>
           </div>
           <Table/>
         </div>
