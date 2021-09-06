@@ -113,11 +113,12 @@ export default function Login ({ setToken }) {
 						<Link to={'/'} class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-secondary hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-900">
 							Quay lại
 						</Link>
-						<button
+						<Link
+							to={"/dashboard"}
 							type="submit"
 							className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-primary hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-900"
 						>Đăng nhập
-						</button>
+						</Link>
 					</div>
 				</form>
 			</div>
