@@ -34,7 +34,8 @@ router.post('/', async (req, res) => {
                     });
                 }
                 return res.send({
-                    token:'this is the only token'
+                    token:'this is the only token',
+                    ward: accounts.ward
                 })
             })
         

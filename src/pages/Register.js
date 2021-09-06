@@ -69,7 +69,7 @@ export default function Register () {
 							<label htmlFor="ward" className="sr-only">
 								Phường
 							</label>
-							<select className="mt-2 appearance-none rounded-xl relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-xl focus:outline-none focus:ring-primary focus:border-primary focus:z-10 text-sm md:text-md" id="ward" value={ward} onChange={e => setWard(e.target.value)}>
+							<select className="mb-2 appearance-none rounded-xl relative block w-full px-3 py-2 border border-gray-300 text-gray-900 rounded-b-xl focus:outline-none focus:ring-primary focus:border-primary focus:z-10 text-sm md:text-md" id="ward" value={ward} onChange={e => setWard(e.target.value)}>
 								<option hidden>-Phường-</option>
 								<option>Bình Thuận</option>
 								<option>Phú Mỹ</option>
@@ -82,7 +82,7 @@ export default function Register () {
 								<option>Tân Thuận Dông</option>
 								<option>Tân Thuận Tây</option>
 							</select>
-						</div>
+							</div>
 						<div>
 							<label htmlFor="email-address" className="sr-only">
 								Địa chỉ Email

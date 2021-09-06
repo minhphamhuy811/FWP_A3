@@ -15,7 +15,7 @@ const router = express.Router()
 	})
 	router.get('/', function(req,res) {
 		res.header("Access-Control-Allow-Origin", "*")
-		patientSchema.find({})
+		patientSchema.find({ward: req.body.ward})
 			.exec(function(err, patients) {
 				if (err) {
 					return res.send({

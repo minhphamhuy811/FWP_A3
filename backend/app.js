@@ -1,6 +1,7 @@
 var patientRouter = require('./routes/patient')
 var registerRouter = require('./routes/register')
 var loginRouter = require('./routes/login')
+var tableRouter = require('./routes/table')
 var express = require('express')
 var app = express()
 var cors = require('cors')
@@ -27,6 +28,7 @@ app.use('/patient', patientRouter)
 app.use('/getall', patientRouter)
 app.use('/register', registerRouter)
 app.use('/login', loginRouter)
+app.use('/table', tableRouter)
 
 app.listen(port, () => {
     console.log(`Server app listening at http://localhost:${port}`)

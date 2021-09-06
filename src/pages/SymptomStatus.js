@@ -33,7 +33,7 @@ export default function SymptomStatus() {
 
 
 	const submitForm = async () => {
-		await axios.post('/patient', {
+		await axios.post('http://localhost:3307/patient', {
 			fullName,
 			id,
 			birthYear,

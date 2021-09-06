@@ -162,13 +162,24 @@ export default function SymptomInfo() {
 									</label>
 									<select className="option-input p-3" id="district" value={district} onChange={e => setDistrict(e.target.value)}>
 										<option hidden>-Chọn-</option>
-										<option>1</option>
-										<option>2</option>
+										<option>7</option>
 									</select>
 								</div>
 								<div>
 									<label htmlFor="ward" className="flex gap-x-1">Phường/xã <div className="text-red-600 italic">(*)</div></label>
-									<input type="text" placeholder="1" className="option-input text-gray-600 p-3" id="ward" value={ward} onChange={e => setWard(e.target.value)}/>
+									<select className="option-input p-3" id="ward" value={ward} onChange={e => setWard(e.target.value)}>
+										<option hidden>-Chọn-</option>										
+										<option>Bình Thuận</option>
+										<option>Phú Mỹ</option>
+										<option>Phú Thuận</option>
+										<option>Tân Hưng</option>
+										<option>Tân Kiểng</option>
+										<option>Tân Phong</option>
+										<option>Tân Phú</option>
+										<option>Tân Quy</option>
+										<option>Tân Thuận Dông</option>
+										<option>Tân Thuận Tây</option>
+									</select>
 								</div>
 							</div>
 							<ul className="flex flex-col col-span-3 my-2">
