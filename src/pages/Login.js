@@ -30,7 +30,15 @@ export default function Login ({ setToken }) {
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 
+<<<<<<< HEAD
 	const handleSubmit = async e => {
+=======
+	function redirect() {
+		window.location = "/dashboard";
+	}
+
+	async function handleSubmit(e) {
+>>>>>>> c81d2e392dc36853cf8385dd1863c38ba78d7750
 		e.preventDefault()
 		const token = await loginUser({
 			email, password
@@ -40,7 +48,11 @@ export default function Login ({ setToken }) {
 		console.log(token)
 		console.log(token.token)
 		console.log(token.ward)
+<<<<<<< HEAD
 		window.location = "/dashboard"
+=======
+		redirect()
+>>>>>>> c81d2e392dc36853cf8385dd1863c38ba78d7750
 	}
 
 	return (
@@ -58,7 +70,7 @@ export default function Login ({ setToken }) {
 						</p>
 					</div>
 				</div>
-				<form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+				<form className="mt-8 space-y-6">
 					<input type="hidden" name="remember" defaultValue="true" />
 					<div className="rounded -space-y-px">
 						<div>
