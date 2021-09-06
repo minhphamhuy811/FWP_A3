@@ -30,6 +30,10 @@ export default function Login ({ setToken }) {
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 
+	function redirect() {
+		window.location = "/dashboard";
+	}
+
 	async function handleSubmit(e) {
 		e.preventDefault()
 		const token = await loginUser({
@@ -40,6 +44,7 @@ export default function Login ({ setToken }) {
 		console.log(token)
 		console.log(token.token)
 		console.log(token.ward)
+		redirect()
 	}
 
 	return (
@@ -57,7 +62,7 @@ export default function Login ({ setToken }) {
 						</p>
 					</div>
 				</div>
-				<form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+				<form className="mt-8 space-y-6">
 					<input type="hidden" name="remember" defaultValue="true" />
 					<div className="rounded -space-y-px">
 						<div>
@@ -119,8 +124,7 @@ export default function Login ({ setToken }) {
 						Quay lại
 					</Link>
 					<Link
-						to={'/dashboard'}
-						type='submit'
+						onClick={e => handleSubmit(e)}
 						className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-primary hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-900"
 					>Đăng nhập
 					</Link>
