@@ -120,7 +120,7 @@ export default function Login ({ setToken }) {
 					</Link>
 					<Link
 						to={'/dashboard'}
-						onClick={(e) => handleSubmit(e)}
+						type='submit'
 						className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-primary hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-900"
 					>Đăng nhập
 					</Link>

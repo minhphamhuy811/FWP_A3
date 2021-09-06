@@ -90,71 +90,8 @@ export default function SymptomInfo() {
 									</label>
 									<select className="option-input p-3" id="city" value={city} onChange={e => setCity(e.target.value)}>
 										<option hidden>-Chọn-</option>
-										<option>Thành phố Hà Nội</option>
 										<option>Thành phố Hồ Chí Minh</option>
-										<option>Tỉnh An Giang</option>
-										<option>Tỉnh Bà Rịa - Vũng Tàu</option>
-										<option>Tỉnh Bạc Liêu</option>
-										<option>Tỉnh Bắc Giang</option>
-										<option>Tỉnh Bắc Kạn</option>
-										<option>Tỉnh Bắc Ninh</option>
-										<option>Tỉnh Bến Tre</option>
-										<option>Tỉnh Bình Dương</option>
-										<option>Tỉnh Bình Định</option>
-										<option>Tỉnh Bình Phước</option>
-										<option>Tỉnh Bình Thuận</option>
-										<option>Tỉnh Cao Bằng</option>
-										<option>Tỉnh Cà Mau</option>
-										<option>Thành phố Cần Thơ</option>
-										<option>Thành phố Hải Phòng</option>
-										<option>Thành phố Đà Nẵng</option>
-										<option>Tỉnh Gia Lai</option>
-										<option>Tỉnh Hòa Bình</option>
-										<option>Tỉnh Hà Giang</option>
-										<option>Tỉnh Hà Nam</option>
-										<option>Tỉnh Hà Tĩnh</option>
-										<option>Tỉnh Hưng Yên</option>
-										<option>Tỉnh Hải Dương</option>
-										<option>Tỉnh Hậu Giang</option>
-										<option>Tỉnh Điện Biên</option>
-										<option>Tỉnh Đắk Lắk</option>
-										<option>Tỉnh Đắk Nông</option>
-										<option>Tỉnh Đồng Nai</option>
-										<option>Tỉnh Đồng Tháp</option>
-										<option>Tỉnh Khánh Hòa</option>
-										<option>Tỉnh Kiên Giang</option>
-										<option>Tỉnh Kon Tum</option>
-										<option>Tỉnh Lai Châu</option>
-										<option>Tỉnh Long An</option>
-										<option>Tỉnh Lào Cai</option>
-										<option>Tỉnh Lâm Đồng</option>
-										<option>Tỉnh Lạng Sơn</option>
-										<option>Tỉnh Nam Định</option>
-										<option>Tỉnh Nghệ An</option>
-										<option>Tỉnh Ninh Bình</option>
-										<option>Tỉnh Ninh Thuận</option>
-										<option>Tỉnh Phú Thọ</option>
-										<option>Tỉnh Phú Yên</option>
-										<option>Tỉnh Quảng Bình</option>
-										<option>Tỉnh Quảng Nam</option>
-										<option>Tỉnh Quảng Ngãi</option>
-										<option>Tỉnh Quảng Ninh</option>
-										<option>Tỉnh Quảng Trị</option>
-										<option>Tỉnh Sóc Trăng</option>
-										<option>Tỉnh Sơn La</option>
-										<option>Tỉnh Thanh Hóa</option>
-										<option>Tỉnh Thái Bình</option>
-										<option>Tỉnh Thái Nguyên</option>
-										<option>Tỉnh Thừa Thiên - Huế</option>
-										<option>Tỉnh Tiền Giang</option>
-										<option>Tỉnh Trà Vinh</option>
-										<option>Tỉnh Tuyên Quang</option>
-										<option>Tỉnh Tây Ninh</option>
-										<option>Tỉnh Vĩnh Long</option>
-										<option>Tỉnh Vĩnh Phúc</option>
-										<option>Tỉnh Yên Bái</option>
 									</select>
-
 								</div>
 								<div>
 									<label htmlFor="district" className="flex gap-x-1">
@@ -207,7 +144,7 @@ export default function SymptomInfo() {
 					</div>
 				</div>
 			</div>
-			<Hotline/>	
+			<Hotline/>
 		</div>
 	)
 }

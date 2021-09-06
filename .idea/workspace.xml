@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="93892fe3-77ec-430c-b7b5-8b6e6faeea2c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/utils/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SymptomInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SymptomInfo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +57,9 @@
       <workItem from="1630763768246" duration="875000" />
       <workItem from="1630820009371" duration="740000" />
       <workItem from="1630898110416" duration="796000" />
-      <workItem from="1630930610418" duration="671000" />
+      <workItem from="1630930610418" duration="1904000" />
+      <workItem from="1630935592963" duration="991000" />
+      <workItem from="1630945351793" duration="363000" />
     </task>
     <servers />
   </component>
