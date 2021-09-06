@@ -30,7 +30,7 @@ export default function Login ({ setToken }) {
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 
-	async function handleSubmit(e) {
+	const handleSubmit = async e => {
 		e.preventDefault()
 		const token = await loginUser({
 			email, password
@@ -40,6 +40,7 @@ export default function Login ({ setToken }) {
 		console.log(token)
 		console.log(token.token)
 		console.log(token.ward)
+		window.location = "/dashboard"
 	}
 
 	return (
@@ -113,18 +114,17 @@ export default function Login ({ setToken }) {
 							</Link>
 						</div>
 					</div>
+					<div className="flex gap-x-2">
+						<Link to={'/'} className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-secondary hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-900">
+							Quay lại
+						</Link>
+						<button
+							type="submit"
+							className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-primary hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-900">
+							Đăng nhập
+						</button>
+					</div>
 				</form>
-				<div className="flex gap-x-2">
-					<Link to={'/'} class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-secondary hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-900">
-						Quay lại
-					</Link>
-					<Link
-						to={'/dashboard'}
-						onClick={(e) => handleSubmit(e)}
-						className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-primary hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-900"
-					>Đăng nhập
-					</Link>
-				</div>
 			</div>
 		</div>
 	)
