@@ -13,9 +13,9 @@ export default function Dashboard() {
 
   return(
     <div className="flex flex-col lg:flex-row">
-    <div className="bg-primary h-1/2 lg:min-h-screen flex-shrink md:flex-shrink-0">
-      <div className="border-b border-primary mx-6 shadow-2xl">
-        <div className="flex flex-col gap-y-5 py-4">
+    <div className="bg-primary h-1/4 lg:min-h-screen flex-shrink md:flex-shrink-0">
+      <div className="border-b" style={{borderColor: '#00142a'}}>
+        <div className="flex flex-col gap-y-5 py-4 ">
           <div className="flex justify-center gap-x-2">
           <img src={logochxhcnvn} className="h-14" alt=""/>
           <img src={logobyt} className="h-14 border-b border-transparent p-0.5 rounded-full bg-white" alt=""/>
@@ -23,8 +23,12 @@ export default function Dashboard() {
           <div className="text-white font-bold text-center text-xl">HỆ THỐNG QUẢN LÝ Y TẾ</div>
           </div>
       </div>
-      <div className="min-h-screen" style={{backgroundColor: '#00142a'}}>
-        <div className="flex flex-col">
+      <div className="h-1/4 lg:min-h-screen" style={{backgroundColor: '#00142a'}}>
+        <div className="flex flex-col md:justify-center md:items-center lg:justify-start lg:items-stretch md:flex-row lg:flex-col">
+          <div className="text-center py-4 px-6 bg-primary">
+            <div className="text-white font-bold text-xl">Bạn đang quản lý Phường:</div>
+            <div className="text-white text-xl italic">Phú Thuận</div>
+          </div>
           <button onClick="userToggle()"
                   className="flex text-xl text-white font-bold items-center gap-x-2 py-4 px-6 border border-transparent hover:bg-black focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
