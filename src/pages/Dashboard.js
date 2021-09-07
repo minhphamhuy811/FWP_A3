@@ -27,7 +27,7 @@ export default function Dashboard() {
         <div className="flex flex-col md:justify-center md:items-center lg:justify-start lg:items-stretch md:flex-row lg:flex-col">
           <div className="text-center py-4 px-6 bg-primary">
             <div className="text-white font-bold text-xl">Bạn đang quản lý Phường:</div>
-            <div className="text-white text-xl italic">Phú Thuận</div>
+            <div className="text-white text-xl italic">{JSON.parse(sessionStorage.getItem('ward'))}</div>
           </div>
           <button onClick="userToggle()"
                   className="flex text-xl text-white font-bold items-center gap-x-2 py-4 px-6 border border-transparent hover:bg-black focus:outline-none">
