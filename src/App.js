@@ -49,7 +49,7 @@ export default function App() {
           <Route path="/admin-register">
             <Register />
           </Route>
-          <Route path="/dashboard">
+          <Route path="/patient-dashboard">
             <Dashboard />
           </Route>
           <Route path="/admin-dashboard">

@@ -11,8 +11,8 @@ export default function Dashboard() {
   }
   return (
     <div className="flex flex-col lg:flex-row">
-      <div className="bg-primary h-1/2 lg:min-h-screen flex-shrink md:flex-shrink-0">
-        <div className="border-b border-primary mx-6 shadow-2xl">
+      <div className="bg-primary h-1/4 lg:min-h-screen flex-shrink md:flex-shrink-0">
+        <div className="border-b" style={{borderColor: '#00142a'}}>
           <div className="flex flex-col gap-y-5 py-4">
             <div className="flex justify-center gap-x-2">
               <img src={logochxhcnvn} className="h-14" alt="" />
@@ -27,10 +27,14 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-        <div className="min-h-screen" style={{ backgroundColor: "#00142a" }}>
-          <div className="flex flex-col">
-            <button
-              onClick="userToggle()"
+        <div className="lg:min-h-screen" style={{ backgroundColor: "#00142a" }}>
+          <div className="flex flex-col md:justify-center md:items-center md:flex-row lg:justify-start lg:items-stretch lg:flex-col">
+            <div className="text-center py-4 px-6 bg-primary">
+              <div className="text-white font-bold text-xl">Bạn đang quản lý Phường:</div>
+              <div className="text-white text-xl italic">{JSON.parse(sessionStorage.getItem('ward'))}</div>
+            </div>
+            <Link
+              to={'/patient-dashboard'}
               className="flex text-xl text-white font-bold items-center gap-x-2 py-4 px-6 border border-transparent hover:bg-black focus:outline-none"
             >
               <svg
@@ -48,9 +52,9 @@ export default function Dashboard() {
                 />
               </svg>
               Patients
-            </button>
-            <button
-              onClick="branchToggle()"
+            </Link>
+            <Link
+              to={'/admin-dashboard'}
               className="flex text-xl text-white font-bold items-center gap-x-2 py-4 px-6 border border-transparent hover:bg-black focus:outline-none"
             >
               <svg
@@ -68,7 +72,7 @@ export default function Dashboard() {
                 />
               </svg>
               Admin
-            </button>
+            </Link>
             <a
               href="/"
               className="flex text-xl text-white font-bold items-center gap-x-2 py-4 px-6 border border-transparent hover:bg-black focus:outline-none"
