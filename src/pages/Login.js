@@ -40,7 +40,7 @@ export default function Login ({ setToken }) {
 		console.log(token)
 		console.log(token.token)
 		console.log(token.ward)
-		window.location = "/dashboard"
+		window.location = "/patient-dashboard"
 	}
 
 	return (

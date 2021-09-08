@@ -2,12 +2,21 @@ import React from "react";
 import { useEffect, useState } from "react";
 
 export default function PatientTable() {
+  const ward = JSON.parse(sessionStorage.getItem('ward'))
   const [patientList, setPatientList] = useState([]);
-  const endPoint = "http://localhost:3307/getall";
+  const endPoint = "http://localhost:3307/table";
   const getPatient = () => {
-    fetch(endPoint)
-      .then((response) => response.json())
-      .then((patientList) => setPatientList(patientList));
+		fetch(endPoint, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+				"Access-Control-Allow-Origin": "*"
+			},
+			body: JSON.stringify({ward})
+		})
+    .then(response => response.json())
+    .then(patientList => setPatientList(patientList))
+
   };
   useEffect(() => {
     getPatient();

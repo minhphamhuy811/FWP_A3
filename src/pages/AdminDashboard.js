@@ -73,29 +73,16 @@ export default function AdminDashboard() {
               </svg>
               Admin
             </Link>
-            <a
-              href="/"
-              className="flex text-xl text-white font-bold items-center gap-x-2 py-4 px-6 border border-transparent hover:bg-black focus:outline-none"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
-                />
-              </svg>
-              <div onClick={logout}>
-                <Link to="/" />
-                Log Out
-              </div>
-            </a>
+            <Link to={'/admin-login'} onClick={logout}
+             className="flex text-xl text-white font-bold items-center gap-x-2 py-4 px-6 border border-transparent hover:bg-black focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+            </svg>
+            <div >
+              Log Out</div>
+          </Link>
           </div>
         </div>
       </div>
