@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-export default function Table() {
+export default function PatientTable() {
   const [patientList, setPatientList] = useState([]);
   const endPoint = "http://localhost:3307/getall";
   const getPatient = () => {
