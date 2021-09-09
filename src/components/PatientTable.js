@@ -146,7 +146,7 @@ export default function PatientTable() {
                     <p>
                       <span className="inline-grid grid-cols-1 text-sm text-left font-medium text-gray-500">
                         <span>
-                          Triệu trứng hiện hữu: {checkSymptom(row).join(", ")}
+                          Triệu chứng hiện hữu: {checkSymptom(row).join(", ")}
                         </span>
                         <span>Nhiệt độ: {row.fever}</span>
                       </span>

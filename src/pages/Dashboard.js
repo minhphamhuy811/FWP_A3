@@ -35,7 +35,7 @@ export default function Dashboard() {
             <div className="text-center py-4 px-6 bg-primary">
               <div className="text-white font-bold text-xl">Bạn đang quản lý Phường:</div>
               <div className="text-white text-xl italic">
-                <label htmlFor="ward" className="flex gap-x-1">Phường/xã <div className="text-red-600 italic">(*)</div></label>
+                <label htmlFor="ward" className="flex gap-x-1 text-white">Phường/xã <div className="text-red-600 italic">(*)</div></label>
                 <select className="option-input p-3" id="ward" value={ward} onChange={e => setWard(e.target.value)}>
                   <option hidden>-Chọn-</option>										
                   <option>Bình Thuận</option>
