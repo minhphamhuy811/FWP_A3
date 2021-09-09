@@ -36,11 +36,7 @@ export default function Login ({ setToken }) {
 			email, password
 		})
 		setToken(token.token)
-		sessionStorage.setItem('ward', JSON.stringify(token.ward))
-		console.log(token)
-		console.log(token.token)
-		console.log(token.ward)
-		window.location = "/patient-dashboard"
+		window.location = "/dashboard"
 	}
 
 	return (

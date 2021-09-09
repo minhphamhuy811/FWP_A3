@@ -27,8 +27,9 @@ body {
   text-transform: capitalize;
 }
 
-label, select,#fullname, #id, #national, #gender, #birthyear, #address, #phoneNumber, #email {
+label, select, #fullname, #id, #national, #gender, #birthyear, #address, #phoneNumber, #email {
   font-size: 12.5px;
+  @apply text-black
 }
 
 label {

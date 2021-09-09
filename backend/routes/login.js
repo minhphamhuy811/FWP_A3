@@ -1,46 +1,34 @@
-/* eslint-disable no-mixed-spaces-and-tabs */
-const express = require('express')
-const accountSchema = require('../schemas/accountSchema')
-const router = express.Router()
+// Importing modules 
+const express = require('express'); 
+const router = express.Router(); 
 
-router.get('/', function(req,res) {
-    res.header("Access-Control-Allow-Origin", "*")
-    accountSchema.find({})
-		.exec(function(err, accounts) {
-			if (err) {
-				 return res.send({
-					err: err.message
-				})}
-			return res.send(accounts)
-		})
-});
+// Importing User Schema 
+const User = require('../schemas/user'); 
 
-router.post('/', async (req, res) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    try {
-        accountSchema.findOne({email: req.body.email})
-            .exec(function (err, accounts) {
-                if (accounts === null) {
-                    return res.status(406).send({
-                        error: "there is no account registered with this email address",
-                        statusCode: 406
-                    })
-                }
+// User login api 
+router.post('/', (req, res) => { 
 
-                if (accounts.password !== req.body.password) {
-                    return res.status(406).send({
-                        error: 'wrong password',
-                        statusCode: 406
-                    });
-                }
-                return res.send({
-                    token:'this is the only token',
-                    ward: accounts.ward
-                })
-            })
-        
-    } catch (e) {
-		return res.status(400).json({error: e.toString()})
-	}
-})
+    // Find user with requested email 
+    User.findOne({ email : req.body.email }, function(err, user) { 
+        if (user === null) { 
+            return res.status(400).send({ 
+                message : "User not found."
+            }); 
+        } 
+        else { 
+            if (user.validPassword(req.body.password)) { 
+                return res.status(201).send({ 
+                    message : "User Logged In", 
+                    token : "this is the only token"
+                }) 
+            } 
+            else { 
+                return res.status(400).send({ 
+                    message : "Wrong Password"
+                }); 
+            } 
+        } 
+    }); 
+}); 
+
 module.exports = router

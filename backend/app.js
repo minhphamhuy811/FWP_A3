@@ -1,8 +1,7 @@
 var patientRouter = require('./routes/patient')
-var registerRouter = require('./routes/register')
-var loginRouter = require('./routes/login')
 var tableRouter = require('./routes/table')
-var adminRouter = require('./routes/admin.js')
+var LoginRouter = require('./routes/login');
+var SignupRouter = require('./routes/signup')
 var express = require('express')
 var app = express()
 var cors = require('cors')
@@ -20,17 +19,14 @@ var corsOptions = {
 }
 
 app.use(cors(corsOptions))
-
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/patient', patientRouter)
-app.use('/getall', patientRouter)
-app.use('/register', registerRouter)
-app.use('/login', loginRouter)
 app.use('/table', tableRouter)
-app.use('/admin', adminRouter)
+app.use('/login', LoginRouter)
+app.use('/signup', SignupRouter)
 
 app.listen(port, () => {
     console.log(`Server app listening at http://localhost:${port}`)

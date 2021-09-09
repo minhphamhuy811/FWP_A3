@@ -40,11 +40,11 @@ export default function SymptomInfo() {
 			<div className="border-blue-900 px-4 mb-2 relative max-w-xl mx-auto">
 				<div className="bg-white border border-transparent rounded-2xl p-4 my-4">
 					<div className="text-center">
-						<h1 className="font-bold text-4xl">KHAI BÁO SỨC KHỎE</h1>
+						<h1 className="text-black font-bold text-4xl">KHAI BÁO SỨC KHỎE</h1>
 					</div>
-					<div className="mt-2 text-center font-bold">Phần 1: Thông tin cá nhân</div>
+					<div className="mt-2 text-center text-black font-bold">Phần 1: Thông tin cá nhân</div>
 					<div className="my-2">
-						<h3 className="font-bold">Thông tin người khai báo</h3>
+						<h3 className="font-bold text-black">Thông tin người khai báo</h3>
 						<form method="post" action="/" className="my-2">
 							<ul className="flex flex-col">
 								<label htmlFor="fullName" className="flex gap-x-1">Họ và Tên <div className="text-red-600 italic"> (*)</div>{validateForm(fullName, nameRegex)}</label>
@@ -81,7 +81,7 @@ export default function SymptomInfo() {
 								</ul>
 							</div>
 							<div className="my-2">
-							<h3 className="font-bold">Thông tin nơi cư trú</h3>
+							<h3 className="font-bold text-black">Thông tin nơi cư trú</h3>
 							</div>
 							<div className="grid grid-cols-3 gap-x-4">
 								<div>

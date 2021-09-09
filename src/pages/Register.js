@@ -6,17 +6,14 @@ import {Link} from 'react-router-dom'
 import axios from 'axios'
 
 export default function Register () {
-	const [ward, setWard] = useState('')
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 	const [confirmPassword, setConfirmPassword] = useState('')
 
 	const setAdmin = async () => {
-		console.log(ward)
-		await axios.post('http://localhost:3307/register', {
+		await axios.post('http://localhost:3307/signup', {
 			email,
-			password,
-			ward
+			password
 		})
 			.catch(function (error) {
 				if (error.response) {
@@ -65,24 +62,6 @@ export default function Register () {
 				<form className="mt-8 space-y-6">
 					<input type="hidden" name="remember" defaultValue="true" />
 					<div className="rounded -space-y-px">
-						<div>
-							<label htmlFor="ward" className="sr-only">
-								Phường
-							</label>
-							<select className="mb-2 appearance-none rounded-xl relative block w-full px-3 py-2 border border-gray-300 text-gray-900 rounded-b-xl focus:outline-none focus:ring-primary focus:border-primary focus:z-10 text-sm md:text-md" id="ward" value={ward} onChange={e => setWard(e.target.value)}>
-								<option hidden>-Phường-</option>
-								<option>Bình Thuận</option>
-								<option>Phú Mỹ</option>
-								<option>Phú Thuận</option>
-								<option>Tân Hưng</option>
-								<option>Tân Kiểng</option>
-								<option>Tân Phong</option>
-								<option>Tân Phú</option>
-								<option>Tân Quy</option>
-								<option>Tân Thuận Dông</option>
-								<option>Tân Thuận Tây</option>
-							</select>
-							</div>
 						<div>
 							<label htmlFor="email-address" className="sr-only">
 								Địa chỉ Email

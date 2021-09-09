@@ -3,9 +3,13 @@ import logochxhcnvn from "../assets/logo_chxhcnvn.svg";
 import logobyt from "../assets/logo_byt.svg";
 import PatientTable from "../components/PatientTable";
 import FileToDownload from "../lib/utils/data.csv";
+import { useSessionStorage } from '../middleware/UseStorage'
 import { Link } from "react-router-dom";
 
 export default function Dashboard() {
+
+  const [ward, setWard] = useSessionStorage('ward', '')
+
   function logout() {
     sessionStorage.removeItem("token");
   }
@@ -31,7 +35,22 @@ export default function Dashboard() {
           <div className="flex flex-col md:justify-center md:items-center md:flex-row lg:justify-start lg:items-stretch lg:flex-col">
             <div className="text-center py-4 px-6 bg-primary">
               <div className="text-white font-bold text-xl">Bạn đang quản lý Phường:</div>
-              <div className="text-white text-xl italic">{JSON.parse(sessionStorage.getItem('ward'))}</div>
+              <div className="text-white text-xl italic">
+                <label htmlFor="ward" className="flex gap-x-1">Phường/xã <div className="text-red-600 italic">(*)</div></label>
+                <select className="option-input p-3" id="ward" value={ward} onChange={e => setWard(e.target.value)}>
+                  <option hidden>-Chọn-</option>										
+                  <option>Bình Thuận</option>
+                  <option>Phú Mỹ</option>
+                  <option>Phú Thuận</option>
+                  <option>Tân Hưng</option>
+                  <option>Tân Kiểng</option>
+                  <option>Tân Phong</option>
+                  <option>Tân Phú</option>
+                  <option>Tân Quy</option>
+                  <option>Tân Thuận Dông</option>
+                  <option>Tân Thuận Tây</option>
+                </select>
+              </div>
             </div>
             <Link
               to={'/patient-dashboard'}

@@ -86,25 +86,25 @@ export default function SymptomStatus() {
 			<div className="border-blue-900 px-4 mb-4 relative w-full max-w-xl mx-auto">
 				<div className="bg-white border border-transparent rounded-2xl p-4 my-4">
 					<div className="text-center">
-						<h1 className="font-bold text-4xl">KHAI BÁO SỨC KHỎE</h1>
+						<h1 className="font-bold text-4xl text-black">KHAI BÁO SỨC KHỎE</h1>
 					</div>
 					<div className="flex flex-col my-4 justify-center items-center ">
-						<h3 className="font-bold">Phần 2: Các dấu hiệu, biểu hiện nhiễm SARS-CoV-2</h3>
+						<h3 className="font-bold text-black">Phần 2: Các dấu hiệu, biểu hiện nhiễm SARS-CoV-2</h3>
 						<form method="post" className="grid grid-cols-2 gap-4" action="/">
 							<div className="flex flex-col">
-								<p className="font-light my-2 flex gap-x-1">1. Sốt (trên 37.5 độ C) <div className="text-red-600 italic">(*)</div></p>
-								<input type="number" value={fever} className="rounded-full border-0 focus:ring-0 pr-4 font-bold" readOnly="true"/>
+								<p className="font-light my-2 flex gap-x-1 text-black">1. Sốt (trên 37.5 độ C) <div className="text-red-600 italic">(*)</div></p>
+								<input type="number" value={fever} className="rounded-full border-0 focus:ring-0 pr-4 font-bold text-black" readOnly="true"/>
 								<input type="range" value={fever} placeholder="nhập nhiệt độ của bạn" min="34" max="42" step="0.5" onChange={event => setFever(event.target.value)} />
 							</div>
 							<div className="flex flex-col">
-								<p className="font-light my-2 flex gap-x-1">2. Ho <div className="text-red-600 italic">(*)</div></p>
+								<p className="font-light my-2 flex gap-x-1 text-black">2. Ho <div className="text-red-600 italic">(*)</div></p>
 								<div>
 									<label><input className="style-radio radio-option" type="radio" name="cough" value={cough} onChange={() => setCough(true)} checked={cough}/> Có	</label>
 									<label><input className="style-radio radio-option" type="radio" name="cough" value={cough} onChange={() => setCough(false)} checked={!cough}/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
-								<p className="font-light my-2 flex gap-x-1">3. Đau đầu <div className="text-red-600 italic">(*)</div></p>
+								<p className="font-light my-2 flex gap-x-1 text-black">3. Đau đầu <div className="text-red-600 italic">(*)</div></p>
 								<div>
 									<label><input className="style-radio radio-option" type="radio" name="headache-option" value={headache} onChange={() => setHeadache(true)} checked={headache}/> Có	</label>
 									<label><input className=" style-radio radio-option" type="radio" name="headache-option" value={headache} onChange={() => setHeadache(false)} checked={!headache}/> Không	</label>
@@ -112,7 +112,7 @@ export default function SymptomStatus() {
 							</div>
 
 							<div className="flex flex-col">
-								<p className="font-light my-2 flex gap-x-1">4. Đau họng, rát họng <div className="text-red-600 italic">(*)</div></p>
+								<p className="font-light my-2 flex gap-x-1 text-black">4. Đau họng, rát họng <div className="text-red-600 italic">(*)</div></p>
 								<div>
 									<label><input className="style-radio radio-option" type="radio" name="sorethroat-option" value={soreThroat} onChange={() => setSoreThroat(true)} checked={soreThroat}/> Có	</label>
 									<label><input className=" style-radio radio-option" type="radio" name="sorethroat-option" value={soreThroat} onChange={() => setSoreThroat(false)} checked={!soreThroat}/> Không	</label>
@@ -120,7 +120,7 @@ export default function SymptomStatus() {
 							</div>
 
 							<div className="flex flex-col">
-								<p className="font-light my-2 flex gap-x-1">5. Sổ mũi, chảy mũi, ngạt mũi <div className="text-red-600 italic">(*)</div></p>
+								<p className="font-light my-2 flex gap-x-1 text-black">5. Sổ mũi, chảy mũi, ngạt mũi <div className="text-red-600 italic">(*)</div></p>
 								<div>
 									<label><input className="style-radio radio-option" type="radio" name="nasal-option" value={stuffNose}  onChange={() => setStuffNose(true)} checked={stuffNose}/> Có	</label>
 									<label><input className=" style-radio radio-option" type="radio" name="nasal-option" value={stuffNose} onChange={() => setStuffNose(false)} checked={!stuffNose}/> Không	</label>
@@ -128,49 +128,49 @@ export default function SymptomStatus() {
 							</div>
 
 							<div className="flex flex-col">
-								<p className="font-light my-2 flex gap-x-1">6. Khó thở <div className="text-red-600 italic">(*)</div></p>
+								<p className="font-light my-2 flex gap-x-1 text-black">6. Khó thở <div className="text-red-600 italic">(*)</div></p>
 								<div>
 									<label><input className="style-radio radio-option" type="radio" name="sob-option" value={difficultyBreathing} onChange={() => setDifficultyBreathing(true)} checked={difficultyBreathing}/> Có	</label>
 									<label><input className=" style-radio radio-option" type="radio" name="sob-option" value={difficultyBreathing} onChange={() => setDifficultyBreathing(false)} checked={!difficultyBreathing}/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
-								<p className="font-light my-2 flex gap-x-1">7. Đau ngực, tức ngực <div className="text-red-600 italic">(*)</div></p>
+								<p className="font-light my-2 flex gap-x-1 text-black">7. Đau ngực, tức ngực <div className="text-red-600 italic">(*)</div></p>
 								<div>
 									<label><input className="style-radio radio-option" type="radio" name="chestpain-option" value={chestache}  onChange={() => setChestache(true)} checked={chestache}/> Có	</label>
 									<label><input className=" style-radio radio-option" type="radio" name="chestpain-option" value={chestache} onChange={() => setChestache(false)} checked={!chestache}/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
-								<p className="font-light my-2 flex gap-x-1">8. Đau mỏi người, đau cơ <div className="text-red-600 italic">(*)</div></p>
+								<p className="font-light my-2 flex gap-x-1 text-black">8. Đau mỏi người, đau cơ <div className="text-red-600 italic">(*)</div></p>
 								<div>
 									<label><input className="style-radio radio-option" type="radio" name="malaise-option" value={muscleache}  onChange={() => setMuscleache(true)} checked={muscleache}/> Có	</label>
 									<label><input className=" style-radio radio-option" type="radio" name="malaise-option" value={muscleache} onChange={() => setMuscleache(false)} checked={!muscleache}/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
-								<p className="font-light my-2 flex gap-x-1">9. Mất vị giác <div className="text-red-600 italic">(*)</div></p>
+								<p className="font-light my-2 flex gap-x-1 text-black">9. Mất vị giác <div className="text-red-600 italic">(*)</div></p>
 								<div>
 									<label><input className="style-radio radio-option" type="radio" name="taste-option" value={ageusia} onChange={() => setAgeusia(true)} checked={ageusia}/> Có	</label>
 									<label><input className=" style-radio radio-option" type="radio" name="taste-option" value={ageusia} onChange={() => setAgeusia(false)} checked={!ageusia}/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
-								<p className="font-light my-2 flex gap-x-1">10. Mất khứu giác <div className="text-red-600 italic">(*)</div></p>
+								<p className="font-light my-2 flex gap-x-1 text-black">10. Mất khứu giác <div className="text-red-600 italic">(*)</div></p>
 								<div>
 									<label><input className="style-radio radio-option" type="radio" name="smell-option" value={anosmia} onChange={() => setAnosmia(true)} checked={anosmia}/> Có	</label>
 									<label><input className=" style-radio radio-option" type="radio" name="smell-option" value={anosmia} onChange={() => setAnosmia(false)} checked={!anosmia}/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
-								<p className="font-light my-2 flex gap-x-1">11. Buồn nôn <div className="text-red-600 italic">(*)</div></p>
+								<p className="font-light my-2 flex gap-x-1 text-black">11. Buồn nôn <div className="text-red-600 italic">(*)</div></p>
 								<div>
 									<label><input className="style-radio radio-option" type="radio" name="nausea-option" value={nausea} onChange={() => setNausea(true)} checked={nausea}/> Có	</label>
 									<label><input className=" style-radio radio-option" type="radio" name="nausea-option" value={nausea} onChange={() => setNausea(false)} checked={!nausea}/> Không	</label>
 								</div>
 							</div>
 							<div className="flex flex-col">
-								<p className="font-light my-2 flex gap-x-1">12. Đau bụng, Tiêu chảy <div className="text-red-600 italic">(*)</div></p>
+								<p className="font-light my-2 flex gap-x-1 text-black">12. Đau bụng, Tiêu chảy <div className="text-red-600 italic">(*)</div></p>
 								<div>
 									<label><input className="style-radio radio-option" type="radio" name="gastro-option" value={stomachache} onChange={() => setStomachache(true)} checked={stomachache}/> Có	</label>
 									<label><input className=" style-radio radio-option" type="radio" name="gastro-option" value={stomachache} onChange={() => setStomachache(false)} checked={!stomachache}/> Không	</label>
