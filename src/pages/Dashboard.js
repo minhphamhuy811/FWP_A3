@@ -33,11 +33,10 @@ export default function Dashboard() {
         <div className="lg:min-h-screen" style={{ backgroundColor: "#00142a" }}>
           <div className="flex flex-col md:justify-center md:items-center md:flex-row lg:justify-start lg:items-stretch lg:flex-col">
             <div className="text-center py-4 px-6 bg-primary">
-              <div className="text-white font-bold text-xl">Bạn đang quản lý Phường:</div>
+              <div className="text-white font-bold text-xl mb-2">Bạn đang quản lý Phường:</div>
               <div className="text-white text-xl italic">
-                <label htmlFor="ward" className="flex gap-x-1 text-white">Phường/xã <div className="text-red-600 italic">(*)</div></label>
-                <select className="option-input p-3" id="ward" value={ward} onChange={e => setWard(e.target.value)}>
-                  <option hidden>-Chọn-</option>										
+                <select className="option-input p-3" id="ward" value={ward} onChange={e => {setWard(e.target.value); location.reload(); return false;}}>
+                  <option hidden>-Chọn-</option>
                   <option>Bình Thuận</option>
                   <option>Phú Mỹ</option>
                   <option>Phú Thuận</option>
@@ -51,46 +50,6 @@ export default function Dashboard() {
                 </select>
               </div>
             </div>
-            <Link
-              to={'/patient-dashboard'}
-              className="flex text-xl text-white font-bold items-center gap-x-2 py-4 px-6 border border-transparent hover:bg-black focus:outline-none"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-                />
-              </svg>
-              Patients
-            </Link>
-            <Link
-              to={'/admin-dashboard'}
-              className="flex text-xl text-white font-bold items-center gap-x-2 py-4 px-6 border border-transparent hover:bg-black focus:outline-none"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"
-                />
-              </svg>
-              Admin
-            </Link>
             <Link to={'/admin-login'} onClick={logout}
              className="flex text-xl text-white font-bold items-center gap-x-2 py-4 px-6 border border-transparent hover:bg-black focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
