@@ -13,7 +13,7 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Register from "./pages/Register";
 import useToken from "./middleware/useToken";
-
+import PrivateRoute from "./middleware/PrivateRoute";
 export default function App() {
   const { token, setToken } = useToken();
 
@@ -48,9 +48,9 @@ export default function App() {
           <Route path="/admin-register">
             <Register />
           </Route>
-          <Route path="/dashboard">
+          <PrivateRoute path="/dashboard">
             <Dashboard />
-          </Route>
+          </PrivateRoute>
         </div>
       </Switch>
     </Router>
