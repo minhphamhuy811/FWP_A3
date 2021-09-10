@@ -13,15 +13,4 @@ const router = express.Router()
 		}
 		res.send('Patient declared successfully')
 	})
-	router.get('/', function(req,res) {
-		res.header("Access-Control-Allow-Origin", "*")
-		patientSchema.find({ward: req.body.ward})
-			.exec(function(err, patients) {
-				if (err) {
-					return res.send({
-						err: err.message
-					})}
-				return res.send(patients)
-			})
-	} );
 module.exports = router

@@ -6,7 +6,7 @@ function PrivateRoute({ children, ...rest }) {
     return (
         <Route
             {...rest}
-            render={() => (token ? children : <Redirect to={{ path: '/' }} />)}
+            render={() => (token ? children : <Redirect to= '/admin-login' />)}
         />
     );
 }

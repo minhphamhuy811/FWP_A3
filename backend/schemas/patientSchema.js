@@ -28,6 +28,7 @@ const patientSchema = mongoose.Schema({
 	anosmia: booleanReq,
 	nausea: booleanReq,
 	stomachache: booleanReq,
+	time : { type : Date, default: Date.now }
 })
 
 module.exports = mongoose.model('patient', patientSchema)

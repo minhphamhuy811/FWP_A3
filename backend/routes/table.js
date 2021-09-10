@@ -4,14 +4,27 @@ const router = express.Router()
 
 router.post('/', function(req,res) {
     res.header("Access-Control-Allow-Origin", "*")
-    try {
-    patientSchema.find({ward: req.body.ward})
-        .exec(function(err, patients) {
+    if (req.body.ward !== undefined) {
+        patientSchema.find({ward: req.body.ward}).exec(function(err, patients) {
+            if (err) {
+                return res.send({
+                    err: err.message
+                })}
             return res.send(patients)
         })
-    } catch (e) {
-        return res.status(400).json({error: e.toString()})
     }
-});
+    if (req.body.time !== undefined) {
+        patientSchema.find({created_at: {
+            $gte: new Date("2021-09-08").toISOString(),
+            $lt: new Date('2021-09-10').toISOString()
+        }}).exec(function(err, patients) {
+            if (err) {
+                return res.send({
+                    err: err.message
+                })}
+            return res.send(patients)
+        })
+    }
+} );
 
 module.exports = router
